@@ -1,0 +1,134 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Template for USENIX papers.
+%
+% History:
+%
+% - TEMPLATE for Usenix papers, specifically to meet requirements of
+%   USENIX '05. originally a template for producing IEEE-format
+%   articles using LaTeX. written by Matthew Ward, CS Department,
+%   Worcester Polytechnic Institute. adapted by David Beazley for his
+%   excellent SWIG paper in Proceedings, Tcl 96. turned into a
+%   smartass generic template by De Clarke, with thanks to both the
+%   above pioneers. Use at your own risk. Complaints to /dev/null.
+%   Make it two column with no page numbering, default is 10 point.
+%
+% - Munged by Fred Douglis <douglis@research.att.com> 10/97 to
+%   separate the .sty file from the LaTeX source template, so that
+%   people can more easily include the .sty file into an existing
+%   document. Also changed to more closely follow the style guidelines
+%   as represented by the Word sample file.
+%
+% - Note that since 2010, USENIX does not require endnotes. If you
+%   want foot of page notes, don't include the endnotes package in the
+%   usepackage command, below.
+% - This version uses the latex2e styles, not the very ancient 2.09
+%   stuff.
+%
+% - Updated July 2018: Text block size changed from 6.5" to 7"
+%
+% - Updated Dec 2018 for ATC'19:
+%
+%   * Revised text to pass HotCRP's auto-formatting check, with
+%     hotcrp.settings.submission_form.body_font_size=10pt, and
+%     hotcrp.settings.submission_form.line_height=12pt
+%
+%   * Switched from \endnote-s to \footnote-s to match Usenix's policy.
+%
+%   * \section* => \begin{abstract} ... \end{abstract}
+%
+%   * Make template self-contained in terms of bibtex entires, to allow
+%     this file to be compiled. (And changing refs style to 'plain'.)
+%
+%   * Make template self-contained in terms of figures, to
+%     allow this file to be compiled. 
+%
+%   * Added packages for hyperref, embedding fonts, and improving
+%     appearance.
+%   
+%   * Removed outdated text.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[letterpaper,twocolumn,10pt]{article}
+\usepackage{usenix2019_v3}
+
+% to be able to draw some self-contained figs
+\usepackage{tikz}
+\usepackage{amsmath}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+%-------------------------------------------------------------------------------
+
+%don't want date printed
+\date{}
+
+% make title bold and 14 pt font (Latex default is non-bold, 16 pt)
+\title{\Large \bf “ARMy Fuzzing:” Metrics for comparably Efficient Fuzzing on Commodity, Portable [ARM64] Devices}
+
+%for single author (just remove % characters)
+\author{
+{\rm Andrew York}\\
+Clemson University
+\and
+{\rm Kathryn Smith}\\
+Clemson University
+} % end author
+
+\maketitle
+
+%-------------------------------------------------------------------------------
+\begin{abstract}
+%-------------------------------------------------------------------------------
+Your abstract text goes here. Just a few facts. Whet our appetites.
+Not more than 200 words, if possible, and preferably closer to 150.
+\end{abstract}
+
+
+%-------------------------------------------------------------------------------
+\section{Problem}
+%-------------------------------------------------------------------------------
+
+
+Software is constantly evolving and growing in complexity. As a result, new methodologies develop to identify vulnerabilities in these programs. Fuzzing is one technique that has emerged. Fuzzing identifies unwanted behavior by generating and deploying random inputs on a target program.
+
+Due to the success of this technique, many fuzzers have been developed. The effectiveness of individual fuzzers vary greatly between target programs. As a result, productive fuzzing relies on selecting the best fuzzer for the target. Unfortunately, one fuzzer does not consistently outperform the others, so selecting a fuzzer is a difficult task.
+
+In the past, researchers solved this problem through offline analysis and benchmarking. Despite their efforts, the following challenges prevented researchers from consistently selecting the best fuzzer: no fuzzer outperforms the others, efficacy of each fuzzer is inconsistent throughout execution, equal resource allocation is inefficient, and fuzzing results are not reproducible. Autofz aims to solve these problems by leveraging multiple fuzzers and dynamically allocating resources to the fuzzers using runtime data. 
+
+In spite of its successes, Autofz is not perfect. While there is no consensus on the best way to assess fuzzers, Autofz oversimplifies this process. Autofz relies on one metric, path coverage, to rank its fuzzers and allocate resources. Autofz could be improved by incorporating additional metrics for its analysis. Potential metrics for evaluation include the number of bugs discovered and the number of run cycles executed during the preprocessing phase.
+
+%-------------------------------------------------------------------------------
+\section{Related Work}
+%-------------------------------------------------------------------------------
+
+\subsection{Fuzzing}
+In 1990, Miller et al. proposed fuzz testing as a tool to test Unix utilities and other applications. Their fuzzer generated random number and character strings. Next, they executed a target program with the random input. Finally, the fuzzer would record how the tested application responded to the random input. The application could succeed, crash, or hang; succeed meant that the program executed normally, a crash indicated that the program terminated abnormally while a hang implied that the application entered an infinite loop. Furthermore, a crash or hang indicated unwanted behavior within the target application. Using this simple methodology, Miller et al. discovered a wealth of bugs within Unix utilities that had not been identified using formal testing procedures. \cite{Miller}
+
+\subsection{Fuzzing Assessment Methods}
+Since Miller et al. introduced fuzzing as an inexpensive means of identifying bugs and increasing overall system reliability, many researchers have developed more complex fuzzers. Despite this abundance of fuzzers, a consensus has not emerged on how to compare them. Moreover, testing conditions are not consistent for new fuzzers. Ecezia el al. aimed to resolve this issue by proposing a universal method for testing new fuzzers and evaluating existing fuzzers. They presented evaluation metrics that could be divided into three categories: bug detection, coverage, and performance. Metrics defined in the bug detention group quantified any undesirable behavior identified by the fuzzer while metrics categorized under coverage measured the percentage of the code that had been executed by the fuzzer. Metrics in the performance category are measurements not directly related to bug detection or performance; they include data such as number of runs executed during a set time frame and time needed to identify the first bug.
+
+After establishing the metrics that need to be collected during testing, Ecezia el al. set the criteria for fuzzer test conditions. They asserted that in order to compare multiple fuzzers, the fuzzers must be tested against the same target applications, at least 15 times, and for the same period of time. These conditions are aimed at eliminating inconsistencies associated with evaluating fuzzers. For instance, fuzzers can only be compared if they are run on the same target application because the results of fuzzers are directly linked to the system under test. When a more buggy program is fuzzed, it will yield more bugs than a well designed system regardless of the fuzzer. Moreover, in order to evaluate a fuzzer, it must be executed at least 15 times because the random input generated by a fuzzers will vary between runs. The final condition that must be constant for each test is execution time; a fuzzer executed for 10 hours cannot be compared to a fuzzer that has been running for 24 hours; the fuzzer run for 24 hours will likely discover more bugs than the fuzzer that has run for 10 hours. The 24 hour fuzzer is not necessarily a better fuzzer, but it had more opportunities to discover unwanted behavior. \cite{Ecezia}
+
+\subsection{Autofz}
+While Ecezia el al. looked to simplify the difficult task of identifying the best fuzzer by establishing evaluation criteria, Fu et al. aimed to eliminate the task. They proposed a new fuzzer that would make the task of evaluating and selecting an individual fuzzer obsolete. Autofz is a collaborative fuzzer that dynamically deploys a set of fuzzers. Autofz accomplishes this by dividing its workload into 2 phases; they are a preparation and a focus phase. 
+
+During the preparation phase, Autofz captures the runtime trends of multiple fuzzers on the target application. First, Autofz deploys the fuzzers with the same seeds. These fuzzers are allowed to execute for the same period of time. Next, Autofz measures the number of unique paths explored by the individual fuzzers. This process is repeated until the phase times out or a strong trend emerges. A strong trend occurs when the difference between the code coverage of the best and worst performing fuzzer exceeds a predetermined threshold. 
+
+Based on the data collected in the preparation phase, Autofz deploys the set fuzzers with the potential to maximize the focus phase’s performance. Specifically, Autofz allocates resources to the fuzzers proportionally to their performance during the preparation phase. For example, the fuzzers that demonstrated the greatest code coverage during the preparation phase have the most resources allocated to them during the focus phase. Moveover, one fuzzer can be allocated all available resources or no resources. After assigning resources to the individual fuzzers, the focus phase is executed. In the focus phase, each fuzzer is executed with its respective resources.
+
+During the focus phase, Autofz achieved greater bitmap coverage than individual fuzzers that executed under the same conditions. Autofz also outperformed collaborative fuzzers that equally allocated resources to individual fuzzers. \cite{Fu}
+
+%-------------------------------------------------------------------------------
+\section{Plan, Timeline}
+%-------------------------------------------------------------------------------
+
+\bibliographystyle{plain}
+\bibliography{output}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%  LocalWords:  endnotes includegraphics fread ptr nobj noindent
+%%  LocalWords:  pdflatex acks
