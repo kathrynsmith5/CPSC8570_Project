@@ -189,14 +189,33 @@ collaborative fuzzers that equally allocated resources to individual fuzzers.
 
 %-------------------------------------------------------------------------------
 \section{Plan, Timeline}
-To accomplish the previously discussed goals, we propose the following plan. 
-During February, we plan to rebuild Autofz and confirm the efficacy of Autofz 
-on two targets. We will also propose improvements for Autofz. Specifically, we 
-will identify additional metrics for individual fuzzer ranking that can be 
-incorporated into the preparation phase of Autofz. In March, we will implement 
-at least one metric proposed in February and compare its effectiveness against 
-the existing version of Autofz. In April, we will compile our results and document 
-our findings.
+%-------------------------------------------------------------------------------
+In this effort, we seek to answer the following research questions:
+
+\begin{itemize}
+    \item \textbf{RQ1.} Can we successfully reproduce a working tool chain from 
+    Fu et al. \cite{Fu} on portable ARM64 computing devices?
+    \item \textbf{RQ2.} Can we reproduce the results (e.g. number of defects found)
+     of fuzzing at least two targets from Fu et al. \cite{Fu} on our ARM64-based
+      tool chain?
+    \item \textbf{RQ3.} Autofz uses a single metric (i.e. AFL bitmap coverage) for
+     allocation of resources to fuzzers. Can we identify at least one additional, 
+     alternate metric for this allocation?
+\end{itemize}
+
+To answer these, we propose the following plan:
+
+\begin{enumerate}
+    \item During \textbf{February}, we plan to rebuild Autofz and confirm the efficacy
+    of Autofz on two targets. We will also propose improvements for Autofz. Specifically,
+     we will identify additional metrics for individual fuzzer ranking that can be 
+     incorporated into the preparation phase of Autofz. 
+
+    \item In \textbf{March}, we will implement at least one metric proposed in February
+     and compare its effectiveness against the existing version of Autofz (i.e. AFL bitmap).
+
+    \item In \textbf{April}, we will compile our results and document our findings.
+\end{enumerate}
 %-------------------------------------------------------------------------------
 
 \bibliographystyle{plain}
