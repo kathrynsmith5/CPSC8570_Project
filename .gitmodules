@@ -1,0 +1,3 @@
+[submodule "autofz"]
+	path = autofz
+	url = https://github.com/drewinchas/autofz.git
