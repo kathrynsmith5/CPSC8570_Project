@@ -59,6 +59,7 @@
 
 %-------------------------------------------------------------------------------
 \begin{document}
+\graphicspath{ {./images/} }
 %-------------------------------------------------------------------------------
 
 %don't want date printed
@@ -188,7 +189,7 @@ collaborative fuzzers that equally allocated resources to individual fuzzers.
 \cite{Fu}
 
 %-------------------------------------------------------------------------------
-\section{Plan, Timeline}
+\section{Remaining Plan, Timeline}
 %-------------------------------------------------------------------------------
 In this effort, we seek to answer the following research questions:
 
@@ -203,14 +204,9 @@ In this effort, we seek to answer the following research questions:
      alternate metric that will improve this allocation?
 \end{itemize}
 
-To answer these, we propose the following plan:
+Our plan for the remaining time in this term is as follows:
 
 \begin{enumerate}
-    \item During \textbf{February}, we plan to rebuild Autofz and confirm the efficacy
-    of Autofz on two targets. We will also propose improvements for Autofz. Specifically,
-     we will identify additional metrics for individual fuzzer ranking that can be 
-     incorporated into the preparation phase of Autofz. 
-
     \item In \textbf{March}, we will implement at least one metric proposed in February
      and compare its effectiveness against the existing version of Autofz (i.e. AFL bitmap).
 
@@ -223,8 +219,8 @@ To answer these, we propose the following plan:
 %-------------------------------------------------------------------------------
 In order to confirm the findings presented in Fu et.al.\cite{Fu}, we deployed our own instance of 
 their autofz environment. We replicated their testing environment by deploying their docker image 
-on our own hardware. Moreover, we tested our recreation of Fu et.al.'s autofz against the targets: 
-exiv2, nm, mojs, and tcpdump. Our initial findings validate the results presented in Fu et.al; 
+on our own hardware. Moreover, we tested our recreation of Fu et al.'s autofz against the targets: 
+exiv2, nm, mojs, and tcpdump. Our initial findings validate the results presented in Fu et al.; 
 autofz is consistently a top preforming fuzzers against the tested targets. 
 
 We have also been able to produce a working tool chain on ARM64, with some significant variations
@@ -271,7 +267,7 @@ There are a number of reasons for the differences between Fu et al.,
 and our ARM64 environment. They correspond to the reason numbers in Table \ref{arm64-characteristics}
 and are:
 \begin{enumerate}
-    \item Ubuntu 16.04 LTS does not support the ARM64 architecture (they call it aarch64).
+    \item Ubuntu 16.04 LTS does not support the ARM64 architecture (also called aarch64).
     \item Aflforkserver.so comes from the quickcov package, developed to support the Cupid
     research project\cite{guler2020cupid}. We had to recompile it for aarch64.
     \item Original AFL does not compile instrumented binaries for aarch64. Instead, we
@@ -282,16 +278,38 @@ and are:
 
 To compare the  modified autofz with the proposed autofz, we tested it against the targets: exiv2, 
 nm, mojs, and tcpdump. Initial test indicate that the ARM64 compatible autofz performs similarly to 
-the unmodified autofz.
+the unmodified autofz. Figure \ref{fig:exiv2_bmdensity_8Mar2024} displays bitmap density covered of 
+the individual algorithms in our implementation, as compared to a similar plot from Fu et. al\cite{Fu}.
+
+\begin{figure}
+    \includegraphics[width=0.52\textwidth]{exiv2_bmdensity_8Mar2024.png}
+    \centering
+    \caption{A comparison of bitmap density covered in the original\cite{Fu} and our coverage during
+     initial fuzzing of exiv2}
+    \label{fig:exiv2_bmdensity_8Mar2024}
+\end{figure}
+
+Bitmap density coverage of our initial fuzzing campaign against tcpdump is plotted in figure 
+\ref{fig:tcpdump_bmdensity_8Mar2024}, shown as a comparison with results from Fu et al.\cite{Fu}.
+
+
+\begin{figure}
+    \includegraphics[width=0.52\textwidth]{tcpdump_bmdensity_8Mar2024.png}
+    \centering
+    \caption{A comparison of bitmap density covered in the original\cite{Fu} and our coverage during initial fuzzing of tcpdump}
+    \label{fig:tcpdump_bmdensity_8Mar2024}
+\end{figure}
 
 In addition to producing an ARM64 compatible autofz, we identified a potential improvement for autofz. 
 Existing versions of autofz use bitmap coverage to rank fuzzers during the preparation, but bitmap 
 coverage may not be the best metric for identifying the most effective fuzzers for a target. While 
 bitmap coverage indicates the portion of a target that was fuzzed, it does not guarantee bug discovery. 
-To resolve this problems, we plan to modifiy autofz, so fuzzers that discover more bugs during the 
+To resolve these problems, we plan to modify autofz, so fuzzers that discover more bugs during the 
 preparation phase are rewarded with more resources during the focus phase because discovering more bugs 
-across a smaller area of code decreases the attack surface by more entry points than discovering less 
+across a smaller area of code decreases the attack surface by more entry points than discovering fewer 
 bugs over a greater area of the code.
+
+
     
 \bibliographystyle{plain}
 \bibliography{output}
