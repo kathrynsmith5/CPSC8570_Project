@@ -66,8 +66,7 @@
 \date{}
 
 % make title bold and 14 pt font (Latex default is non-bold, 16 pt)
-\title{\Large \bf “ARMy Fuzzing:” Metrics for comparably Efficient Fuzzing on Commodity, 
-Portable [ARM64] Devices}
+\title{\Large \bf “ARMy Fuzzing:” Midterm Report}
 
 %for single author (just remove % characters)
 \author{
@@ -81,15 +80,18 @@ Clemson University
 \maketitle
 
 %-------------------------------------------------------------------------------
-\section{Problem}
+\section{Introduction and Problem}
 %-------------------------------------------------------------------------------
 
-Software is constantly evolving and growing in complexity. As a result, 
-new methodologies develop to identify vulnerabilities in these programs. 
-Fuzzing is one technique that has emerged. Fuzzing identifies unwanted behavior 
-by generating and deploying random inputs on a target program. \cite{Ecezia}
+At the midterm point in this term, this paper reports our progress thus far on 
+this project. We've built a version of the autofz tool chain on ARM64. We have 
+also successfully executed fuzzing campaigns against four targets that were included 
+in the original autofz paper. We look forward to selecting and integrating additional 
+metrics into autofz that can be used to improve the allocation of resources to the 
+individual algorithms used by autofz. This paper also documents each researcher's 
+individual completed and planned contributions for this project.
 
-Due to the success of this technique, many fuzzers have been developed. 
+Due to the success of fuzzing as a method of identifying bugs in software, many fuzzers have been developed. 
 Unfortunately, selecting a fuzzer is a difficult task. The following challenges 
 prevent researchers from quickly selecting a fuzzer using benchmarking: no fuzzer 
 consistently outperforms the others, the efficacy of a fuzzer is inconsistent 
@@ -308,6 +310,26 @@ To resolve these problems, we plan to modify autofz, so fuzzers that discover mo
 preparation phase are rewarded with more resources during the focus phase because discovering more bugs 
 across a smaller area of code decreases the attack surface by more entry points than discovering fewer 
 bugs over a greater area of the code.
+
+%-------------------------------------------------------------------------------
+\section{Team Contributions and Plan}
+%-------------------------------------------------------------------------------
+
+At the midpoint in this term, Kathryn has recreated autofz using Fu et al.\cite{Fu}'s build scripts 
+on our AMD64 development system. She identified an alternate metric that we can incorporate into 
+autofz. She also executed fuzzing campaigns against mojs and tcpdump on both of our architectures 
+under evaluation (i.e. AMD64 and ARM64). 
+
+Andrew recreated autofz using Fu et al.\cite{Fu}'s docker image on our AMD64 development system. 
+He also completed the modifications necessary to run autofz on our ARM64 laptops. He executed fuzzing 
+campaigns against exiv2 and nm on both: AMD64 and ARM64.
+
+We will both work to reproduce and confirm results from Fu et al.\cite{Fu}. To validate our findings: 
+Andrew plans to analyze his findings from fuzzing runs against exiv2 and nm; Kathryn plans to do the 
+same of findings from fuzzing runs against mojs and tcpdump. We will work together to incorporate 
+the rate of unique bugs found as an additional metric into the allocation of resources to individual 
+algorithms by autofz.
+
 
 
     
