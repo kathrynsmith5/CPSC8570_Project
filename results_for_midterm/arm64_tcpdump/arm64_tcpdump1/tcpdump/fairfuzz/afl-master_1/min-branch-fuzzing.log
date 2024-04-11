@@ -1,0 +1,3360 @@
+Entering new queueing cycle
+while bitflipping, 0 of 0 tries hit branch -1
+while calibrating, 0 of 0 tries hit branch -1
+calib stage: 73 new coverage in 31805 total execs
+calib stage: 45 new branches in 31805 total execs
+In deterministic stage, 0 of 0 tries hit branch -1
+det stage: 175 new coverage in 528829 total execs
+det stage: 123 new branches in 528829 total execs
+In havoc stage, 0 of 0 tries hit branch -1
+havoc stage: 287 new coverage in 554301 total execs
+havoc stage: 152 new branches in 554301 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:000378,sync:autofz,src:012202,+cov: 
+which hit branch 3856 (hit by 1 inputs) 
+while bitflipping, 3548 of 3808 tries hit branch 3856
+while calibrating, 654 of 1429 tries hit branch 3856
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 44413 of 44739 tries hit branch 3856
+det stage: 0 new coverage in 49976 total execs
+det stage: 0 new branches in 49976 total execs
+In havoc stage, 9730 of 24576 tries hit branch 3856
+havoc stage: 4 new coverage in 74584 total execs
+havoc stage: 0 new branches in 74584 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:000408,sync:autofz,src:002692,+cov: 
+which hit branch 1024 (hit by 1 inputs) 
+while bitflipping, 836 of 1056 tries hit branch 1024
+while calibrating, 207 of 397 tries hit branch 1024
+calib stage: 0 new coverage in 1453 total execs
+calib stage: 0 new branches in 1453 total execs
+In deterministic stage, 9664 of 9670 tries hit branch 1024
+det stage: 0 new coverage in 11123 total execs
+det stage: 0 new branches in 11123 total execs
+In havoc stage, 1273 of 3072 tries hit branch 1024
+havoc stage: 0 new coverage in 14195 total execs
+havoc stage: 0 new branches in 14195 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:000412,sync:autofz,src:003672,+cov: 
+which hit branch 1675 (hit by 1 inputs) 
+while bitflipping, 4219 of 4352 tries hit branch 1675
+while calibrating, 1533 of 1633 tries hit branch 1675
+calib stage: 0 new coverage in 5985 total execs
+calib stage: 0 new branches in 5985 total execs
+In deterministic stage, 12316 of 12364 tries hit branch 1675
+det stage: 0 new coverage in 18349 total execs
+det stage: 0 new branches in 18349 total execs
+In havoc stage, 1464 of 3072 tries hit branch 1675
+havoc stage: 0 new coverage in 21421 total execs
+havoc stage: 0 new branches in 21421 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:000415,sync:autofz,src:004688,+cov: 
+which hit branch 2592 (hit by 1 inputs) 
+while bitflipping, 9674 of 9856 tries hit branch 2592
+while calibrating, 2925 of 3697 tries hit branch 2592
+calib stage: 1 new coverage in 13561 total execs
+calib stage: 0 new branches in 13561 total execs
+In deterministic stage, 62695 of 62715 tries hit branch 2592
+det stage: 3 new coverage in 76292 total execs
+det stage: 0 new branches in 76292 total execs
+In havoc stage, 2554 of 3072 tries hit branch 2592
+havoc stage: 3 new coverage in 79364 total execs
+havoc stage: 0 new branches in 79364 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:000421,sync:autofz,src:003289,+cov: 
+which hit branch 2563 (hit by 1 inputs) 
+while bitflipping, 2964 of 3136 tries hit branch 2563
+while calibrating, 412 of 1177 tries hit branch 2563
+calib stage: 0 new coverage in 4313 total execs
+calib stage: 0 new branches in 4313 total execs
+In deterministic stage, 12250 of 12268 tries hit branch 2563
+det stage: 2 new coverage in 16597 total execs
+det stage: 1 new branches in 16597 total execs
+In havoc stage, 15140 of 24576 tries hit branch 2563
+havoc stage: 10 new coverage in 41237 total execs
+havoc stage: 8 new branches in 41237 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:000429,sync:autofz,src:009922,+cov: 
+which hit branch 2052 (hit by 1 inputs) 
+while bitflipping, 3605 of 3808 tries hit branch 2052
+while calibrating, 1241 of 1429 tries hit branch 2052
+calib stage: 1 new coverage in 5245 total execs
+calib stage: 1 new branches in 5245 total execs
+In deterministic stage, 17906 of 18070 tries hit branch 2052
+det stage: 2 new coverage in 23323 total execs
+det stage: 2 new branches in 23323 total execs
+In havoc stage, 2617 of 6144 tries hit branch 2052
+havoc stage: 3 new coverage in 29475 total execs
+havoc stage: 3 new branches in 29475 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:000493,sync:autofz,src:011015,+cov: 
+which hit branch 2290 (hit by 1 inputs) 
+while bitflipping, 3640 of 3808 tries hit branch 2290
+while calibrating, 1305 of 1429 tries hit branch 2290
+calib stage: 1 new coverage in 5245 total execs
+calib stage: 1 new branches in 5245 total execs
+In deterministic stage, 12771 of 12886 tries hit branch 2290
+det stage: 1 new coverage in 18131 total execs
+det stage: 1 new branches in 18131 total execs
+In havoc stage, 1377 of 3072 tries hit branch 2290
+havoc stage: 1 new coverage in 21203 total execs
+havoc stage: 1 new branches in 21203 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:000660,sync:autofz,src:004522,+cov: 
+which hit branch 4314 (hit by 1 inputs) 
+while bitflipping, 6975 of 7392 tries hit branch 4314
+while calibrating, 940 of 2773 tries hit branch 4314
+calib stage: 1 new coverage in 10173 total execs
+calib stage: 1 new branches in 10173 total execs
+In deterministic stage, 118358 of 118425 tries hit branch 4314
+det stage: 6 new coverage in 128638 total execs
+det stage: 2 new branches in 128638 total execs
+In havoc stage, 11185 of 18432 tries hit branch 4314
+havoc stage: 13 new coverage in 147126 total execs
+havoc stage: 3 new branches in 147126 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:000715,sync:autofz,src:010847,+cov: 
+which hit branch 4544 (hit by 1 inputs) 
+while bitflipping, 3648 of 3808 tries hit branch 4544
+while calibrating, 1141 of 1429 tries hit branch 4544
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 12622 of 12710 tries hit branch 4544
+det stage: 1 new coverage in 17955 total execs
+det stage: 1 new branches in 17955 total execs
+In havoc stage, 1487 of 3072 tries hit branch 4544
+havoc stage: 1 new coverage in 21027 total execs
+havoc stage: 1 new branches in 21027 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:000730,sync:autofz,src:012644,+cov: 
+which hit branch 1144 (hit by 1 inputs) 
+while bitflipping, 2817 of 3152 tries hit branch 1144
+while calibrating, 658 of 1183 tries hit branch 1144
+calib stage: 2 new coverage in 4351 total execs
+calib stage: 2 new branches in 4351 total execs
+In deterministic stage, 18293 of 18434 tries hit branch 1144
+det stage: 2 new coverage in 22785 total execs
+det stage: 2 new branches in 22785 total execs
+In havoc stage, 1344 of 3072 tries hit branch 1144
+havoc stage: 2 new coverage in 25857 total execs
+havoc stage: 2 new branches in 25857 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:000738,sync:autofz,src:009792,+cov: 
+which hit branch 4617 (hit by 1 inputs) 
+while bitflipping, 3650 of 3808 tries hit branch 4617
+while calibrating, 1223 of 1429 tries hit branch 4617
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 12239 of 12326 tries hit branch 4617
+det stage: 0 new coverage in 17563 total execs
+det stage: 0 new branches in 17563 total execs
+In havoc stage, 846 of 2048 tries hit branch 4617
+havoc stage: 0 new coverage in 19611 total execs
+havoc stage: 0 new branches in 19611 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:000771,sync:autofz,src:008016,+cov: 
+which hit branch 2095 (hit by 1 inputs) 
+while bitflipping, 4600 of 4768 tries hit branch 2095
+while calibrating, 1656 of 1789 tries hit branch 2095
+calib stage: 0 new coverage in 6557 total execs
+calib stage: 0 new branches in 6557 total execs
+In deterministic stage, 13589 of 13592 tries hit branch 2095
+det stage: 0 new coverage in 20149 total execs
+det stage: 0 new branches in 20149 total execs
+In havoc stage, 1756 of 3072 tries hit branch 2095
+havoc stage: 0 new coverage in 23221 total execs
+havoc stage: 0 new branches in 23221 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:000776,sync:autofz,src:009897,+cov: 
+which hit branch 2271 (hit by 1 inputs) 
+while bitflipping, 3657 of 3808 tries hit branch 2271
+while calibrating, 1319 of 1429 tries hit branch 2271
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 41388 of 41452 tries hit branch 2271
+det stage: 2 new coverage in 46705 total execs
+det stage: 1 new branches in 46705 total execs
+In havoc stage, 1410 of 3072 tries hit branch 2271
+havoc stage: 2 new coverage in 49777 total execs
+havoc stage: 1 new branches in 49777 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:000807,sync:autofz,src:005282,+cov: 
+which hit branch 1583 (hit by 1 inputs) 
+while bitflipping, 3932 of 4192 tries hit branch 1583
+while calibrating, 596 of 1573 tries hit branch 1583
+calib stage: 0 new coverage in 5765 total execs
+calib stage: 0 new branches in 5765 total execs
+In deterministic stage, 15528 of 15528 tries hit branch 1583
+det stage: 0 new coverage in 21293 total execs
+det stage: 0 new branches in 21293 total execs
+In havoc stage, 1501 of 3072 tries hit branch 1583
+havoc stage: 0 new coverage in 24365 total execs
+havoc stage: 0 new branches in 24365 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:000862,sync:autofz,src:004803,+cov: 
+which hit branch 2489 (hit by 1 inputs) 
+while bitflipping, 3606 of 3808 tries hit branch 2489
+while calibrating, 1201 of 1429 tries hit branch 2489
+calib stage: 1 new coverage in 5245 total execs
+calib stage: 0 new branches in 5245 total execs
+In deterministic stage, 14717 of 14906 tries hit branch 2489
+det stage: 3 new coverage in 20167 total execs
+det stage: 2 new branches in 20167 total execs
+In havoc stage, 936 of 2048 tries hit branch 2489
+havoc stage: 3 new coverage in 22215 total execs
+havoc stage: 2 new branches in 22215 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:000871,sync:autofz,src:011821,+cov: 
+which hit branch 5168 (hit by 1 inputs) 
+while bitflipping, 2838 of 3104 tries hit branch 5168
+while calibrating, 534 of 1165 tries hit branch 5168
+calib stage: 0 new coverage in 4269 total execs
+calib stage: 0 new branches in 4269 total execs
+In deterministic stage, 50634 of 51007 tries hit branch 5168
+det stage: 0 new coverage in 55276 total execs
+det stage: 0 new branches in 55276 total execs
+In havoc stage, 1458 of 6144 tries hit branch 5168
+havoc stage: 1 new coverage in 61428 total execs
+havoc stage: 0 new branches in 61428 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:001107,sync:autofz,src:005400,+cov: 
+which hit branch 2203 (hit by 1 inputs) 
+while bitflipping, 10932 of 11072 tries hit branch 2203
+while calibrating, 4018 of 4153 tries hit branch 2203
+calib stage: 1 new coverage in 15233 total execs
+calib stage: 0 new branches in 15233 total execs
+In deterministic stage, 115595 of 115631 tries hit branch 2203
+det stage: 1 new coverage in 130864 total execs
+det stage: 0 new branches in 130864 total execs
+In havoc stage, 2611 of 3072 tries hit branch 2203
+havoc stage: 1 new coverage in 133936 total execs
+havoc stage: 0 new branches in 133936 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:001195,sync:autofz,src:007518,+cov: 
+which hit branch 1585 (hit by 1 inputs) 
+while bitflipping, 4202 of 4352 tries hit branch 1585
+while calibrating, 1481 of 1633 tries hit branch 1585
+calib stage: 0 new coverage in 5985 total execs
+calib stage: 0 new branches in 5985 total execs
+In deterministic stage, 13468 of 13535 tries hit branch 1585
+det stage: 0 new coverage in 19520 total execs
+det stage: 0 new branches in 19520 total execs
+In havoc stage, 1420 of 3072 tries hit branch 1585
+havoc stage: 0 new coverage in 22592 total execs
+havoc stage: 0 new branches in 22592 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:001231,sync:autofz,src:012096,+cov: 
+which hit branch 4596 (hit by 1 inputs) 
+while bitflipping, 3933 of 4096 tries hit branch 4596
+while calibrating, 1240 of 1537 tries hit branch 4596
+calib stage: 0 new coverage in 5633 total execs
+calib stage: 0 new branches in 5633 total execs
+In deterministic stage, 14923 of 15010 tries hit branch 4596
+det stage: 0 new coverage in 20643 total execs
+det stage: 0 new branches in 20643 total execs
+In havoc stage, 1410 of 3072 tries hit branch 4596
+havoc stage: 0 new coverage in 23715 total execs
+havoc stage: 0 new branches in 23715 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:001235,sync:autofz,src:009606,+cov: 
+which hit branch 4722 (hit by 1 inputs) 
+while bitflipping, 3540 of 3808 tries hit branch 4722
+while calibrating, 543 of 1429 tries hit branch 4722
+calib stage: 1 new coverage in 5245 total execs
+calib stage: 1 new branches in 5245 total execs
+In deterministic stage, 21421 of 21612 tries hit branch 4722
+det stage: 1 new coverage in 26857 total execs
+det stage: 1 new branches in 26857 total execs
+In havoc stage, 1914 of 4096 tries hit branch 4722
+havoc stage: 2 new coverage in 30961 total execs
+havoc stage: 1 new branches in 30961 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:001252,sync:autofz,src:008795,+cov: 
+which hit branch 1826 (hit by 1 inputs) 
+while bitflipping, 3607 of 3808 tries hit branch 1826
+while calibrating, 1246 of 1429 tries hit branch 1826
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 12261 of 12332 tries hit branch 1826
+det stage: 0 new coverage in 17569 total execs
+det stage: 0 new branches in 17569 total execs
+In havoc stage, 1352 of 3072 tries hit branch 1826
+havoc stage: 0 new coverage in 20641 total execs
+havoc stage: 0 new branches in 20641 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:001269,sync:autofz,src:005716,+cov: 
+which hit branch 1443 (hit by 1 inputs) 
+while bitflipping, 2142 of 2336 tries hit branch 1443
+while calibrating, 572 of 877 tries hit branch 1443
+calib stage: 0 new coverage in 3213 total execs
+calib stage: 0 new branches in 3213 total execs
+In deterministic stage, 23220 of 23357 tries hit branch 1443
+det stage: 1 new coverage in 26578 total execs
+det stage: 0 new branches in 26578 total execs
+In havoc stage, 1278 of 3072 tries hit branch 1443
+havoc stage: 1 new coverage in 29650 total execs
+havoc stage: 0 new branches in 29650 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:001302,sync:autofz,src:009830,+cov: 
+which hit branch 3918 (hit by 1 inputs) 
+while bitflipping, 3587 of 3808 tries hit branch 3918
+while calibrating, 754 of 1429 tries hit branch 3918
+calib stage: 1 new coverage in 5245 total execs
+calib stage: 1 new branches in 5245 total execs
+In deterministic stage, 25203 of 25530 tries hit branch 3918
+det stage: 3 new coverage in 30791 total execs
+det stage: 3 new branches in 30791 total execs
+In havoc stage, 1829 of 4096 tries hit branch 3918
+havoc stage: 4 new coverage in 34895 total execs
+havoc stage: 4 new branches in 34895 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:001392,sync:autofz,src:011513,+cov: 
+which hit branch 4541 (hit by 1 inputs) 
+while bitflipping, 3771 of 3936 tries hit branch 4541
+while calibrating, 1166 of 1477 tries hit branch 4541
+calib stage: 0 new coverage in 5413 total execs
+calib stage: 0 new branches in 5413 total execs
+In deterministic stage, 15894 of 15966 tries hit branch 4541
+det stage: 0 new coverage in 21379 total execs
+det stage: 0 new branches in 21379 total execs
+In havoc stage, 1716 of 3072 tries hit branch 4541
+havoc stage: 0 new coverage in 24451 total execs
+havoc stage: 0 new branches in 24451 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:001453,sync:autofz,src:003715,+cov: 
+which hit branch 6054 (hit by 1 inputs) 
+while bitflipping, 2964 of 3136 tries hit branch 6054
+while calibrating, 403 of 1177 tries hit branch 6054
+calib stage: 0 new coverage in 4313 total execs
+calib stage: 0 new branches in 4313 total execs
+In deterministic stage, 11903 of 11927 tries hit branch 6054
+det stage: 0 new coverage in 16240 total execs
+det stage: 0 new branches in 16240 total execs
+In havoc stage, 7928 of 12288 tries hit branch 6054
+havoc stage: 2 new coverage in 28544 total execs
+havoc stage: 1 new branches in 28544 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:001508,sync:autofz,src:008766,+cov: 
+which hit branch 5054 (hit by 1 inputs) 
+while bitflipping, 1901 of 2336 tries hit branch 5054
+while calibrating, 293 of 877 tries hit branch 5054
+calib stage: 0 new coverage in 3213 total execs
+calib stage: 0 new branches in 3213 total execs
+In deterministic stage, 36980 of 37262 tries hit branch 5054
+det stage: 0 new coverage in 40475 total execs
+det stage: 0 new branches in 40475 total execs
+In havoc stage, 1126 of 3072 tries hit branch 5054
+havoc stage: 0 new coverage in 43547 total execs
+havoc stage: 0 new branches in 43547 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:001633,sync:autofz,src:003727,+cov: 
+which hit branch 6116 (hit by 1 inputs) 
+while bitflipping, 10964 of 11200 tries hit branch 6116
+while calibrating, 1710 of 4201 tries hit branch 6116
+calib stage: 1 new coverage in 15409 total execs
+calib stage: 1 new branches in 15409 total execs
+In deterministic stage, 33472 of 33500 tries hit branch 6116
+det stage: 3 new coverage in 48925 total execs
+det stage: 3 new branches in 48925 total execs
+In havoc stage, 6719 of 8192 tries hit branch 6116
+havoc stage: 5 new coverage in 57133 total execs
+havoc stage: 4 new branches in 57133 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:001675,sync:autofz,src:009477,+cov: 
+which hit branch 4763 (hit by 1 inputs) 
+while bitflipping, 3558 of 3808 tries hit branch 4763
+while calibrating, 557 of 1429 tries hit branch 4763
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 15402 of 15556 tries hit branch 4763
+det stage: 1 new coverage in 20801 total execs
+det stage: 0 new branches in 20801 total execs
+In havoc stage, 1423 of 3072 tries hit branch 4763
+havoc stage: 1 new coverage in 23873 total execs
+havoc stage: 0 new branches in 23873 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:001694,sync:autofz,src:009537,+cov: 
+which hit branch 4762 (hit by 1 inputs) 
+while bitflipping, 3571 of 3808 tries hit branch 4762
+while calibrating, 566 of 1429 tries hit branch 4762
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 19061 of 19215 tries hit branch 4762
+det stage: 0 new coverage in 24452 total execs
+det stage: 0 new branches in 24452 total execs
+In havoc stage, 1393 of 3072 tries hit branch 4762
+havoc stage: 0 new coverage in 27524 total execs
+havoc stage: 0 new branches in 27524 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:001713,sync:autofz,src:012645,+cov: 
+which hit branch 1120 (hit by 1 inputs) 
+while bitflipping, 2814 of 3160 tries hit branch 1120
+while calibrating, 679 of 1186 tries hit branch 1120
+calib stage: 0 new coverage in 4346 total execs
+calib stage: 0 new branches in 4346 total execs
+In deterministic stage, 20331 of 20475 tries hit branch 1120
+det stage: 0 new coverage in 24821 total execs
+det stage: 0 new branches in 24821 total execs
+In havoc stage, 1355 of 3072 tries hit branch 1120
+havoc stage: 0 new coverage in 27893 total execs
+havoc stage: 0 new branches in 27893 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:001737,sync:autofz,src:010868,+cov: 
+which hit branch 4558 (hit by 1 inputs) 
+while bitflipping, 3644 of 3808 tries hit branch 4558
+while calibrating, 1123 of 1429 tries hit branch 4558
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 16265 of 16354 tries hit branch 4558
+det stage: 0 new coverage in 21591 total execs
+det stage: 0 new branches in 21591 total execs
+In havoc stage, 1480 of 3072 tries hit branch 4558
+havoc stage: 0 new coverage in 24663 total execs
+havoc stage: 0 new branches in 24663 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:001915,sync:autofz,src:010797,+cov: 
+which hit branch 5044 (hit by 1 inputs) 
+while bitflipping, 795 of 1056 tries hit branch 5044
+while calibrating, 158 of 397 tries hit branch 5044
+calib stage: 0 new coverage in 1453 total execs
+calib stage: 0 new branches in 1453 total execs
+In deterministic stage, 10976 of 11052 tries hit branch 5044
+det stage: 0 new coverage in 12505 total execs
+det stage: 0 new branches in 12505 total execs
+In havoc stage, 1185 of 3072 tries hit branch 5044
+havoc stage: 0 new coverage in 15577 total execs
+havoc stage: 0 new branches in 15577 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:001920,sync:autofz,src:003142,+cov: 
+which hit branch 2248 (hit by 1 inputs) 
+while bitflipping, 3656 of 3792 tries hit branch 2248
+while calibrating, 1316 of 1423 tries hit branch 2248
+calib stage: 0 new coverage in 5215 total execs
+calib stage: 0 new branches in 5215 total execs
+In deterministic stage, 9815 of 9883 tries hit branch 2248
+det stage: 0 new coverage in 15098 total execs
+det stage: 0 new branches in 15098 total execs
+In havoc stage, 1407 of 3072 tries hit branch 2248
+havoc stage: 0 new coverage in 18170 total execs
+havoc stage: 0 new branches in 18170 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:001923,sync:autofz,src:003515,+cov: 
+which hit branch 6239 (hit by 1 inputs) 
+while bitflipping, 3779 of 4128 tries hit branch 6239
+while calibrating, 565 of 1549 tries hit branch 6239
+calib stage: 0 new coverage in 5677 total execs
+calib stage: 0 new branches in 5677 total execs
+In deterministic stage, 83945 of 83999 tries hit branch 6239
+det stage: 1 new coverage in 89684 total execs
+det stage: 0 new branches in 89684 total execs
+In havoc stage, 5597 of 18432 tries hit branch 6239
+havoc stage: 8 new coverage in 108172 total execs
+havoc stage: 1 new branches in 108172 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:001986,sync:autofz,src:008341,+cov: 
+which hit branch 2089 (hit by 1 inputs) 
+while bitflipping, 419 of 576 tries hit branch 2089
+while calibrating, 86 of 217 tries hit branch 2089
+calib stage: 0 new coverage in 793 total execs
+calib stage: 0 new branches in 793 total execs
+In deterministic stage, 9355 of 9502 tries hit branch 2089
+det stage: 1 new coverage in 10303 total execs
+det stage: 1 new branches in 10303 total execs
+In havoc stage, 1352 of 3072 tries hit branch 2089
+havoc stage: 1 new coverage in 13375 total execs
+havoc stage: 1 new branches in 13375 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:002022,sync:autofz,src:006194,+cov: 
+which hit branch 4166 (hit by 1 inputs) 
+while bitflipping, 1039 of 1184 tries hit branch 4166
+while calibrating, 337 of 445 tries hit branch 4166
+calib stage: 0 new coverage in 1629 total execs
+calib stage: 0 new branches in 1629 total execs
+In deterministic stage, 10612 of 10635 tries hit branch 4166
+det stage: 0 new coverage in 12264 total execs
+det stage: 0 new branches in 12264 total execs
+In havoc stage, 1539 of 3072 tries hit branch 4166
+havoc stage: 0 new coverage in 15336 total execs
+havoc stage: 0 new branches in 15336 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:002068,sync:autofz,src:012321,+cov: 
+which hit branch 5208 (hit by 1 inputs) 
+while bitflipping, 2822 of 3104 tries hit branch 5208
+while calibrating, 758 of 1165 tries hit branch 5208
+calib stage: 0 new coverage in 4269 total execs
+calib stage: 0 new branches in 4269 total execs
+In deterministic stage, 56683 of 56730 tries hit branch 5208
+det stage: 0 new coverage in 60999 total execs
+det stage: 0 new branches in 60999 total execs
+In havoc stage, 678 of 3072 tries hit branch 5208
+havoc stage: 0 new coverage in 64071 total execs
+havoc stage: 0 new branches in 64071 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:002175,sync:autofz,src:005274,+cov: 
+which hit branch 6282 (hit by 1 inputs) 
+while bitflipping, 905 of 1056 tries hit branch 6282
+while calibrating, 264 of 397 tries hit branch 6282
+calib stage: 2 new coverage in 1469 total execs
+calib stage: 2 new branches in 1469 total execs
+In deterministic stage, 9791 of 9835 tries hit branch 6282
+det stage: 2 new coverage in 11304 total execs
+det stage: 2 new branches in 11304 total execs
+In havoc stage, 1282 of 3072 tries hit branch 6282
+havoc stage: 2 new coverage in 14376 total execs
+havoc stage: 2 new branches in 14376 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:002182,sync:autofz,src:009555,+cov: 
+which hit branch 1188 (hit by 1 inputs) 
+while bitflipping, 3508 of 3680 tries hit branch 1188
+while calibrating, 1262 of 1381 tries hit branch 1188
+calib stage: 0 new coverage in 5061 total execs
+calib stage: 0 new branches in 5061 total execs
+In deterministic stage, 9265 of 9355 tries hit branch 1188
+det stage: 0 new coverage in 14416 total execs
+det stage: 0 new branches in 14416 total execs
+In havoc stage, 1045 of 3072 tries hit branch 1188
+havoc stage: 0 new coverage in 17488 total execs
+havoc stage: 0 new branches in 17488 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:002225,sync:autofz,src:003656,+cov: 
+which hit branch 1570 (hit by 1 inputs) 
+while bitflipping, 4400 of 4608 tries hit branch 1570
+while calibrating, 1525 of 1729 tries hit branch 1570
+calib stage: 0 new coverage in 6337 total execs
+calib stage: 0 new branches in 6337 total execs
+In deterministic stage, 21040 of 21114 tries hit branch 1570
+det stage: 0 new coverage in 27451 total execs
+det stage: 0 new branches in 27451 total execs
+In havoc stage, 1244 of 3072 tries hit branch 1570
+havoc stage: 0 new coverage in 30523 total execs
+havoc stage: 0 new branches in 30523 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:002251,sync:autofz,src:009533,+cov: 
+which hit branch 4769 (hit by 1 inputs) 
+while bitflipping, 3557 of 3808 tries hit branch 4769
+while calibrating, 1147 of 1429 tries hit branch 4769
+calib stage: 1 new coverage in 5245 total execs
+calib stage: 1 new branches in 5245 total execs
+In deterministic stage, 14579 of 14837 tries hit branch 4769
+det stage: 1 new coverage in 20082 total execs
+det stage: 1 new branches in 20082 total execs
+In havoc stage, 1377 of 3072 tries hit branch 4769
+havoc stage: 1 new coverage in 23154 total execs
+havoc stage: 1 new branches in 23154 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:002258,sync:autofz,src:002966,+cov: 
+which hit branch 5608 (hit by 1 inputs) 
+while bitflipping, 10993 of 11224 tries hit branch 5608
+while calibrating, 2061 of 4210 tries hit branch 5608
+calib stage: 1 new coverage in 15442 total execs
+calib stage: 0 new branches in 15442 total execs
+In deterministic stage, 35175 of 35209 tries hit branch 5608
+det stage: 1 new coverage in 50651 total execs
+det stage: 0 new branches in 50651 total execs
+In havoc stage, 2558 of 6144 tries hit branch 5608
+havoc stage: 2 new coverage in 56803 total execs
+havoc stage: 1 new branches in 56803 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:002340,sync:autofz,src:006882,+cov: 
+which hit branch 6414 (hit by 1 inputs) 
+while bitflipping, 2036 of 2320 tries hit branch 6414
+while calibrating, 463 of 871 tries hit branch 6414
+calib stage: 0 new coverage in 3191 total execs
+calib stage: 0 new branches in 3191 total execs
+In deterministic stage, 30091 of 30351 tries hit branch 6414
+det stage: 0 new coverage in 33542 total execs
+det stage: 0 new branches in 33542 total execs
+In havoc stage, 1226 of 3072 tries hit branch 6414
+havoc stage: 0 new coverage in 36614 total execs
+havoc stage: 0 new branches in 36614 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:002398,sync:autofz,src:009465,+cov: 
+which hit branch 6186 (hit by 1 inputs) 
+while bitflipping, 5712 of 5952 tries hit branch 6186
+while calibrating, 1093 of 2233 tries hit branch 6186
+calib stage: 7 new coverage in 8241 total execs
+calib stage: 5 new branches in 8241 total execs
+In deterministic stage, 25583 of 25696 tries hit branch 6186
+det stage: 8 new coverage in 33945 total execs
+det stage: 6 new branches in 33945 total execs
+In havoc stage, 11564 of 24576 tries hit branch 6186
+havoc stage: 11 new coverage in 58545 total execs
+havoc stage: 6 new branches in 58545 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:002415,sync:autofz,src:012248,+cov: 
+which hit branch 1089 (hit by 1 inputs) 
+while bitflipping, 2830 of 3168 tries hit branch 1089
+while calibrating, 673 of 1189 tries hit branch 1089
+calib stage: 0 new coverage in 4357 total execs
+calib stage: 0 new branches in 4357 total execs
+In deterministic stage, 20241 of 20470 tries hit branch 1089
+det stage: 0 new coverage in 24827 total execs
+det stage: 0 new branches in 24827 total execs
+In havoc stage, 414 of 1024 tries hit branch 1089
+havoc stage: 0 new coverage in 25851 total execs
+havoc stage: 0 new branches in 25851 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:002421,sync:autofz,src:010172,+cov: 
+which hit branch 5127 (hit by 1 inputs) 
+while bitflipping, 2884 of 3104 tries hit branch 5127
+while calibrating, 902 of 1165 tries hit branch 5127
+calib stage: 0 new coverage in 4269 total execs
+calib stage: 0 new branches in 4269 total execs
+In deterministic stage, 18563 of 18687 tries hit branch 5127
+det stage: 0 new coverage in 22956 total execs
+det stage: 0 new branches in 22956 total execs
+In havoc stage, 1326 of 3072 tries hit branch 5127
+havoc stage: 0 new coverage in 26028 total execs
+havoc stage: 0 new branches in 26028 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:002438,sync:autofz,src:007520,+cov: 
+which hit branch 1601 (hit by 1 inputs) 
+while bitflipping, 4202 of 4352 tries hit branch 1601
+while calibrating, 1480 of 1633 tries hit branch 1601
+calib stage: 4 new coverage in 6017 total execs
+calib stage: 4 new branches in 6017 total execs
+In deterministic stage, 13050 of 13120 tries hit branch 1601
+det stage: 4 new coverage in 19137 total execs
+det stage: 4 new branches in 19137 total execs
+In havoc stage, 1451 of 3072 tries hit branch 1601
+havoc stage: 4 new coverage in 22209 total execs
+havoc stage: 4 new branches in 22209 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:002447,sync:autofz,src:009574,+cov: 
+which hit branch 6427 (hit by 1 inputs) 
+while bitflipping, 2065 of 2336 tries hit branch 6427
+while calibrating, 478 of 877 tries hit branch 6427
+calib stage: 0 new coverage in 3213 total execs
+calib stage: 0 new branches in 3213 total execs
+In deterministic stage, 33480 of 33737 tries hit branch 6427
+det stage: 0 new coverage in 36950 total execs
+det stage: 0 new branches in 36950 total execs
+In havoc stage, 647 of 1536 tries hit branch 6427
+havoc stage: 0 new coverage in 38486 total execs
+havoc stage: 0 new branches in 38486 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:002511,sync:autofz,src:008772,+cov: 
+which hit branch 2559 (hit by 1 inputs) 
+while bitflipping, 3533 of 3680 tries hit branch 2559
+while calibrating, 1230 of 1381 tries hit branch 2559
+calib stage: 0 new coverage in 5061 total execs
+calib stage: 0 new branches in 5061 total execs
+In deterministic stage, 10153 of 10208 tries hit branch 2559
+det stage: 0 new coverage in 15269 total execs
+det stage: 0 new branches in 15269 total execs
+In havoc stage, 1125 of 3072 tries hit branch 2559
+havoc stage: 0 new coverage in 18341 total execs
+havoc stage: 0 new branches in 18341 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:002535,sync:autofz,src:010006,+cov: 
+which hit branch 4759 (hit by 1 inputs) 
+while bitflipping, 3556 of 3808 tries hit branch 4759
+while calibrating, 556 of 1429 tries hit branch 4759
+calib stage: 4 new coverage in 5269 total execs
+calib stage: 0 new branches in 5269 total execs
+In deterministic stage, 17640 of 17839 tries hit branch 4759
+det stage: 4 new coverage in 23108 total execs
+det stage: 0 new branches in 23108 total execs
+In havoc stage, 1413 of 3072 tries hit branch 4759
+havoc stage: 4 new coverage in 26180 total execs
+havoc stage: 0 new branches in 26180 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:002555,sync:autofz,src:008009,+cov: 
+which hit branch 5233 (hit by 1 inputs) 
+while bitflipping, 4180 of 4352 tries hit branch 5233
+while calibrating, 1482 of 1633 tries hit branch 5233
+calib stage: 0 new coverage in 5985 total execs
+calib stage: 0 new branches in 5985 total execs
+In deterministic stage, 12785 of 12853 tries hit branch 5233
+det stage: 0 new coverage in 18838 total execs
+det stage: 0 new branches in 18838 total execs
+In havoc stage, 1408 of 3072 tries hit branch 5233
+havoc stage: 0 new coverage in 21910 total execs
+havoc stage: 0 new branches in 21910 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:002573,sync:autofz,src:002967,+cov: 
+which hit branch 5597 (hit by 1 inputs) 
+while bitflipping, 3354 of 3488 tries hit branch 5597
+while calibrating, 1215 of 1309 tries hit branch 5597
+calib stage: 0 new coverage in 4797 total execs
+calib stage: 0 new branches in 4797 total execs
+In deterministic stage, 22274 of 22308 tries hit branch 5597
+det stage: 1 new coverage in 27113 total execs
+det stage: 0 new branches in 27113 total execs
+In havoc stage, 1790 of 3072 tries hit branch 5597
+havoc stage: 1 new coverage in 30185 total execs
+havoc stage: 0 new branches in 30185 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:002591,sync:autofz,src:007915,+cov: 
+which hit branch 6424 (hit by 1 inputs) 
+while bitflipping, 2004 of 2320 tries hit branch 6424
+while calibrating, 440 of 871 tries hit branch 6424
+calib stage: 0 new coverage in 3191 total execs
+calib stage: 0 new branches in 3191 total execs
+In deterministic stage, 16451 of 16719 tries hit branch 6424
+det stage: 0 new coverage in 19910 total execs
+det stage: 0 new branches in 19910 total execs
+In havoc stage, 2291 of 6144 tries hit branch 6424
+havoc stage: 1 new coverage in 26062 total execs
+havoc stage: 0 new branches in 26062 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:002605,sync:autofz,src:005370,+cov: 
+which hit branch 6127 (hit by 1 inputs) 
+while bitflipping, 2502 of 2656 tries hit branch 6127
+while calibrating, 889 of 997 tries hit branch 6127
+calib stage: 0 new coverage in 3653 total execs
+calib stage: 0 new branches in 3653 total execs
+In deterministic stage, 9535 of 9536 tries hit branch 6127
+det stage: 0 new coverage in 13189 total execs
+det stage: 0 new branches in 13189 total execs
+In havoc stage, 998 of 2048 tries hit branch 6127
+havoc stage: 0 new coverage in 15237 total execs
+havoc stage: 0 new branches in 15237 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:002634,sync:autofz,src:009360,+cov: 
+which hit branch 3673 (hit by 1 inputs) 
+while bitflipping, 3455 of 3648 tries hit branch 3673
+while calibrating, 1186 of 1369 tries hit branch 3673
+calib stage: 0 new coverage in 5017 total execs
+calib stage: 0 new branches in 5017 total execs
+In deterministic stage, 18080 of 18167 tries hit branch 3673
+det stage: 0 new coverage in 23184 total execs
+det stage: 0 new branches in 23184 total execs
+In havoc stage, 1319 of 2048 tries hit branch 3673
+havoc stage: 0 new coverage in 25232 total execs
+havoc stage: 0 new branches in 25232 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:002635,sync:autofz,src:008866,+cov: 
+which hit branch 6327 (hit by 1 inputs) 
+while bitflipping, 4099 of 4288 tries hit branch 6327
+while calibrating, 1427 of 1609 tries hit branch 6327
+calib stage: 0 new coverage in 5897 total execs
+calib stage: 0 new branches in 5897 total execs
+In deterministic stage, 18561 of 18655 tries hit branch 6327
+det stage: 0 new coverage in 24552 total execs
+det stage: 0 new branches in 24552 total execs
+In havoc stage, 1455 of 3072 tries hit branch 6327
+havoc stage: 0 new coverage in 27624 total execs
+havoc stage: 0 new branches in 27624 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:002656,sync:autofz,src:007467,+cov: 
+which hit branch 6477 (hit by 1 inputs) 
+while bitflipping, 2033 of 2336 tries hit branch 6477
+while calibrating, 446 of 877 tries hit branch 6477
+calib stage: 0 new coverage in 3213 total execs
+calib stage: 0 new branches in 3213 total execs
+In deterministic stage, 30950 of 31216 tries hit branch 6477
+det stage: 0 new coverage in 34429 total execs
+det stage: 0 new branches in 34429 total execs
+In havoc stage, 606 of 1536 tries hit branch 6477
+havoc stage: 0 new coverage in 35965 total execs
+havoc stage: 0 new branches in 35965 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:002677,sync:autofz,src:005273,+cov: 
+which hit branch 6264 (hit by 1 inputs) 
+while bitflipping, 709 of 864 tries hit branch 6264
+while calibrating, 209 of 325 tries hit branch 6264
+calib stage: 0 new coverage in 1189 total execs
+calib stage: 0 new branches in 1189 total execs
+In deterministic stage, 16491 of 16568 tries hit branch 6264
+det stage: 0 new coverage in 17757 total execs
+det stage: 0 new branches in 17757 total execs
+In havoc stage, 990 of 3072 tries hit branch 6264
+havoc stage: 0 new coverage in 20829 total execs
+havoc stage: 0 new branches in 20829 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:002702,sync:autofz,src:007255,+cov: 
+which hit branch 5279 (hit by 1 inputs) 
+while bitflipping, 3599 of 3808 tries hit branch 5279
+while calibrating, 1236 of 1429 tries hit branch 5279
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 15306 of 15440 tries hit branch 5279
+det stage: 0 new coverage in 20677 total execs
+det stage: 0 new branches in 20677 total execs
+In havoc stage, 872 of 2048 tries hit branch 5279
+havoc stage: 0 new coverage in 22725 total execs
+havoc stage: 0 new branches in 22725 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:002728,sync:autofz,src:006891,+cov: 
+which hit branch 6614 (hit by 1 inputs) 
+while bitflipping, 839 of 1056 tries hit branch 6614
+while calibrating, 186 of 397 tries hit branch 6614
+calib stage: 0 new coverage in 1453 total execs
+calib stage: 0 new branches in 1453 total execs
+In deterministic stage, 13312 of 13891 tries hit branch 6614
+det stage: 0 new coverage in 15344 total execs
+det stage: 0 new branches in 15344 total execs
+In havoc stage, 361 of 1536 tries hit branch 6614
+havoc stage: 0 new coverage in 16880 total execs
+havoc stage: 0 new branches in 16880 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:002754,sync:autofz,src:007481,+cov: 
+which hit branch 6445 (hit by 1 inputs) 
+while bitflipping, 2022 of 2328 tries hit branch 6445
+while calibrating, 457 of 874 tries hit branch 6445
+calib stage: 0 new coverage in 3202 total execs
+calib stage: 0 new branches in 3202 total execs
+In deterministic stage, 29731 of 29985 tries hit branch 6445
+det stage: 0 new coverage in 33187 total execs
+det stage: 0 new branches in 33187 total execs
+In havoc stage, 1228 of 3072 tries hit branch 6445
+havoc stage: 0 new coverage in 36259 total execs
+havoc stage: 0 new branches in 36259 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:002805,sync:autofz,src:005278,+cov: 
+which hit branch 4311 (hit by 1 inputs) 
+while bitflipping, 759 of 960 tries hit branch 4311
+while calibrating, 168 of 361 tries hit branch 4311
+calib stage: 0 new coverage in 1321 total execs
+calib stage: 0 new branches in 1321 total execs
+In deterministic stage, 19370 of 19455 tries hit branch 4311
+det stage: 0 new coverage in 20776 total execs
+det stage: 0 new branches in 20776 total execs
+In havoc stage, 1650 of 3072 tries hit branch 4311
+havoc stage: 0 new coverage in 23848 total execs
+havoc stage: 0 new branches in 23848 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:002812,sync:autofz,src:009010,+cov: 
+which hit branch 5149 (hit by 1 inputs) 
+while bitflipping, 830 of 1056 tries hit branch 5149
+while calibrating, 135 of 397 tries hit branch 5149
+calib stage: 1 new coverage in 1461 total execs
+calib stage: 0 new branches in 1461 total execs
+In deterministic stage, 12649 of 12805 tries hit branch 5149
+det stage: 1 new coverage in 14266 total execs
+det stage: 0 new branches in 14266 total execs
+In havoc stage, 1568 of 3072 tries hit branch 5149
+havoc stage: 1 new coverage in 17338 total execs
+havoc stage: 0 new branches in 17338 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:002822,sync:autofz,src:003233,+cov: 
+which hit branch 6720 (hit by 1 inputs) 
+while bitflipping, 3653 of 3808 tries hit branch 6720
+while calibrating, 1212 of 1429 tries hit branch 6720
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 22393 of 22495 tries hit branch 6720
+det stage: 0 new coverage in 27732 total execs
+det stage: 0 new branches in 27732 total execs
+In havoc stage, 1483 of 3072 tries hit branch 6720
+havoc stage: 0 new coverage in 30804 total execs
+havoc stage: 0 new branches in 30804 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:002844,sync:autofz,src:007264,+cov: 
+which hit branch 5261 (hit by 1 inputs) 
+while bitflipping, 3609 of 3808 tries hit branch 5261
+while calibrating, 1247 of 1429 tries hit branch 5261
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 15965 of 16099 tries hit branch 5261
+det stage: 0 new coverage in 21336 total execs
+det stage: 0 new branches in 21336 total execs
+In havoc stage, 1370 of 3072 tries hit branch 5261
+havoc stage: 0 new coverage in 24408 total execs
+havoc stage: 0 new branches in 24408 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:002869,sync:autofz,src:009799,+cov: 
+which hit branch 4582 (hit by 1 inputs) 
+while bitflipping, 3509 of 3680 tries hit branch 4582
+while calibrating, 1121 of 1381 tries hit branch 4582
+calib stage: 0 new coverage in 5061 total execs
+calib stage: 0 new branches in 5061 total execs
+In deterministic stage, 12888 of 12993 tries hit branch 4582
+det stage: 0 new coverage in 18054 total execs
+det stage: 0 new branches in 18054 total execs
+In havoc stage, 1089 of 3072 tries hit branch 4582
+havoc stage: 0 new coverage in 21126 total execs
+havoc stage: 0 new branches in 21126 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:002953,sync:autofz,src:008771,+cov: 
+which hit branch 5565 (hit by 1 inputs) 
+while bitflipping, 3533 of 3680 tries hit branch 5565
+while calibrating, 1230 of 1381 tries hit branch 5565
+calib stage: 0 new coverage in 5061 total execs
+calib stage: 0 new branches in 5061 total execs
+In deterministic stage, 10196 of 10249 tries hit branch 5565
+det stage: 0 new coverage in 15310 total execs
+det stage: 0 new branches in 15310 total execs
+In havoc stage, 1131 of 3072 tries hit branch 5565
+havoc stage: 0 new coverage in 18382 total execs
+havoc stage: 0 new branches in 18382 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:002959,sync:autofz,src:007082,+cov: 
+which hit branch 2157 (hit by 1 inputs) 
+while bitflipping, 4458 of 4640 tries hit branch 2157
+while calibrating, 1600 of 1741 tries hit branch 2157
+calib stage: 0 new coverage in 6381 total execs
+calib stage: 0 new branches in 6381 total execs
+In deterministic stage, 13557 of 13709 tries hit branch 2157
+det stage: 0 new coverage in 20090 total execs
+det stage: 0 new branches in 20090 total execs
+In havoc stage, 1368 of 3072 tries hit branch 2157
+havoc stage: 0 new coverage in 23162 total execs
+havoc stage: 0 new branches in 23162 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:003014,sync:autofz,src:005610,+cov: 
+which hit branch 6817 (hit by 1 inputs) 
+while bitflipping, 3632 of 3808 tries hit branch 6817
+while calibrating, 1159 of 1429 tries hit branch 6817
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 15138 of 15279 tries hit branch 6817
+det stage: 0 new coverage in 20516 total execs
+det stage: 0 new branches in 20516 total execs
+In havoc stage, 1281 of 3072 tries hit branch 6817
+havoc stage: 0 new coverage in 23588 total execs
+havoc stage: 0 new branches in 23588 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:003038,sync:autofz,src:003312,+cov: 
+which hit branch 1788 (hit by 1 inputs) 
+while bitflipping, 5660 of 5824 tries hit branch 1788
+while calibrating, 1417 of 2185 tries hit branch 1788
+calib stage: 1 new coverage in 8017 total execs
+calib stage: 0 new branches in 8017 total execs
+In deterministic stage, 43923 of 43947 tries hit branch 1788
+det stage: 2 new coverage in 51972 total execs
+det stage: 0 new branches in 51972 total execs
+In havoc stage, 1022 of 2048 tries hit branch 1788
+havoc stage: 2 new coverage in 54020 total execs
+havoc stage: 0 new branches in 54020 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:003057,sync:autofz,src:008096,+cov: 
+which hit branch 5249 (hit by 1 inputs) 
+while bitflipping, 3608 of 3808 tries hit branch 5249
+while calibrating, 1245 of 1429 tries hit branch 5249
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 12323 of 12457 tries hit branch 5249
+det stage: 0 new coverage in 17694 total execs
+det stage: 0 new branches in 17694 total execs
+In havoc stage, 925 of 2048 tries hit branch 5249
+havoc stage: 0 new coverage in 19742 total execs
+havoc stage: 0 new branches in 19742 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:003060,sync:autofz,src:007517,+cov: 
+which hit branch 1605 (hit by 1 inputs) 
+while bitflipping, 4210 of 4352 tries hit branch 1605
+while calibrating, 1483 of 1633 tries hit branch 1605
+calib stage: 0 new coverage in 5985 total execs
+calib stage: 0 new branches in 5985 total execs
+In deterministic stage, 13256 of 13369 tries hit branch 1605
+det stage: 1 new coverage in 19362 total execs
+det stage: 1 new branches in 19362 total execs
+In havoc stage, 1399 of 3072 tries hit branch 1605
+havoc stage: 1 new coverage in 22434 total execs
+havoc stage: 1 new branches in 22434 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:003141,sync:autofz,src:001000,+cov: 
+which hit branch 6608 (hit by 1 inputs) 
+while bitflipping, 70936 of 71936 tries hit branch 6608
+while calibrating, 10026 of 26977 tries hit branch 6608
+calib stage: 0 new coverage in 98913 total execs
+calib stage: 0 new branches in 98913 total execs
+In deterministic stage, 1842105 of 1842232 tries hit branch 6608
+det stage: 1 new coverage in 1941153 total execs
+det stage: 0 new branches in 1941153 total execs
+In havoc stage, 17007 of 24576 tries hit branch 6608
+havoc stage: 6 new coverage in 1965769 total execs
+havoc stage: 0 new branches in 1965769 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:003205,sync:autofz,src:011640,+cov: 
+which hit branch 1972 (hit by 1 inputs) 
+while bitflipping, 3743 of 3936 tries hit branch 1972
+while calibrating, 1289 of 1477 tries hit branch 1972
+calib stage: 0 new coverage in 5413 total execs
+calib stage: 0 new branches in 5413 total execs
+In deterministic stage, 17482 of 17600 tries hit branch 1972
+det stage: 0 new coverage in 23013 total execs
+det stage: 0 new branches in 23013 total execs
+In havoc stage, 1722 of 3072 tries hit branch 1972
+havoc stage: 0 new coverage in 26085 total execs
+havoc stage: 0 new branches in 26085 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:003211,sync:autofz,src:009307,+cov: 
+which hit branch 6693 (hit by 1 inputs) 
+while bitflipping, 2079 of 2240 tries hit branch 6693
+while calibrating, 617 of 841 tries hit branch 6693
+calib stage: 0 new coverage in 3081 total execs
+calib stage: 0 new branches in 3081 total execs
+In deterministic stage, 10024 of 10049 tries hit branch 6693
+det stage: 0 new coverage in 13130 total execs
+det stage: 0 new branches in 13130 total execs
+In havoc stage, 1463 of 3072 tries hit branch 6693
+havoc stage: 0 new coverage in 16202 total execs
+havoc stage: 0 new branches in 16202 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:003246,sync:autofz,src:010007,+cov: 
+which hit branch 4734 (hit by 1 inputs) 
+while bitflipping, 3589 of 3808 tries hit branch 4734
+while calibrating, 1216 of 1429 tries hit branch 4734
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 19713 of 20026 tries hit branch 4734
+det stage: 0 new coverage in 25263 total execs
+det stage: 0 new branches in 25263 total execs
+In havoc stage, 1511 of 3072 tries hit branch 4734
+havoc stage: 0 new coverage in 28335 total execs
+havoc stage: 0 new branches in 28335 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:003392,sync:autofz,src:004399,+cov: 
+which hit branch 1420 (hit by 1 inputs) 
+while bitflipping, 2147 of 2336 tries hit branch 1420
+while calibrating, 572 of 877 tries hit branch 1420
+calib stage: 0 new coverage in 3213 total execs
+calib stage: 0 new branches in 3213 total execs
+In deterministic stage, 23937 of 24086 tries hit branch 1420
+det stage: 0 new coverage in 27299 total execs
+det stage: 0 new branches in 27299 total execs
+In havoc stage, 1781 of 4096 tries hit branch 1420
+havoc stage: 1 new coverage in 31403 total execs
+havoc stage: 0 new branches in 31403 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:003411,sync:autofz,src:002691,+cov: 
+which hit branch 4327 (hit by 1 inputs) 
+while bitflipping, 832 of 1040 tries hit branch 4327
+while calibrating, 196 of 391 tries hit branch 4327
+calib stage: 0 new coverage in 1431 total execs
+calib stage: 0 new branches in 1431 total execs
+In deterministic stage, 12068 of 12074 tries hit branch 4327
+det stage: 0 new coverage in 13505 total execs
+det stage: 0 new branches in 13505 total execs
+In havoc stage, 1338 of 3072 tries hit branch 4327
+havoc stage: 0 new coverage in 16577 total execs
+havoc stage: 0 new branches in 16577 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:003425,sync:autofz,src:004622,+cov: 
+which hit branch 6037 (hit by 1 inputs) 
+while bitflipping, 5654 of 5824 tries hit branch 6037
+while calibrating, 1423 of 2185 tries hit branch 6037
+calib stage: 0 new coverage in 8009 total execs
+calib stage: 0 new branches in 8009 total execs
+In deterministic stage, 17476 of 17505 tries hit branch 6037
+det stage: 1 new coverage in 25522 total execs
+det stage: 0 new branches in 25522 total execs
+In havoc stage, 1551 of 3072 tries hit branch 6037
+havoc stage: 1 new coverage in 28594 total execs
+havoc stage: 0 new branches in 28594 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:003439,sync:autofz,src:009906,+cov: 
+which hit branch 2234 (hit by 1 inputs) 
+while bitflipping, 368 of 512 tries hit branch 2234
+while calibrating, 86 of 193 tries hit branch 2234
+calib stage: 0 new coverage in 705 total execs
+calib stage: 0 new branches in 705 total execs
+In deterministic stage, 9550 of 9586 tries hit branch 2234
+det stage: 0 new coverage in 10291 total execs
+det stage: 0 new branches in 10291 total execs
+In havoc stage, 2671 of 6144 tries hit branch 2234
+havoc stage: 1 new coverage in 16443 total execs
+havoc stage: 0 new branches in 16443 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:003443,sync:autofz,src:009461,+cov: 
+which hit branch 6417 (hit by 1 inputs) 
+while bitflipping, 2034 of 2336 tries hit branch 6417
+while calibrating, 394 of 877 tries hit branch 6417
+calib stage: 0 new coverage in 3213 total execs
+calib stage: 0 new branches in 3213 total execs
+In deterministic stage, 33292 of 33585 tries hit branch 6417
+det stage: 0 new coverage in 36798 total execs
+det stage: 0 new branches in 36798 total execs
+In havoc stage, 5376 of 12288 tries hit branch 6417
+havoc stage: 2 new coverage in 49102 total execs
+havoc stage: 0 new branches in 49102 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:003484,sync:autofz,src:008861,+cov: 
+which hit branch 5354 (hit by 1 inputs) 
+while bitflipping, 3648 of 3808 tries hit branch 5354
+while calibrating, 1320 of 1429 tries hit branch 5354
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 16878 of 16915 tries hit branch 5354
+det stage: 0 new coverage in 22152 total execs
+det stage: 0 new branches in 22152 total execs
+In havoc stage, 475 of 1024 tries hit branch 5354
+havoc stage: 0 new coverage in 23176 total execs
+havoc stage: 0 new branches in 23176 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:003511,sync:autofz,src:005817,+cov: 
+which hit branch 6269 (hit by 1 inputs) 
+while bitflipping, 4362 of 4544 tries hit branch 6269
+while calibrating, 1569 of 1705 tries hit branch 6269
+calib stage: 2 new coverage in 6265 total execs
+calib stage: 2 new branches in 6265 total execs
+In deterministic stage, 18502 of 18634 tries hit branch 6269
+det stage: 3 new coverage in 24907 total execs
+det stage: 3 new branches in 24907 total execs
+In havoc stage, 675 of 1024 tries hit branch 6269
+havoc stage: 3 new coverage in 25931 total execs
+havoc stage: 3 new branches in 25931 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:003525,sync:autofz,src:005211,+cov: 
+which hit branch 1237 (hit by 1 inputs) 
+while bitflipping, 876 of 1056 tries hit branch 1237
+while calibrating, 262 of 397 tries hit branch 1237
+calib stage: 0 new coverage in 1453 total execs
+calib stage: 0 new branches in 1453 total execs
+In deterministic stage, 8208 of 8271 tries hit branch 1237
+det stage: 0 new coverage in 9724 total execs
+det stage: 0 new branches in 9724 total execs
+In havoc stage, 1201 of 3072 tries hit branch 1237
+havoc stage: 0 new coverage in 12796 total execs
+havoc stage: 0 new branches in 12796 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:003550,sync:autofz,src:007687,+cov: 
+which hit branch 5314 (hit by 1 inputs) 
+while bitflipping, 692 of 864 tries hit branch 5314
+while calibrating, 174 of 325 tries hit branch 5314
+calib stage: 0 new coverage in 1189 total execs
+calib stage: 0 new branches in 1189 total execs
+In deterministic stage, 17616 of 17846 tries hit branch 5314
+det stage: 0 new coverage in 19035 total execs
+det stage: 0 new branches in 19035 total execs
+In havoc stage, 1269 of 3072 tries hit branch 5314
+havoc stage: 0 new coverage in 22107 total execs
+havoc stage: 0 new branches in 22107 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:003648,sync:autofz,src:006252,+cov: 
+which hit branch 6615 (hit by 1 inputs) 
+while bitflipping, 3297 of 3584 tries hit branch 6615
+while calibrating, 498 of 1345 tries hit branch 6615
+calib stage: 0 new coverage in 4929 total execs
+calib stage: 0 new branches in 4929 total execs
+In deterministic stage, 64507 of 64596 tries hit branch 6615
+det stage: 0 new coverage in 69525 total execs
+det stage: 0 new branches in 69525 total execs
+In havoc stage, 9470 of 24576 tries hit branch 6615
+havoc stage: 5 new coverage in 94141 total execs
+havoc stage: 2 new branches in 94141 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:003767,sync:autofz,src:009743,+cov: 
+which hit branch 5253 (hit by 1 inputs) 
+while bitflipping, 3600 of 3808 tries hit branch 5253
+while calibrating, 1244 of 1429 tries hit branch 5253
+calib stage: 1 new coverage in 5245 total execs
+calib stage: 1 new branches in 5245 total execs
+In deterministic stage, 13000 of 13136 tries hit branch 5253
+det stage: 1 new coverage in 18381 total execs
+det stage: 1 new branches in 18381 total execs
+In havoc stage, 1497 of 3072 tries hit branch 5253
+havoc stage: 1 new coverage in 21453 total execs
+havoc stage: 1 new branches in 21453 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:003776,sync:autofz,src:008007,+cov: 
+which hit branch 5226 (hit by 1 inputs) 
+while bitflipping, 4175 of 4352 tries hit branch 5226
+while calibrating, 1488 of 1633 tries hit branch 5226
+calib stage: 0 new coverage in 5985 total execs
+calib stage: 0 new branches in 5985 total execs
+In deterministic stage, 13248 of 13317 tries hit branch 5226
+det stage: 0 new coverage in 19302 total execs
+det stage: 0 new branches in 19302 total execs
+In havoc stage, 1482 of 3072 tries hit branch 5226
+havoc stage: 0 new coverage in 22374 total execs
+havoc stage: 0 new branches in 22374 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:003784,sync:autofz,src:009638,+cov: 
+which hit branch 2879 (hit by 1 inputs) 
+while bitflipping, 2029 of 2336 tries hit branch 2879
+while calibrating, 455 of 877 tries hit branch 2879
+calib stage: 0 new coverage in 3213 total execs
+calib stage: 0 new branches in 3213 total execs
+In deterministic stage, 31788 of 32058 tries hit branch 2879
+det stage: 0 new coverage in 35271 total execs
+det stage: 0 new branches in 35271 total execs
+In havoc stage, 1386 of 3072 tries hit branch 2879
+havoc stage: 0 new coverage in 38343 total execs
+havoc stage: 0 new branches in 38343 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:003800,sync:autofz,src:002127,+cov: 
+which hit branch 2250 (hit by 1 inputs) 
+while bitflipping, 11035 of 11200 tries hit branch 2250
+while calibrating, 3429 of 4201 tries hit branch 2250
+calib stage: 0 new coverage in 15401 total execs
+calib stage: 0 new branches in 15401 total execs
+In deterministic stage, 62381 of 62415 tries hit branch 2250
+det stage: 1 new coverage in 77824 total execs
+det stage: 0 new branches in 77824 total execs
+In havoc stage, 1763 of 2048 tries hit branch 2250
+havoc stage: 1 new coverage in 79872 total execs
+havoc stage: 0 new branches in 79872 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:003844,sync:autofz,src:009635,+cov: 
+which hit branch 6550 (hit by 1 inputs) 
+while bitflipping, 1957 of 2328 tries hit branch 6550
+while calibrating, 413 of 874 tries hit branch 6550
+calib stage: 0 new coverage in 3202 total execs
+calib stage: 0 new branches in 3202 total execs
+In deterministic stage, 22519 of 22929 tries hit branch 6550
+det stage: 1 new coverage in 26139 total execs
+det stage: 1 new branches in 26139 total execs
+In havoc stage, 1336 of 3072 tries hit branch 6550
+havoc stage: 1 new coverage in 29211 total execs
+havoc stage: 1 new branches in 29211 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:003852,sync:autofz,src:009457,+cov: 
+which hit branch 6422 (hit by 1 inputs) 
+while bitflipping, 2066 of 2320 tries hit branch 6422
+while calibrating, 482 of 871 tries hit branch 6422
+calib stage: 0 new coverage in 3191 total execs
+calib stage: 0 new branches in 3191 total execs
+In deterministic stage, 30842 of 31096 tries hit branch 6422
+det stage: 0 new coverage in 34287 total execs
+det stage: 0 new branches in 34287 total execs
+In havoc stage, 1323 of 3072 tries hit branch 6422
+havoc stage: 0 new coverage in 37359 total execs
+havoc stage: 0 new branches in 37359 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:003864,sync:autofz,src:010862,+cov: 
+which hit branch 4561 (hit by 1 inputs) 
+while bitflipping, 3649 of 3808 tries hit branch 4561
+while calibrating, 1225 of 1429 tries hit branch 4561
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 15708 of 15803 tries hit branch 4561
+det stage: 0 new coverage in 21040 total execs
+det stage: 0 new branches in 21040 total execs
+In havoc stage, 1330 of 3072 tries hit branch 4561
+havoc stage: 1 new coverage in 24120 total execs
+havoc stage: 1 new branches in 24120 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:003871,sync:autofz,src:007296,+cov: 
+which hit branch 5340 (hit by 1 inputs) 
+while bitflipping, 3580 of 3808 tries hit branch 5340
+while calibrating, 690 of 1429 tries hit branch 5340
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 16342 of 16387 tries hit branch 5340
+det stage: 0 new coverage in 21624 total execs
+det stage: 0 new branches in 21624 total execs
+In havoc stage, 1466 of 3072 tries hit branch 5340
+havoc stage: 0 new coverage in 24696 total execs
+havoc stage: 0 new branches in 24696 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:003874,sync:autofz,src:005478,+cov: 
+which hit branch 2519 (hit by 1 inputs) 
+while bitflipping, 3596 of 3792 tries hit branch 2519
+while calibrating, 1197 of 1423 tries hit branch 2519
+calib stage: 0 new coverage in 5215 total execs
+calib stage: 0 new branches in 5215 total execs
+In deterministic stage, 15176 of 15391 tries hit branch 2519
+det stage: 3 new coverage in 20630 total execs
+det stage: 1 new branches in 20630 total execs
+In havoc stage, 1478 of 3072 tries hit branch 2519
+havoc stage: 3 new coverage in 23702 total execs
+havoc stage: 1 new branches in 23702 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:003979,sync:autofz,src:006899,+cov: 
+which hit branch 6639 (hit by 1 inputs) 
+while bitflipping, 840 of 1056 tries hit branch 6639
+while calibrating, 137 of 397 tries hit branch 6639
+calib stage: 0 new coverage in 1453 total execs
+calib stage: 0 new branches in 1453 total execs
+In deterministic stage, 13515 of 13680 tries hit branch 6639
+det stage: 0 new coverage in 15133 total execs
+det stage: 0 new branches in 15133 total execs
+In havoc stage, 1658 of 3072 tries hit branch 6639
+havoc stage: 0 new coverage in 18205 total execs
+havoc stage: 0 new branches in 18205 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:004012,sync:autofz,src:008594,+cov: 
+which hit branch 6484 (hit by 1 inputs) 
+while bitflipping, 1939 of 2336 tries hit branch 6484
+while calibrating, 416 of 877 tries hit branch 6484
+calib stage: 0 new coverage in 3213 total execs
+calib stage: 0 new branches in 3213 total execs
+In deterministic stage, 36955 of 37256 tries hit branch 6484
+det stage: 0 new coverage in 40469 total execs
+det stage: 0 new branches in 40469 total execs
+In havoc stage, 1310 of 3072 tries hit branch 6484
+havoc stage: 0 new coverage in 43541 total execs
+havoc stage: 0 new branches in 43541 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:004018,sync:autofz,src:005646,+cov: 
+which hit branch 6980 (hit by 1 inputs) 
+while bitflipping, 872 of 1056 tries hit branch 6980
+while calibrating, 164 of 397 tries hit branch 6980
+calib stage: 1 new coverage in 1461 total execs
+calib stage: 1 new branches in 1461 total execs
+In deterministic stage, 4678 of 4745 tries hit branch 6980
+det stage: 2 new coverage in 6214 total execs
+det stage: 2 new branches in 6214 total execs
+In havoc stage, 1475 of 3072 tries hit branch 6980
+havoc stage: 2 new coverage in 9286 total execs
+havoc stage: 2 new branches in 9286 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:004037,sync:autofz,src:009481,+cov: 
+which hit branch 4743 (hit by 1 inputs) 
+while bitflipping, 3595 of 3808 tries hit branch 4743
+while calibrating, 1220 of 1429 tries hit branch 4743
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 21835 of 22106 tries hit branch 4743
+det stage: 0 new coverage in 27343 total execs
+det stage: 0 new branches in 27343 total execs
+In havoc stage, 1468 of 3072 tries hit branch 4743
+havoc stage: 0 new coverage in 30415 total execs
+havoc stage: 0 new branches in 30415 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:004049,sync:autofz,src:004417,+cov: 
+which hit branch 4811 (hit by 1 inputs) 
+while bitflipping, 2099 of 2336 tries hit branch 4811
+while calibrating, 632 of 877 tries hit branch 4811
+calib stage: 0 new coverage in 3213 total execs
+calib stage: 0 new branches in 3213 total execs
+In deterministic stage, 34611 of 34995 tries hit branch 4811
+det stage: 1 new coverage in 38216 total execs
+det stage: 1 new branches in 38216 total execs
+In havoc stage, 1749 of 3072 tries hit branch 4811
+havoc stage: 1 new coverage in 41288 total execs
+havoc stage: 1 new branches in 41288 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:004139,sync:autofz,src:000847,+cov: 
+which hit branch 6604 (hit by 1 inputs) 
+while bitflipping, 97508 of 98560 tries hit branch 6604
+while calibrating, 15719 of 36961 tries hit branch 6604
+calib stage: 0 new coverage in 135521 total execs
+calib stage: 0 new branches in 135521 total execs
+In deterministic stage, 2265951 of 2266072 tries hit branch 6604
+det stage: 2 new coverage in 2401609 total execs
+det stage: 0 new branches in 2401609 total execs
+In havoc stage, 4236 of 4608 tries hit branch 6604
+havoc stage: 2 new coverage in 2406217 total execs
+havoc stage: 0 new branches in 2406217 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:004151,sync:autofz,src:010011,+cov: 
+which hit branch 4705 (hit by 1 inputs) 
+while bitflipping, 3716 of 3936 tries hit branch 4705
+while calibrating, 1267 of 1477 tries hit branch 4705
+calib stage: 1 new coverage in 5421 total execs
+calib stage: 1 new branches in 5421 total execs
+In deterministic stage, 30757 of 31109 tries hit branch 4705
+det stage: 2 new coverage in 36538 total execs
+det stage: 2 new branches in 36538 total execs
+In havoc stage, 3433 of 6144 tries hit branch 4705
+havoc stage: 3 new coverage in 42690 total execs
+havoc stage: 2 new branches in 42690 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:004182,sync:autofz,src:012357,+cov: 
+which hit branch 5145 (hit by 1 inputs) 
+while bitflipping, 3061 of 3328 tries hit branch 5145
+while calibrating, 893 of 1249 tries hit branch 5145
+calib stage: 0 new coverage in 4577 total execs
+calib stage: 0 new branches in 4577 total execs
+In deterministic stage, 40010 of 40123 tries hit branch 5145
+det stage: 0 new coverage in 44700 total execs
+det stage: 0 new branches in 44700 total execs
+In havoc stage, 728 of 1536 tries hit branch 5145
+havoc stage: 0 new coverage in 46236 total execs
+havoc stage: 0 new branches in 46236 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:004200,sync:autofz,src:004247,+cov: 
+which hit branch 6864 (hit by 1 inputs) 
+while bitflipping, 3603 of 3808 tries hit branch 6864
+while calibrating, 517 of 1429 tries hit branch 6864
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 20298 of 20423 tries hit branch 6864
+det stage: 0 new coverage in 25660 total execs
+det stage: 0 new branches in 25660 total execs
+In havoc stage, 1165 of 2048 tries hit branch 6864
+havoc stage: 0 new coverage in 27708 total execs
+havoc stage: 0 new branches in 27708 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:004250,sync:autofz,src:003585,+cov: 
+which hit branch 4361 (hit by 1 inputs) 
+while bitflipping, 828 of 1040 tries hit branch 4361
+while calibrating, 162 of 391 tries hit branch 4361
+calib stage: 0 new coverage in 1431 total execs
+calib stage: 0 new branches in 1431 total execs
+In deterministic stage, 13449 of 13714 tries hit branch 4361
+det stage: 0 new coverage in 15145 total execs
+det stage: 0 new branches in 15145 total execs
+In havoc stage, 1834 of 4096 tries hit branch 4361
+havoc stage: 1 new coverage in 19249 total execs
+havoc stage: 0 new branches in 19249 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:004266,sync:autofz,src:004983,+cov: 
+which hit branch 6790 (hit by 1 inputs) 
+while bitflipping, 3660 of 3808 tries hit branch 6790
+while calibrating, 1214 of 1429 tries hit branch 6790
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 12558 of 12648 tries hit branch 6790
+det stage: 1 new coverage in 17893 total execs
+det stage: 1 new branches in 17893 total execs
+In havoc stage, 1542 of 3072 tries hit branch 6790
+havoc stage: 1 new coverage in 20965 total execs
+havoc stage: 1 new branches in 20965 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:004312,sync:autofz,src:010717,+cov: 
+which hit branch 6503 (hit by 1 inputs) 
+while bitflipping, 1983 of 2328 tries hit branch 6503
+while calibrating, 396 of 874 tries hit branch 6503
+calib stage: 0 new coverage in 3202 total execs
+calib stage: 0 new branches in 3202 total execs
+In deterministic stage, 34338 of 34625 tries hit branch 6503
+det stage: 0 new coverage in 37827 total execs
+det stage: 0 new branches in 37827 total execs
+In havoc stage, 657 of 1536 tries hit branch 6503
+havoc stage: 0 new coverage in 39363 total execs
+havoc stage: 0 new branches in 39363 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:004407,sync:autofz,src:008869,+cov: 
+which hit branch 6324 (hit by 1 inputs) 
+while bitflipping, 4100 of 4288 tries hit branch 6324
+while calibrating, 1427 of 1609 tries hit branch 6324
+calib stage: 0 new coverage in 5897 total execs
+calib stage: 0 new branches in 5897 total execs
+In deterministic stage, 15279 of 15367 tries hit branch 6324
+det stage: 0 new coverage in 21264 total execs
+det stage: 0 new branches in 21264 total execs
+In havoc stage, 1525 of 3072 tries hit branch 6324
+havoc stage: 0 new coverage in 24336 total execs
+havoc stage: 0 new branches in 24336 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:004452,sync:autofz,src:004979,+cov: 
+which hit branch 6811 (hit by 1 inputs) 
+while bitflipping, 3621 of 3808 tries hit branch 6811
+while calibrating, 1095 of 1429 tries hit branch 6811
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 16704 of 16837 tries hit branch 6811
+det stage: 0 new coverage in 22074 total execs
+det stage: 0 new branches in 22074 total execs
+In havoc stage, 1547 of 3072 tries hit branch 6811
+havoc stage: 0 new coverage in 25146 total execs
+havoc stage: 0 new branches in 25146 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:004453,sync:autofz,src:009399,+cov: 
+which hit branch 7037 (hit by 1 inputs) 
+while bitflipping, 2056 of 2240 tries hit branch 7037
+while calibrating, 607 of 841 tries hit branch 7037
+calib stage: 0 new coverage in 3081 total execs
+calib stage: 0 new branches in 3081 total execs
+In deterministic stage, 11756 of 11760 tries hit branch 7037
+det stage: 1 new coverage in 14849 total execs
+det stage: 1 new branches in 14849 total execs
+In havoc stage, 1418 of 3072 tries hit branch 7037
+havoc stage: 1 new coverage in 17921 total execs
+havoc stage: 1 new branches in 17921 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:004456,sync:autofz,src:004196,+cov: 
+which hit branch 6833 (hit by 1 inputs) 
+while bitflipping, 904 of 1056 tries hit branch 6833
+while calibrating, 182 of 397 tries hit branch 6833
+calib stage: 0 new coverage in 1453 total execs
+calib stage: 0 new branches in 1453 total execs
+In deterministic stage, 9754 of 9811 tries hit branch 6833
+det stage: 0 new coverage in 11264 total execs
+det stage: 0 new branches in 11264 total execs
+In havoc stage, 1481 of 3072 tries hit branch 6833
+havoc stage: 0 new coverage in 14336 total execs
+havoc stage: 0 new branches in 14336 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:004525,sync:autofz,src:009343,+cov: 
+which hit branch 6286 (hit by 1 inputs) 
+while bitflipping, 3654 of 3808 tries hit branch 6286
+while calibrating, 1281 of 1429 tries hit branch 6286
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 11324 of 11361 tries hit branch 6286
+det stage: 0 new coverage in 16598 total execs
+det stage: 0 new branches in 16598 total execs
+In havoc stage, 1611 of 3072 tries hit branch 6286
+havoc stage: 0 new coverage in 19670 total execs
+havoc stage: 0 new branches in 19670 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:004530,sync:autofz,src:005015,+cov: 
+which hit branch 7098 (hit by 1 inputs) 
+while bitflipping, 3637 of 3792 tries hit branch 7098
+while calibrating, 1206 of 1423 tries hit branch 7098
+calib stage: 0 new coverage in 5215 total execs
+calib stage: 0 new branches in 5215 total execs
+In deterministic stage, 12599 of 12690 tries hit branch 7098
+det stage: 0 new coverage in 17905 total execs
+det stage: 0 new branches in 17905 total execs
+In havoc stage, 1542 of 3072 tries hit branch 7098
+havoc stage: 0 new coverage in 20977 total execs
+havoc stage: 0 new branches in 20977 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:004535,sync:autofz,src:003591,+cov: 
+which hit branch 4316 (hit by 1 inputs) 
+while bitflipping, 837 of 1048 tries hit branch 4316
+while calibrating, 143 of 394 tries hit branch 4316
+calib stage: 0 new coverage in 1442 total execs
+calib stage: 0 new branches in 1442 total execs
+In deterministic stage, 10995 of 11001 tries hit branch 4316
+det stage: 0 new coverage in 12443 total execs
+det stage: 0 new branches in 12443 total execs
+In havoc stage, 1120 of 2048 tries hit branch 4316
+havoc stage: 0 new coverage in 14491 total execs
+havoc stage: 0 new branches in 14491 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:004557,sync:autofz,src:002238,+cov: 
+which hit branch 1498 (hit by 1 inputs) 
+while bitflipping, 7464 of 7776 tries hit branch 1498
+while calibrating, 1785 of 2917 tries hit branch 1498
+calib stage: 0 new coverage in 10693 total execs
+calib stage: 0 new branches in 10693 total execs
+In deterministic stage, 53501 of 53532 tries hit branch 1498
+det stage: 0 new coverage in 64225 total execs
+det stage: 0 new branches in 64225 total execs
+In havoc stage, 4851 of 6144 tries hit branch 1498
+havoc stage: 1 new coverage in 70377 total execs
+havoc stage: 0 new branches in 70377 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:004599,sync:autofz,src:011266,+cov: 
+which hit branch 5270 (hit by 1 inputs) 
+while bitflipping, 3614 of 3808 tries hit branch 5270
+while calibrating, 1249 of 1429 tries hit branch 5270
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 15013 of 15230 tries hit branch 5270
+det stage: 0 new coverage in 20467 total execs
+det stage: 0 new branches in 20467 total execs
+In havoc stage, 1433 of 3072 tries hit branch 5270
+havoc stage: 0 new coverage in 23539 total execs
+havoc stage: 0 new branches in 23539 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:004619,sync:autofz,src:004213,+cov: 
+which hit branch 6760 (hit by 1 inputs) 
+while bitflipping, 3647 of 3808 tries hit branch 6760
+while calibrating, 1213 of 1429 tries hit branch 6760
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 12968 of 13033 tries hit branch 6760
+det stage: 0 new coverage in 18270 total execs
+det stage: 0 new branches in 18270 total execs
+In havoc stage, 1532 of 3072 tries hit branch 6760
+havoc stage: 0 new coverage in 21342 total execs
+havoc stage: 0 new branches in 21342 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:004662,sync:autofz,src:010400,+cov: 
+which hit branch 3746 (hit by 1 inputs) 
+while bitflipping, 10933 of 11200 tries hit branch 3746
+while calibrating, 2848 of 4201 tries hit branch 3746
+calib stage: 0 new coverage in 15401 total execs
+calib stage: 0 new branches in 15401 total execs
+In deterministic stage, 297001 of 297739 tries hit branch 3746
+det stage: 1 new coverage in 313148 total execs
+det stage: 0 new branches in 313148 total execs
+In havoc stage, 2488 of 3072 tries hit branch 3746
+havoc stage: 1 new coverage in 316220 total execs
+havoc stage: 0 new branches in 316220 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:004669,sync:autofz,src:007947,+cov: 
+which hit branch 1588 (hit by 1 inputs) 
+while bitflipping, 4202 of 4352 tries hit branch 1588
+while calibrating, 1480 of 1633 tries hit branch 1588
+calib stage: 0 new coverage in 5985 total execs
+calib stage: 0 new branches in 5985 total execs
+In deterministic stage, 14077 of 14145 tries hit branch 1588
+det stage: 0 new coverage in 20130 total execs
+det stage: 0 new branches in 20130 total execs
+In havoc stage, 1491 of 3072 tries hit branch 1588
+havoc stage: 0 new coverage in 23202 total execs
+havoc stage: 0 new branches in 23202 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:004712,sync:autofz,src:006815,+cov: 
+which hit branch 6941 (hit by 1 inputs) 
+while bitflipping, 3644 of 3808 tries hit branch 6941
+while calibrating, 1179 of 1429 tries hit branch 6941
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 19490 of 19586 tries hit branch 6941
+det stage: 0 new coverage in 24823 total execs
+det stage: 0 new branches in 24823 total execs
+In havoc stage, 1539 of 3072 tries hit branch 6941
+havoc stage: 0 new coverage in 27895 total execs
+havoc stage: 0 new branches in 27895 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:004722,sync:autofz,src:004103,+cov: 
+which hit branch 6839 (hit by 1 inputs) 
+while bitflipping, 3658 of 3808 tries hit branch 6839
+while calibrating, 1213 of 1429 tries hit branch 6839
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 21139 of 21233 tries hit branch 6839
+det stage: 0 new coverage in 26470 total execs
+det stage: 0 new branches in 26470 total execs
+In havoc stage, 950 of 2048 tries hit branch 6839
+havoc stage: 0 new coverage in 28518 total execs
+havoc stage: 0 new branches in 28518 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:004736,sync:autofz,src:008296,+cov: 
+which hit branch 7245 (hit by 1 inputs) 
+while bitflipping, 840 of 1056 tries hit branch 7245
+while calibrating, 137 of 397 tries hit branch 7245
+calib stage: 0 new coverage in 1453 total execs
+calib stage: 0 new branches in 1453 total execs
+In deterministic stage, 14875 of 15032 tries hit branch 7245
+det stage: 0 new coverage in 16485 total execs
+det stage: 0 new branches in 16485 total execs
+In havoc stage, 1106 of 2048 tries hit branch 7245
+havoc stage: 0 new coverage in 18533 total execs
+havoc stage: 0 new branches in 18533 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:004812,sync:autofz,src:009289,+cov: 
+which hit branch 6212 (hit by 1 inputs) 
+while bitflipping, 3629 of 3792 tries hit branch 6212
+while calibrating, 1199 of 1423 tries hit branch 6212
+calib stage: 0 new coverage in 5215 total execs
+calib stage: 0 new branches in 5215 total execs
+In deterministic stage, 15992 of 16082 tries hit branch 6212
+det stage: 0 new coverage in 21297 total execs
+det stage: 0 new branches in 21297 total execs
+In havoc stage, 1433 of 3072 tries hit branch 6212
+havoc stage: 0 new coverage in 24369 total execs
+havoc stage: 0 new branches in 24369 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:004825,sync:autofz,src:004794,+cov: 
+which hit branch 2504 (hit by 1 inputs) 
+while bitflipping, 3596 of 3792 tries hit branch 2504
+while calibrating, 1197 of 1423 tries hit branch 2504
+calib stage: 0 new coverage in 5215 total execs
+calib stage: 0 new branches in 5215 total execs
+In deterministic stage, 15213 of 15417 tries hit branch 2504
+det stage: 0 new coverage in 20632 total execs
+det stage: 0 new branches in 20632 total execs
+In havoc stage, 965 of 2048 tries hit branch 2504
+havoc stage: 0 new coverage in 22680 total execs
+havoc stage: 0 new branches in 22680 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:004828,sync:autofz,src:002392,+cov: 
+which hit branch 3819 (hit by 1 inputs) 
+while bitflipping, 5563 of 5824 tries hit branch 3819
+while calibrating, 1458 of 2185 tries hit branch 3819
+calib stage: 0 new coverage in 8009 total execs
+calib stage: 0 new branches in 8009 total execs
+In deterministic stage, 75594 of 76403 tries hit branch 3819
+det stage: 3 new coverage in 84436 total execs
+det stage: 0 new branches in 84436 total execs
+In havoc stage, 2046 of 3072 tries hit branch 3819
+havoc stage: 3 new coverage in 87508 total execs
+havoc stage: 0 new branches in 87508 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:004853,sync:autofz,src:005016,+cov: 
+which hit branch 6731 (hit by 1 inputs) 
+while bitflipping, 905 of 1056 tries hit branch 6731
+while calibrating, 182 of 397 tries hit branch 6731
+calib stage: 0 new coverage in 1453 total execs
+calib stage: 0 new branches in 1453 total execs
+In deterministic stage, 5768 of 5827 tries hit branch 6731
+det stage: 0 new coverage in 7280 total execs
+det stage: 0 new branches in 7280 total execs
+In havoc stage, 1397 of 3072 tries hit branch 6731
+havoc stage: 0 new coverage in 10352 total execs
+havoc stage: 0 new branches in 10352 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:004865,sync:autofz,src:009471,+cov: 
+which hit branch 4749 (hit by 1 inputs) 
+while bitflipping, 3595 of 3808 tries hit branch 4749
+while calibrating, 1221 of 1429 tries hit branch 4749
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 19508 of 19770 tries hit branch 4749
+det stage: 0 new coverage in 25007 total execs
+det stage: 0 new branches in 25007 total execs
+In havoc stage, 1446 of 3072 tries hit branch 4749
+havoc stage: 0 new coverage in 28079 total execs
+havoc stage: 0 new branches in 28079 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:004878,sync:autofz,src:007894,+cov: 
+which hit branch 1461 (hit by 1 inputs) 
+while bitflipping, 872 of 1056 tries hit branch 1461
+while calibrating, 232 of 397 tries hit branch 1461
+calib stage: 0 new coverage in 1453 total execs
+calib stage: 0 new branches in 1453 total execs
+In deterministic stage, 10371 of 10425 tries hit branch 1461
+det stage: 0 new coverage in 11878 total execs
+det stage: 0 new branches in 11878 total execs
+In havoc stage, 1025 of 3072 tries hit branch 1461
+havoc stage: 0 new coverage in 14950 total execs
+havoc stage: 0 new branches in 14950 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:004889,sync:autofz,src:005254,+cov: 
+which hit branch 5239 (hit by 1 inputs) 
+while bitflipping, 2114 of 2336 tries hit branch 5239
+while calibrating, 442 of 877 tries hit branch 5239
+calib stage: 0 new coverage in 3213 total execs
+calib stage: 0 new branches in 3213 total execs
+In deterministic stage, 20659 of 20908 tries hit branch 5239
+det stage: 0 new coverage in 24121 total execs
+det stage: 0 new branches in 24121 total execs
+In havoc stage, 1365 of 3072 tries hit branch 5239
+havoc stage: 0 new coverage in 27193 total execs
+havoc stage: 0 new branches in 27193 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:004890,sync:autofz,src:005689,+cov: 
+which hit branch 6772 (hit by 1 inputs) 
+while bitflipping, 3646 of 3808 tries hit branch 6772
+while calibrating, 1213 of 1429 tries hit branch 6772
+calib stage: 1 new coverage in 5245 total execs
+calib stage: 1 new branches in 5245 total execs
+In deterministic stage, 12714 of 12779 tries hit branch 6772
+det stage: 1 new coverage in 18024 total execs
+det stage: 1 new branches in 18024 total execs
+In havoc stage, 1501 of 3072 tries hit branch 6772
+havoc stage: 1 new coverage in 21096 total execs
+havoc stage: 1 new branches in 21096 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:004905,sync:autofz,src:002503,+cov: 
+which hit branch 4901 (hit by 1 inputs) 
+while bitflipping, 846 of 1056 tries hit branch 4901
+while calibrating, 188 of 397 tries hit branch 4901
+calib stage: 0 new coverage in 1453 total execs
+calib stage: 0 new branches in 1453 total execs
+In deterministic stage, 14810 of 15017 tries hit branch 4901
+det stage: 0 new coverage in 16470 total execs
+det stage: 0 new branches in 16470 total execs
+In havoc stage, 1292 of 3072 tries hit branch 4901
+havoc stage: 0 new coverage in 19542 total execs
+havoc stage: 0 new branches in 19542 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:004928,sync:autofz,src:009375,+cov: 
+which hit branch 6665 (hit by 1 inputs) 
+while bitflipping, 3614 of 3808 tries hit branch 6665
+while calibrating, 980 of 1429 tries hit branch 6665
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 17125 of 17344 tries hit branch 6665
+det stage: 0 new coverage in 22581 total execs
+det stage: 0 new branches in 22581 total execs
+In havoc stage, 716 of 1536 tries hit branch 6665
+havoc stage: 0 new coverage in 24117 total execs
+havoc stage: 0 new branches in 24117 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:004940,sync:autofz,src:006185,+cov: 
+which hit branch 6697 (hit by 1 inputs) 
+while bitflipping, 1338 of 3808 tries hit branch 6697
+while calibrating, 418 of 1429 tries hit branch 6697
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 8331 of 8463 tries hit branch 6697
+det stage: 0 new coverage in 13700 total execs
+det stage: 0 new branches in 13700 total execs
+In havoc stage, 1416 of 3072 tries hit branch 6697
+havoc stage: 0 new coverage in 16772 total execs
+havoc stage: 0 new branches in 16772 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:004960,sync:autofz,src:003693,+cov: 
+which hit branch 2392 (hit by 1 inputs) 
+while bitflipping, 10966 of 11200 tries hit branch 2392
+while calibrating, 1716 of 4201 tries hit branch 2392
+calib stage: 0 new coverage in 15401 total execs
+calib stage: 0 new branches in 15401 total execs
+In deterministic stage, 29626 of 29653 tries hit branch 2392
+det stage: 2 new coverage in 45070 total execs
+det stage: 1 new branches in 45070 total execs
+In havoc stage, 2156 of 3072 tries hit branch 2392
+havoc stage: 2 new coverage in 48142 total execs
+havoc stage: 1 new branches in 48142 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:004971,sync:autofz,src:012244,+cov: 
+which hit branch 1094 (hit by 1 inputs) 
+while bitflipping, 2838 of 3168 tries hit branch 1094
+while calibrating, 682 of 1189 tries hit branch 1094
+calib stage: 0 new coverage in 4357 total execs
+calib stage: 0 new branches in 4357 total execs
+In deterministic stage, 24019 of 24491 tries hit branch 1094
+det stage: 5 new coverage in 28888 total execs
+det stage: 5 new branches in 28888 total execs
+In havoc stage, 1442 of 3072 tries hit branch 1094
+havoc stage: 5 new coverage in 31960 total execs
+havoc stage: 5 new branches in 31960 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:004981,sync:autofz,src:009689,+cov: 
+which hit branch 2125 (hit by 1 inputs) 
+while bitflipping, 4439 of 4616 tries hit branch 2125
+while calibrating, 1597 of 1732 tries hit branch 2125
+calib stage: 2 new coverage in 6364 total execs
+calib stage: 2 new branches in 6364 total execs
+In deterministic stage, 13794 of 13798 tries hit branch 2125
+det stage: 3 new coverage in 20170 total execs
+det stage: 3 new branches in 20170 total execs
+In havoc stage, 1498 of 3072 tries hit branch 2125
+havoc stage: 3 new coverage in 23242 total execs
+havoc stage: 3 new branches in 23242 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:004991,sync:autofz,src:009353,+cov: 
+which hit branch 6898 (hit by 1 inputs) 
+while bitflipping, 1988 of 2240 tries hit branch 6898
+while calibrating, 389 of 841 tries hit branch 6898
+calib stage: 1 new coverage in 3089 total execs
+calib stage: 1 new branches in 3089 total execs
+In deterministic stage, 24937 of 25005 tries hit branch 6898
+det stage: 1 new coverage in 28094 total execs
+det stage: 1 new branches in 28094 total execs
+In havoc stage, 2856 of 6144 tries hit branch 6898
+havoc stage: 2 new coverage in 34246 total execs
+havoc stage: 1 new branches in 34246 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:004995,sync:autofz,src:008342,+cov: 
+which hit branch 2178 (hit by 1 inputs) 
+while bitflipping, 4068 of 4248 tries hit branch 2178
+while calibrating, 1448 of 1594 tries hit branch 2178
+calib stage: 0 new coverage in 5842 total execs
+calib stage: 0 new branches in 5842 total execs
+In deterministic stage, 11220 of 11246 tries hit branch 2178
+det stage: 0 new coverage in 17088 total execs
+det stage: 0 new branches in 17088 total execs
+In havoc stage, 1138 of 3072 tries hit branch 2178
+havoc stage: 0 new coverage in 20160 total execs
+havoc stage: 0 new branches in 20160 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:005018,sync:autofz,src:009009,+cov: 
+which hit branch 5108 (hit by 1 inputs) 
+while bitflipping, 836 of 1056 tries hit branch 5108
+while calibrating, 137 of 397 tries hit branch 5108
+calib stage: 0 new coverage in 1453 total execs
+calib stage: 0 new branches in 1453 total execs
+In deterministic stage, 13168 of 13322 tries hit branch 5108
+det stage: 0 new coverage in 14775 total execs
+det stage: 0 new branches in 14775 total execs
+In havoc stage, 1698 of 3072 tries hit branch 5108
+havoc stage: 0 new coverage in 17847 total execs
+havoc stage: 0 new branches in 17847 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:005082,sync:autofz,src:009550,+cov: 
+which hit branch 4641 (hit by 1 inputs) 
+while bitflipping, 3667 of 3936 tries hit branch 4641
+while calibrating, 531 of 1477 tries hit branch 4641
+calib stage: 1 new coverage in 5421 total execs
+calib stage: 0 new branches in 5421 total execs
+In deterministic stage, 21738 of 21903 tries hit branch 4641
+det stage: 1 new coverage in 27324 total execs
+det stage: 0 new branches in 27324 total execs
+In havoc stage, 616 of 1024 tries hit branch 4641
+havoc stage: 1 new coverage in 28348 total execs
+havoc stage: 0 new branches in 28348 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:005096,sync:autofz,src:007521,+cov: 
+which hit branch 1612 (hit by 1 inputs) 
+while bitflipping, 4210 of 4352 tries hit branch 1612
+while calibrating, 1483 of 1633 tries hit branch 1612
+calib stage: 0 new coverage in 5985 total execs
+calib stage: 0 new branches in 5985 total execs
+In deterministic stage, 13663 of 13731 tries hit branch 1612
+det stage: 0 new coverage in 19716 total execs
+det stage: 0 new branches in 19716 total execs
+In havoc stage, 1581 of 3072 tries hit branch 1612
+havoc stage: 0 new coverage in 22788 total execs
+havoc stage: 0 new branches in 22788 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:005104,sync:autofz,src:008599,+cov: 
+which hit branch 7247 (hit by 1 inputs) 
+while bitflipping, 2890 of 3104 tries hit branch 7247
+while calibrating, 904 of 1165 tries hit branch 7247
+calib stage: 1 new coverage in 4277 total execs
+calib stage: 1 new branches in 4277 total execs
+In deterministic stage, 24742 of 24909 tries hit branch 7247
+det stage: 1 new coverage in 29186 total execs
+det stage: 1 new branches in 29186 total execs
+In havoc stage, 1405 of 3072 tries hit branch 7247
+havoc stage: 1 new coverage in 32258 total execs
+havoc stage: 1 new branches in 32258 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:005171,sync:autofz,src:010743,+cov: 
+which hit branch 7680 (hit by 1 inputs) 
+while bitflipping, 3489 of 3808 tries hit branch 7680
+while calibrating, 1101 of 1429 tries hit branch 7680
+calib stage: 1 new coverage in 5245 total execs
+calib stage: 1 new branches in 5245 total execs
+In deterministic stage, 20173 of 20509 tries hit branch 7680
+det stage: 3 new coverage in 25770 total execs
+det stage: 2 new branches in 25770 total execs
+In havoc stage, 1480 of 3072 tries hit branch 7680
+havoc stage: 3 new coverage in 28842 total execs
+havoc stage: 2 new branches in 28842 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:005188,sync:autofz,src:005119,+cov: 
+which hit branch 7101 (hit by 1 inputs) 
+while bitflipping, 3641 of 3808 tries hit branch 7101
+while calibrating, 1210 of 1429 tries hit branch 7101
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 15136 of 15203 tries hit branch 7101
+det stage: 0 new coverage in 20440 total execs
+det stage: 0 new branches in 20440 total execs
+In havoc stage, 1041 of 2048 tries hit branch 7101
+havoc stage: 0 new coverage in 22488 total execs
+havoc stage: 0 new branches in 22488 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:005246,sync:autofz,src:003875,+cov: 
+which hit branch 6323 (hit by 1 inputs) 
+while bitflipping, 3621 of 3808 tries hit branch 6323
+while calibrating, 1248 of 1429 tries hit branch 6323
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 13574 of 13764 tries hit branch 6323
+det stage: 0 new coverage in 19001 total execs
+det stage: 0 new branches in 19001 total execs
+In havoc stage, 1031 of 2048 tries hit branch 6323
+havoc stage: 0 new coverage in 21049 total execs
+havoc stage: 0 new branches in 21049 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:005257,sync:autofz,src:011222,+cov: 
+which hit branch 5140 (hit by 1 inputs) 
+while bitflipping, 2883 of 3104 tries hit branch 5140
+while calibrating, 902 of 1165 tries hit branch 5140
+calib stage: 0 new coverage in 4269 total execs
+calib stage: 0 new branches in 4269 total execs
+In deterministic stage, 20828 of 20986 tries hit branch 5140
+det stage: 0 new coverage in 25255 total execs
+det stage: 0 new branches in 25255 total execs
+In havoc stage, 1456 of 3072 tries hit branch 5140
+havoc stage: 0 new coverage in 28327 total execs
+havoc stage: 0 new branches in 28327 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:005262,sync:autofz,src:007896,+cov: 
+which hit branch 1458 (hit by 1 inputs) 
+while bitflipping, 888 of 1056 tries hit branch 1458
+while calibrating, 276 of 397 tries hit branch 1458
+calib stage: 0 new coverage in 1453 total execs
+calib stage: 0 new branches in 1453 total execs
+In deterministic stage, 9708 of 9762 tries hit branch 1458
+det stage: 0 new coverage in 11215 total execs
+det stage: 0 new branches in 11215 total execs
+In havoc stage, 1364 of 3072 tries hit branch 1458
+havoc stage: 0 new coverage in 14287 total execs
+havoc stage: 0 new branches in 14287 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:005269,sync:autofz,src:009407,+cov: 
+which hit branch 7106 (hit by 1 inputs) 
+while bitflipping, 3640 of 3808 tries hit branch 7106
+while calibrating, 1210 of 1429 tries hit branch 7106
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 15074 of 15141 tries hit branch 7106
+det stage: 0 new coverage in 20378 total execs
+det stage: 0 new branches in 20378 total execs
+In havoc stage, 1547 of 3072 tries hit branch 7106
+havoc stage: 0 new coverage in 23450 total execs
+havoc stage: 0 new branches in 23450 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:005276,sync:autofz,src:007058,+cov: 
+which hit branch 7850 (hit by 1 inputs) 
+while bitflipping, 3595 of 3808 tries hit branch 7850
+while calibrating, 1171 of 1429 tries hit branch 7850
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 19206 of 19410 tries hit branch 7850
+det stage: 1 new coverage in 24655 total execs
+det stage: 0 new branches in 24655 total execs
+In havoc stage, 527 of 1024 tries hit branch 7850
+havoc stage: 1 new coverage in 25679 total execs
+havoc stage: 0 new branches in 25679 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:005313,sync:autofz,src:009913,+cov: 
+which hit branch 7744 (hit by 1 inputs) 
+while bitflipping, 1561 of 1744 tries hit branch 7744
+while calibrating, 417 of 655 tries hit branch 7744
+calib stage: 0 new coverage in 2399 total execs
+calib stage: 0 new branches in 2399 total execs
+In deterministic stage, 11346 of 11661 tries hit branch 7744
+det stage: 1 new coverage in 14068 total execs
+det stage: 1 new branches in 14068 total execs
+In havoc stage, 1248 of 3072 tries hit branch 7744
+havoc stage: 1 new coverage in 17140 total execs
+havoc stage: 1 new branches in 17140 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:005342,sync:autofz,src:005692,+cov: 
+which hit branch 7026 (hit by 1 inputs) 
+while bitflipping, 3612 of 3808 tries hit branch 7026
+while calibrating, 1197 of 1429 tries hit branch 7026
+calib stage: 1 new coverage in 5245 total execs
+calib stage: 1 new branches in 5245 total execs
+In deterministic stage, 11537 of 11607 tries hit branch 7026
+det stage: 1 new coverage in 16852 total execs
+det stage: 1 new branches in 16852 total execs
+In havoc stage, 540 of 1024 tries hit branch 7026
+havoc stage: 1 new coverage in 17876 total execs
+havoc stage: 1 new branches in 17876 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:005372,sync:autofz,src:012208,+cov: 
+which hit branch 3770 (hit by 1 inputs) 
+while bitflipping, 3565 of 3808 tries hit branch 3770
+while calibrating, 657 of 1429 tries hit branch 3770
+calib stage: 1 new coverage in 5245 total execs
+calib stage: 0 new branches in 5245 total execs
+In deterministic stage, 54499 of 54650 tries hit branch 3770
+det stage: 1 new coverage in 59895 total execs
+det stage: 0 new branches in 59895 total execs
+In havoc stage, 1459 of 3072 tries hit branch 3770
+havoc stage: 1 new coverage in 62967 total execs
+havoc stage: 0 new branches in 62967 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:005379,sync:autofz,src:009012,+cov: 
+which hit branch 5136 (hit by 1 inputs) 
+while bitflipping, 830 of 1056 tries hit branch 5136
+while calibrating, 134 of 397 tries hit branch 5136
+calib stage: 0 new coverage in 1453 total execs
+calib stage: 0 new branches in 1453 total execs
+In deterministic stage, 12799 of 12953 tries hit branch 5136
+det stage: 0 new coverage in 14406 total execs
+det stage: 0 new branches in 14406 total execs
+In havoc stage, 853 of 1536 tries hit branch 5136
+havoc stage: 0 new coverage in 15942 total execs
+havoc stage: 0 new branches in 15942 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:005421,sync:autofz,src:008874,+cov: 
+which hit branch 1964 (hit by 1 inputs) 
+while bitflipping, 3614 of 3808 tries hit branch 1964
+while calibrating, 1237 of 1429 tries hit branch 1964
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 23102 of 23241 tries hit branch 1964
+det stage: 0 new coverage in 28478 total execs
+det stage: 0 new branches in 28478 total execs
+In havoc stage, 1485 of 3072 tries hit branch 1964
+havoc stage: 0 new coverage in 31550 total execs
+havoc stage: 0 new branches in 31550 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:005429,sync:autofz,src:005326,+cov: 
+which hit branch 1555 (hit by 1 inputs) 
+while bitflipping, 4170 of 4352 tries hit branch 1555
+while calibrating, 1308 of 1633 tries hit branch 1555
+calib stage: 0 new coverage in 5985 total execs
+calib stage: 0 new branches in 5985 total execs
+In deterministic stage, 27683 of 27780 tries hit branch 1555
+det stage: 0 new coverage in 33765 total execs
+det stage: 0 new branches in 33765 total execs
+In havoc stage, 1598 of 3072 tries hit branch 1555
+havoc stage: 0 new coverage in 36837 total execs
+havoc stage: 0 new branches in 36837 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:005449,sync:autofz,src:009575,+cov: 
+which hit branch 6415 (hit by 1 inputs) 
+while bitflipping, 2029 of 2320 tries hit branch 6415
+while calibrating, 462 of 871 tries hit branch 6415
+calib stage: 0 new coverage in 3191 total execs
+calib stage: 0 new branches in 3191 total execs
+In deterministic stage, 31938 of 32191 tries hit branch 6415
+det stage: 0 new coverage in 35382 total execs
+det stage: 0 new branches in 35382 total execs
+In havoc stage, 2671 of 6144 tries hit branch 6415
+havoc stage: 1 new coverage in 41534 total execs
+havoc stage: 0 new branches in 41534 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:005475,sync:autofz,src:010036,+cov: 
+which hit branch 5153 (hit by 1 inputs) 
+while bitflipping, 924 of 1152 tries hit branch 5153
+while calibrating, 169 of 433 tries hit branch 5153
+calib stage: 1 new coverage in 1593 total execs
+calib stage: 0 new branches in 1593 total execs
+In deterministic stage, 14298 of 14462 tries hit branch 5153
+det stage: 1 new coverage in 16055 total execs
+det stage: 0 new branches in 16055 total execs
+In havoc stage, 1538 of 3072 tries hit branch 5153
+havoc stage: 1 new coverage in 19127 total execs
+havoc stage: 0 new branches in 19127 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:005497,sync:autofz,src:009884,+cov: 
+which hit branch 6209 (hit by 1 inputs) 
+while bitflipping, 3606 of 3808 tries hit branch 6209
+while calibrating, 1237 of 1429 tries hit branch 6209
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 16215 of 16346 tries hit branch 6209
+det stage: 0 new coverage in 21583 total execs
+det stage: 0 new branches in 21583 total execs
+In havoc stage, 725 of 1536 tries hit branch 6209
+havoc stage: 0 new coverage in 23119 total execs
+havoc stage: 0 new branches in 23119 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:005503,sync:autofz,src:004384,+cov: 
+which hit branch 1397 (hit by 1 inputs) 
+while bitflipping, 2149 of 2336 tries hit branch 1397
+while calibrating, 571 of 877 tries hit branch 1397
+calib stage: 0 new coverage in 3213 total execs
+calib stage: 0 new branches in 3213 total execs
+In deterministic stage, 24065 of 24205 tries hit branch 1397
+det stage: 0 new coverage in 27418 total execs
+det stage: 0 new branches in 27418 total execs
+In havoc stage, 468 of 1024 tries hit branch 1397
+havoc stage: 0 new coverage in 28442 total execs
+havoc stage: 0 new branches in 28442 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:005527,sync:autofz,src:008375,+cov: 
+which hit branch 5254 (hit by 1 inputs) 
+while bitflipping, 3600 of 3808 tries hit branch 5254
+while calibrating, 1247 of 1429 tries hit branch 5254
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 12638 of 12762 tries hit branch 5254
+det stage: 0 new coverage in 17999 total execs
+det stage: 0 new branches in 17999 total execs
+In havoc stage, 1482 of 3072 tries hit branch 5254
+havoc stage: 0 new coverage in 21071 total execs
+havoc stage: 0 new branches in 21071 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:005528,sync:autofz,src:005930,+cov: 
+which hit branch 8075 (hit by 1 inputs) 
+while bitflipping, 3602 of 3808 tries hit branch 8075
+while calibrating, 1173 of 1429 tries hit branch 8075
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 17397 of 17651 tries hit branch 8075
+det stage: 0 new coverage in 22888 total execs
+det stage: 0 new branches in 22888 total execs
+In havoc stage, 1517 of 3072 tries hit branch 8075
+havoc stage: 0 new coverage in 25960 total execs
+havoc stage: 0 new branches in 25960 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:005537,sync:autofz,src:007522,+cov: 
+which hit branch 1592 (hit by 1 inputs) 
+while bitflipping, 4202 of 4352 tries hit branch 1592
+while calibrating, 1481 of 1633 tries hit branch 1592
+calib stage: 0 new coverage in 5985 total execs
+calib stage: 0 new branches in 5985 total execs
+In deterministic stage, 13506 of 13574 tries hit branch 1592
+det stage: 0 new coverage in 19559 total execs
+det stage: 0 new branches in 19559 total execs
+In havoc stage, 509 of 1024 tries hit branch 1592
+havoc stage: 0 new coverage in 20583 total execs
+havoc stage: 0 new branches in 20583 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:005605,sync:autofz,src:005405,+cov: 
+which hit branch 6686 (hit by 1 inputs) 
+while bitflipping, 1629 of 3808 tries hit branch 6686
+while calibrating, 245 of 1429 tries hit branch 6686
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 13146 of 13187 tries hit branch 6686
+det stage: 0 new coverage in 18424 total execs
+det stage: 0 new branches in 18424 total execs
+In havoc stage, 1349 of 3072 tries hit branch 6686
+havoc stage: 0 new coverage in 21496 total execs
+havoc stage: 0 new branches in 21496 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:005631,sync:autofz,src:001851,+cov: 
+which hit branch 5530 (hit by 1 inputs) 
+while bitflipping, 16491 of 16736 tries hit branch 5530
+while calibrating, 3106 of 6277 tries hit branch 5530
+calib stage: 0 new coverage in 23013 total execs
+calib stage: 0 new branches in 23013 total execs
+In deterministic stage, 74460 of 74505 tries hit branch 5530
+det stage: 0 new coverage in 97518 total execs
+det stage: 0 new branches in 97518 total execs
+In havoc stage, 1935 of 3072 tries hit branch 5530
+havoc stage: 0 new coverage in 100590 total execs
+havoc stage: 0 new branches in 100590 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:005636,sync:autofz,src:007917,+cov: 
+which hit branch 6419 (hit by 1 inputs) 
+while bitflipping, 2003 of 2320 tries hit branch 6419
+while calibrating, 448 of 871 tries hit branch 6419
+calib stage: 0 new coverage in 3191 total execs
+calib stage: 0 new branches in 3191 total execs
+In deterministic stage, 33239 of 33521 tries hit branch 6419
+det stage: 0 new coverage in 36712 total execs
+det stage: 0 new branches in 36712 total execs
+In havoc stage, 1105 of 3072 tries hit branch 6419
+havoc stage: 0 new coverage in 39784 total execs
+havoc stage: 0 new branches in 39784 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:005666,sync:autofz,src:008767,+cov: 
+which hit branch 5552 (hit by 1 inputs) 
+while bitflipping, 3533 of 3680 tries hit branch 5552
+while calibrating, 1230 of 1381 tries hit branch 5552
+calib stage: 0 new coverage in 5061 total execs
+calib stage: 0 new branches in 5061 total execs
+In deterministic stage, 10432 of 10485 tries hit branch 5552
+det stage: 0 new coverage in 15546 total execs
+det stage: 0 new branches in 15546 total execs
+In havoc stage, 1189 of 3072 tries hit branch 5552
+havoc stage: 0 new coverage in 18618 total execs
+havoc stage: 0 new branches in 18618 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:005675,sync:autofz,src:008868,+cov: 
+which hit branch 6329 (hit by 1 inputs) 
+while bitflipping, 4099 of 4288 tries hit branch 6329
+while calibrating, 1427 of 1609 tries hit branch 6329
+calib stage: 0 new coverage in 5897 total execs
+calib stage: 0 new branches in 5897 total execs
+In deterministic stage, 19178 of 19273 tries hit branch 6329
+det stage: 0 new coverage in 25170 total execs
+det stage: 0 new branches in 25170 total execs
+In havoc stage, 1509 of 3072 tries hit branch 6329
+havoc stage: 0 new coverage in 28242 total execs
+havoc stage: 0 new branches in 28242 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:005703,sync:autofz,src:010253,+cov: 
+which hit branch 7176 (hit by 1 inputs) 
+while bitflipping, 10351 of 10624 tries hit branch 7176
+while calibrating, 3551 of 3985 tries hit branch 7176
+calib stage: 1 new coverage in 14617 total execs
+calib stage: 1 new branches in 14617 total execs
+In deterministic stage, 120376 of 120518 tries hit branch 7176
+det stage: 2 new coverage in 135143 total execs
+det stage: 2 new branches in 135143 total execs
+In havoc stage, 2293 of 3072 tries hit branch 7176
+havoc stage: 2 new coverage in 138215 total execs
+havoc stage: 2 new branches in 138215 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:005705,sync:autofz,src:007911,+cov: 
+which hit branch 6529 (hit by 1 inputs) 
+while bitflipping, 2004 of 2336 tries hit branch 6529
+while calibrating, 408 of 877 tries hit branch 6529
+calib stage: 0 new coverage in 3213 total execs
+calib stage: 0 new branches in 3213 total execs
+In deterministic stage, 23983 of 24264 tries hit branch 6529
+det stage: 0 new coverage in 27477 total execs
+det stage: 0 new branches in 27477 total execs
+In havoc stage, 884 of 2048 tries hit branch 6529
+havoc stage: 0 new coverage in 29525 total execs
+havoc stage: 0 new branches in 29525 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:005722,sync:autofz,src:009504,+cov: 
+which hit branch 7987 (hit by 1 inputs) 
+while bitflipping, 3569 of 3808 tries hit branch 7987
+while calibrating, 1160 of 1429 tries hit branch 7987
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 18045 of 18233 tries hit branch 7987
+det stage: 2 new coverage in 23486 total execs
+det stage: 0 new branches in 23486 total execs
+In havoc stage, 2943 of 6144 tries hit branch 7987
+havoc stage: 3 new coverage in 29638 total execs
+havoc stage: 0 new branches in 29638 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:005734,sync:autofz,src:008865,+cov: 
+which hit branch 6328 (hit by 1 inputs) 
+while bitflipping, 4100 of 4288 tries hit branch 6328
+while calibrating, 1427 of 1609 tries hit branch 6328
+calib stage: 0 new coverage in 5897 total execs
+calib stage: 0 new branches in 5897 total execs
+In deterministic stage, 15278 of 15363 tries hit branch 6328
+det stage: 0 new coverage in 21260 total execs
+det stage: 0 new branches in 21260 total execs
+In havoc stage, 1554 of 3072 tries hit branch 6328
+havoc stage: 0 new coverage in 24332 total execs
+havoc stage: 0 new branches in 24332 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:005758,sync:autofz,src:007280,+cov: 
+which hit branch 5258 (hit by 1 inputs) 
+while bitflipping, 3602 of 3808 tries hit branch 5258
+while calibrating, 1244 of 1429 tries hit branch 5258
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 12494 of 12618 tries hit branch 5258
+det stage: 0 new coverage in 17855 total execs
+det stage: 0 new branches in 17855 total execs
+In havoc stage, 1436 of 3072 tries hit branch 5258
+havoc stage: 0 new coverage in 20927 total execs
+havoc stage: 0 new branches in 20927 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:005784,sync:autofz,src:007602,+cov: 
+which hit branch 5572 (hit by 1 inputs) 
+while bitflipping, 4478 of 4624 tries hit branch 5572
+while calibrating, 1607 of 1735 tries hit branch 5572
+calib stage: 0 new coverage in 6359 total execs
+calib stage: 0 new branches in 6359 total execs
+In deterministic stage, 12057 of 12062 tries hit branch 5572
+det stage: 0 new coverage in 18421 total execs
+det stage: 0 new branches in 18421 total execs
+In havoc stage, 1553 of 3072 tries hit branch 5572
+havoc stage: 0 new coverage in 21493 total execs
+havoc stage: 0 new branches in 21493 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:005860,sync:autofz,src:008604,+cov: 
+which hit branch 5221 (hit by 1 inputs) 
+while bitflipping, 4181 of 4352 tries hit branch 5221
+while calibrating, 1484 of 1633 tries hit branch 5221
+calib stage: 0 new coverage in 5985 total execs
+calib stage: 0 new branches in 5985 total execs
+In deterministic stage, 13074 of 13152 tries hit branch 5221
+det stage: 0 new coverage in 19137 total execs
+det stage: 0 new branches in 19137 total execs
+In havoc stage, 1452 of 3072 tries hit branch 5221
+havoc stage: 0 new coverage in 22209 total execs
+havoc stage: 0 new branches in 22209 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:005868,sync:autofz,src:009680,+cov: 
+which hit branch 7216 (hit by 1 inputs) 
+while bitflipping, 931 of 1152 tries hit branch 7216
+while calibrating, 171 of 433 tries hit branch 7216
+calib stage: 0 new coverage in 1585 total execs
+calib stage: 0 new branches in 1585 total execs
+In deterministic stage, 17239 of 17356 tries hit branch 7216
+det stage: 0 new coverage in 18941 total execs
+det stage: 0 new branches in 18941 total execs
+In havoc stage, 747 of 1536 tries hit branch 7216
+havoc stage: 0 new coverage in 20477 total execs
+havoc stage: 0 new branches in 20477 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:005870,sync:autofz,src:010842,+cov: 
+which hit branch 4458 (hit by 1 inputs) 
+while bitflipping, 3653 of 3808 tries hit branch 4458
+while calibrating, 1271 of 1429 tries hit branch 4458
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 10476 of 10543 tries hit branch 4458
+det stage: 0 new coverage in 15780 total execs
+det stage: 0 new branches in 15780 total execs
+In havoc stage, 1558 of 3072 tries hit branch 4458
+havoc stage: 0 new coverage in 18852 total execs
+havoc stage: 0 new branches in 18852 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:005879,sync:autofz,src:007060,+cov: 
+which hit branch 7861 (hit by 1 inputs) 
+while bitflipping, 3589 of 3808 tries hit branch 7861
+while calibrating, 1168 of 1429 tries hit branch 7861
+calib stage: 1 new coverage in 5245 total execs
+calib stage: 1 new branches in 5245 total execs
+In deterministic stage, 16875 of 17084 tries hit branch 7861
+det stage: 1 new coverage in 22329 total execs
+det stage: 1 new branches in 22329 total execs
+In havoc stage, 995 of 2048 tries hit branch 7861
+havoc stage: 1 new coverage in 24377 total execs
+havoc stage: 1 new branches in 24377 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:005893,sync:autofz,src:009359,+cov: 
+which hit branch 2060 (hit by 1 inputs) 
+while bitflipping, 3006 of 3200 tries hit branch 2060
+while calibrating, 1008 of 1201 tries hit branch 2060
+calib stage: 0 new coverage in 4401 total execs
+calib stage: 0 new branches in 4401 total execs
+In deterministic stage, 18206 of 18309 tries hit branch 2060
+det stage: 0 new coverage in 22710 total execs
+det stage: 0 new branches in 22710 total execs
+In havoc stage, 1398 of 3072 tries hit branch 2060
+havoc stage: 0 new coverage in 25782 total execs
+havoc stage: 0 new branches in 25782 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:005911,sync:autofz,src:009923,+cov: 
+which hit branch 6359 (hit by 1 inputs) 
+while bitflipping, 3535 of 3808 tries hit branch 6359
+while calibrating, 905 of 1429 tries hit branch 6359
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 20494 of 20607 tries hit branch 6359
+det stage: 0 new coverage in 25844 total execs
+det stage: 0 new branches in 25844 total execs
+In havoc stage, 1423 of 3072 tries hit branch 6359
+havoc stage: 0 new coverage in 28916 total execs
+havoc stage: 0 new branches in 28916 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:005965,sync:autofz,src:006884,+cov: 
+which hit branch 6437 (hit by 1 inputs) 
+while bitflipping, 2028 of 2336 tries hit branch 6437
+while calibrating, 455 of 877 tries hit branch 6437
+calib stage: 0 new coverage in 3213 total execs
+calib stage: 0 new branches in 3213 total execs
+In deterministic stage, 31429 of 31709 tries hit branch 6437
+det stage: 0 new coverage in 34922 total execs
+det stage: 0 new branches in 34922 total execs
+In havoc stage, 1341 of 3072 tries hit branch 6437
+havoc stage: 0 new coverage in 37994 total execs
+havoc stage: 0 new branches in 37994 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:005983,sync:autofz,src:008326,+cov: 
+which hit branch 7811 (hit by 1 inputs) 
+while bitflipping, 2996 of 3264 tries hit branch 7811
+while calibrating, 919 of 1225 tries hit branch 7811
+calib stage: 0 new coverage in 4489 total execs
+calib stage: 0 new branches in 4489 total execs
+In deterministic stage, 20917 of 21254 tries hit branch 7811
+det stage: 0 new coverage in 25743 total execs
+det stage: 0 new branches in 25743 total execs
+In havoc stage, 1370 of 3072 tries hit branch 7811
+havoc stage: 0 new coverage in 28815 total execs
+havoc stage: 0 new branches in 28815 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:006085,sync:autofz,src:009576,+cov: 
+which hit branch 6438 (hit by 1 inputs) 
+while bitflipping, 2021 of 2336 tries hit branch 6438
+while calibrating, 455 of 877 tries hit branch 6438
+calib stage: 0 new coverage in 3213 total execs
+calib stage: 0 new branches in 3213 total execs
+In deterministic stage, 31546 of 31798 tries hit branch 6438
+det stage: 0 new coverage in 35011 total execs
+det stage: 0 new branches in 35011 total execs
+In havoc stage, 1346 of 3072 tries hit branch 6438
+havoc stage: 1 new coverage in 38091 total execs
+havoc stage: 0 new branches in 38091 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:006120,sync:autofz,src:009425,+cov: 
+which hit branch 6211 (hit by 1 inputs) 
+while bitflipping, 767 of 960 tries hit branch 6211
+while calibrating, 167 of 361 tries hit branch 6211
+calib stage: 0 new coverage in 1321 total execs
+calib stage: 0 new branches in 1321 total execs
+In deterministic stage, 17721 of 17760 tries hit branch 6211
+det stage: 0 new coverage in 19081 total execs
+det stage: 0 new branches in 19081 total execs
+In havoc stage, 463 of 1024 tries hit branch 6211
+havoc stage: 0 new coverage in 20105 total execs
+havoc stage: 0 new branches in 20105 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:006165,sync:autofz,src:009454,+cov: 
+which hit branch 6728 (hit by 1 inputs) 
+while bitflipping, 3646 of 3808 tries hit branch 6728
+while calibrating, 1213 of 1429 tries hit branch 6728
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 13194 of 13259 tries hit branch 6728
+det stage: 0 new coverage in 18496 total execs
+det stage: 0 new branches in 18496 total execs
+In havoc stage, 1004 of 2048 tries hit branch 6728
+havoc stage: 0 new coverage in 20544 total execs
+havoc stage: 0 new branches in 20544 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:006191,sync:autofz,src:003484,+cov: 
+which hit branch 2890 (hit by 1 inputs) 
+while bitflipping, 83068 of 84096 tries hit branch 2890
+while calibrating, 13357 of 31537 tries hit branch 2890
+calib stage: 1 new coverage in 115641 total execs
+calib stage: 0 new branches in 115641 total execs
+In deterministic stage, 1861007 of 1861073 tries hit branch 2890
+det stage: 1 new coverage in 1976714 total execs
+det stage: 0 new branches in 1976714 total execs
+In havoc stage, 879 of 3072 tries hit branch 2890
+havoc stage: 1 new coverage in 1979786 total execs
+havoc stage: 0 new branches in 1979786 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:006205,sync:autofz,src:008323,+cov: 
+which hit branch 8144 (hit by 1 inputs) 
+while bitflipping, 3587 of 3808 tries hit branch 8144
+while calibrating, 1162 of 1429 tries hit branch 8144
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 16465 of 16698 tries hit branch 8144
+det stage: 0 new coverage in 21935 total execs
+det stage: 0 new branches in 21935 total execs
+In havoc stage, 948 of 2048 tries hit branch 8144
+havoc stage: 0 new coverage in 23983 total execs
+havoc stage: 0 new branches in 23983 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:006441,sync:autofz,src:014594,+cov: 
+which hit branch 5046 (hit by 1 inputs) 
+while bitflipping, 805 of 1056 tries hit branch 5046
+while calibrating, 151 of 397 tries hit branch 5046
+calib stage: 0 new coverage in 1453 total execs
+calib stage: 0 new branches in 1453 total execs
+In deterministic stage, 13617 of 13785 tries hit branch 5046
+det stage: 0 new coverage in 15238 total execs
+det stage: 0 new branches in 15238 total execs
+In havoc stage, 991 of 2048 tries hit branch 5046
+havoc stage: 0 new coverage in 17286 total execs
+havoc stage: 0 new branches in 17286 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:006489,sync:autofz,src:013636,+cov: 
+which hit branch 5630 (hit by 1 inputs) 
+while bitflipping, 3739 of 3936 tries hit branch 5630
+while calibrating, 1197 of 1477 tries hit branch 5630
+calib stage: 0 new coverage in 5413 total execs
+calib stage: 0 new branches in 5413 total execs
+In deterministic stage, 19816 of 19998 tries hit branch 5630
+det stage: 0 new coverage in 25411 total execs
+det stage: 0 new branches in 25411 total execs
+In havoc stage, 1038 of 2048 tries hit branch 5630
+havoc stage: 0 new coverage in 27459 total execs
+havoc stage: 0 new branches in 27459 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:006498,sync:autofz,src:014915,+cov: 
+which hit branch 4185 (hit by 1 inputs) 
+while bitflipping, 1583 of 1760 tries hit branch 4185
+while calibrating, 369 of 661 tries hit branch 4185
+calib stage: 1 new coverage in 2429 total execs
+calib stage: 0 new branches in 2429 total execs
+In deterministic stage, 9503 of 9505 tries hit branch 4185
+det stage: 2 new coverage in 11942 total execs
+det stage: 1 new branches in 11942 total execs
+In havoc stage, 1361 of 3072 tries hit branch 4185
+havoc stage: 2 new coverage in 15014 total execs
+havoc stage: 1 new branches in 15014 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:006511,sync:autofz,src:013167,+cov: 
+which hit branch 2141 (hit by 1 inputs) 
+while bitflipping, 4657 of 4832 tries hit branch 2141
+while calibrating, 1678 of 1813 tries hit branch 2141
+calib stage: 0 new coverage in 6645 total execs
+calib stage: 0 new branches in 6645 total execs
+In deterministic stage, 15795 of 15798 tries hit branch 2141
+det stage: 0 new coverage in 22443 total execs
+det stage: 0 new branches in 22443 total execs
+In havoc stage, 1198 of 2048 tries hit branch 2141
+havoc stage: 0 new coverage in 24491 total execs
+havoc stage: 0 new branches in 24491 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:006522,sync:autofz,src:013635,+cov: 
+which hit branch 5626 (hit by 1 inputs) 
+while bitflipping, 3715 of 3912 tries hit branch 5626
+while calibrating, 1188 of 1468 tries hit branch 5626
+calib stage: 0 new coverage in 5380 total execs
+calib stage: 0 new branches in 5380 total execs
+In deterministic stage, 18836 of 19022 tries hit branch 5626
+det stage: 0 new coverage in 24402 total execs
+det stage: 0 new branches in 24402 total execs
+In havoc stage, 1497 of 3072 tries hit branch 5626
+havoc stage: 0 new coverage in 27474 total execs
+havoc stage: 0 new branches in 27474 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:006580,sync:autofz,src:014031,+cov: 
+which hit branch 2441 (hit by 1 inputs) 
+while bitflipping, 403 of 592 tries hit branch 2441
+while calibrating, 65 of 223 tries hit branch 2441
+calib stage: 0 new coverage in 815 total execs
+calib stage: 0 new branches in 815 total execs
+In deterministic stage, 9381 of 9382 tries hit branch 2441
+det stage: 0 new coverage in 10197 total execs
+det stage: 0 new branches in 10197 total execs
+In havoc stage, 1412 of 3072 tries hit branch 2441
+havoc stage: 0 new coverage in 13269 total execs
+havoc stage: 0 new branches in 13269 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:006584,sync:autofz,src:013590,+cov: 
+which hit branch 2119 (hit by 1 inputs) 
+while bitflipping, 7891 of 8064 tries hit branch 2119
+while calibrating, 2882 of 3025 tries hit branch 2119
+calib stage: 0 new coverage in 11089 total execs
+calib stage: 0 new branches in 11089 total execs
+In deterministic stage, 45694 of 45698 tries hit branch 2119
+det stage: 0 new coverage in 56787 total execs
+det stage: 0 new branches in 56787 total execs
+In havoc stage, 1575 of 2048 tries hit branch 2119
+havoc stage: 0 new coverage in 58835 total execs
+havoc stage: 0 new branches in 58835 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:006625,sync:autofz,src:014336,+cov: 
+which hit branch 6867 (hit by 1 inputs) 
+while bitflipping, 3571 of 3808 tries hit branch 6867
+while calibrating, 909 of 1429 tries hit branch 6867
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 25210 of 25360 tries hit branch 6867
+det stage: 0 new coverage in 30597 total execs
+det stage: 0 new branches in 30597 total execs
+In havoc stage, 747 of 1536 tries hit branch 6867
+havoc stage: 0 new coverage in 32133 total execs
+havoc stage: 0 new branches in 32133 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:006634,sync:autofz,src:014032,+cov: 
+which hit branch 2471 (hit by 1 inputs) 
+while bitflipping, 668 of 864 tries hit branch 2471
+while calibrating, 174 of 325 tries hit branch 2471
+calib stage: 0 new coverage in 1189 total execs
+calib stage: 0 new branches in 1189 total execs
+In deterministic stage, 17159 of 17160 tries hit branch 2471
+det stage: 0 new coverage in 18349 total execs
+det stage: 0 new branches in 18349 total execs
+In havoc stage, 1096 of 3072 tries hit branch 2471
+havoc stage: 0 new coverage in 21421 total execs
+havoc stage: 0 new branches in 21421 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:006640,sync:autofz,src:013059,+cov: 
+which hit branch 9459 (hit by 1 inputs) 
+while bitflipping, 2084 of 2336 tries hit branch 9459
+while calibrating, 492 of 877 tries hit branch 9459
+calib stage: 0 new coverage in 3213 total execs
+calib stage: 0 new branches in 3213 total execs
+In deterministic stage, 31597 of 31728 tries hit branch 9459
+det stage: 0 new coverage in 34941 total execs
+det stage: 0 new branches in 34941 total execs
+In havoc stage, 1348 of 3072 tries hit branch 9459
+havoc stage: 0 new coverage in 38013 total execs
+havoc stage: 0 new branches in 38013 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:006646,sync:autofz,src:012744,+cov: 
+which hit branch 9466 (hit by 1 inputs) 
+while bitflipping, 2076 of 2336 tries hit branch 9466
+while calibrating, 485 of 877 tries hit branch 9466
+calib stage: 0 new coverage in 3213 total execs
+calib stage: 0 new branches in 3213 total execs
+In deterministic stage, 31218 of 31372 tries hit branch 9466
+det stage: 0 new coverage in 34585 total execs
+det stage: 0 new branches in 34585 total execs
+In havoc stage, 1371 of 3072 tries hit branch 9466
+havoc stage: 0 new coverage in 37657 total execs
+havoc stage: 0 new branches in 37657 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:006704,sync:autofz,src:014990,+cov: 
+which hit branch 7613 (hit by 1 inputs) 
+while bitflipping, 1369 of 1568 tries hit branch 7613
+while calibrating, 235 of 589 tries hit branch 7613
+calib stage: 0 new coverage in 2157 total execs
+calib stage: 0 new branches in 2157 total execs
+In deterministic stage, 8286 of 8286 tries hit branch 7613
+det stage: 0 new coverage in 10443 total execs
+det stage: 0 new branches in 10443 total execs
+In havoc stage, 1450 of 3072 tries hit branch 7613
+havoc stage: 0 new coverage in 13515 total execs
+havoc stage: 0 new branches in 13515 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:006723,sync:autofz,src:013666,+cov: 
+which hit branch 5632 (hit by 1 inputs) 
+while bitflipping, 3715 of 3936 tries hit branch 5632
+while calibrating, 673 of 1477 tries hit branch 5632
+calib stage: 0 new coverage in 5413 total execs
+calib stage: 0 new branches in 5413 total execs
+In deterministic stage, 21436 of 21516 tries hit branch 5632
+det stage: 2 new coverage in 26945 total execs
+det stage: 1 new branches in 26945 total execs
+In havoc stage, 1597 of 3072 tries hit branch 5632
+havoc stage: 2 new coverage in 30017 total execs
+havoc stage: 1 new branches in 30017 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:006778,sync:autofz,src:013927,+cov: 
+which hit branch 7462 (hit by 1 inputs) 
+while bitflipping, 3593 of 3808 tries hit branch 7462
+while calibrating, 518 of 1429 tries hit branch 7462
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 18401 of 18442 tries hit branch 7462
+det stage: 0 new coverage in 23679 total execs
+det stage: 0 new branches in 23679 total execs
+In havoc stage, 1033 of 2048 tries hit branch 7462
+havoc stage: 0 new coverage in 25727 total execs
+havoc stage: 0 new branches in 25727 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:006784,sync:autofz,src:014403,+cov: 
+which hit branch 6753 (hit by 1 inputs) 
+while bitflipping, 3648 of 3808 tries hit branch 6753
+while calibrating, 1213 of 1429 tries hit branch 6753
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 17063 of 17133 tries hit branch 6753
+det stage: 0 new coverage in 22370 total execs
+det stage: 0 new branches in 22370 total execs
+In havoc stage, 1019 of 2048 tries hit branch 6753
+havoc stage: 0 new coverage in 24418 total execs
+havoc stage: 0 new branches in 24418 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:006789,sync:autofz,src:014437,+cov: 
+which hit branch 5222 (hit by 1 inputs) 
+while bitflipping, 4180 of 4352 tries hit branch 5222
+while calibrating, 1481 of 1633 tries hit branch 5222
+calib stage: 0 new coverage in 5985 total execs
+calib stage: 0 new branches in 5985 total execs
+In deterministic stage, 12651 of 12655 tries hit branch 5222
+det stage: 0 new coverage in 18640 total execs
+det stage: 0 new branches in 18640 total execs
+In havoc stage, 1507 of 3072 tries hit branch 5222
+havoc stage: 0 new coverage in 21712 total execs
+havoc stage: 0 new branches in 21712 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:006792,sync:autofz,src:014890,+cov: 
+which hit branch 7631 (hit by 1 inputs) 
+while bitflipping, 2173 of 2400 tries hit branch 7631
+while calibrating, 517 of 901 tries hit branch 7631
+calib stage: 0 new coverage in 3301 total execs
+calib stage: 0 new branches in 3301 total execs
+In deterministic stage, 25605 of 25705 tries hit branch 7631
+det stage: 0 new coverage in 29006 total execs
+det stage: 0 new branches in 29006 total execs
+In havoc stage, 1378 of 3072 tries hit branch 7631
+havoc stage: 0 new coverage in 32078 total execs
+havoc stage: 0 new branches in 32078 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:006811,sync:autofz,src:013196,+cov: 
+which hit branch 1974 (hit by 1 inputs) 
+while bitflipping, 3600 of 3808 tries hit branch 1974
+while calibrating, 1248 of 1429 tries hit branch 1974
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 13199 of 13376 tries hit branch 1974
+det stage: 0 new coverage in 18613 total execs
+det stage: 0 new branches in 18613 total execs
+In havoc stage, 1416 of 3072 tries hit branch 1974
+havoc stage: 0 new coverage in 21685 total execs
+havoc stage: 0 new branches in 21685 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:006820,sync:autofz,src:013600,+cov: 
+which hit branch 1999 (hit by 1 inputs) 
+while bitflipping, 2326 of 2528 tries hit branch 1999
+while calibrating, 753 of 949 tries hit branch 1999
+calib stage: 0 new coverage in 3477 total execs
+calib stage: 0 new branches in 3477 total execs
+In deterministic stage, 19443 of 19616 tries hit branch 1999
+det stage: 1 new coverage in 23101 total execs
+det stage: 1 new branches in 23101 total execs
+In havoc stage, 1370 of 3072 tries hit branch 1999
+havoc stage: 1 new coverage in 26173 total execs
+havoc stage: 1 new branches in 26173 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:006917,sync:autofz,src:013356,+cov: 
+which hit branch 9458 (hit by 1 inputs) 
+while bitflipping, 2091 of 2336 tries hit branch 9458
+while calibrating, 495 of 877 tries hit branch 9458
+calib stage: 0 new coverage in 3213 total execs
+calib stage: 0 new branches in 3213 total execs
+In deterministic stage, 31913 of 32044 tries hit branch 9458
+det stage: 0 new coverage in 35257 total execs
+det stage: 0 new branches in 35257 total execs
+In havoc stage, 941 of 2048 tries hit branch 9458
+havoc stage: 0 new coverage in 37305 total execs
+havoc stage: 0 new branches in 37305 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:006949,sync:autofz,src:014063,+cov: 
+which hit branch 2431 (hit by 1 inputs) 
+while bitflipping, 462 of 640 tries hit branch 2431
+while calibrating, 101 of 241 tries hit branch 2431
+calib stage: 0 new coverage in 881 total execs
+calib stage: 0 new branches in 881 total execs
+In deterministic stage, 11600 of 11601 tries hit branch 2431
+det stage: 0 new coverage in 12482 total execs
+det stage: 0 new branches in 12482 total execs
+In havoc stage, 918 of 2048 tries hit branch 2431
+havoc stage: 0 new coverage in 14530 total execs
+havoc stage: 0 new branches in 14530 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:007006,sync:autofz,src:012777,+cov: 
+which hit branch 9743 (hit by 1 inputs) 
+while bitflipping, 3497 of 3808 tries hit branch 9743
+while calibrating, 1146 of 1429 tries hit branch 9743
+calib stage: 2 new coverage in 5253 total execs
+calib stage: 2 new branches in 5253 total execs
+In deterministic stage, 23793 of 24085 tries hit branch 9743
+det stage: 2 new coverage in 29338 total execs
+det stage: 2 new branches in 29338 total execs
+In havoc stage, 977 of 2048 tries hit branch 9743
+havoc stage: 2 new coverage in 31386 total execs
+havoc stage: 2 new branches in 31386 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:007011,sync:autofz,src:013054,+cov: 
+which hit branch 9487 (hit by 1 inputs) 
+while bitflipping, 2084 of 2336 tries hit branch 9487
+while calibrating, 492 of 877 tries hit branch 9487
+calib stage: 0 new coverage in 3213 total execs
+calib stage: 0 new branches in 3213 total execs
+In deterministic stage, 30032 of 30163 tries hit branch 9487
+det stage: 0 new coverage in 33376 total execs
+det stage: 0 new branches in 33376 total execs
+In havoc stage, 1410 of 3072 tries hit branch 9487
+havoc stage: 0 new coverage in 36448 total execs
+havoc stage: 0 new branches in 36448 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:007050,sync:autofz,src:014110,+cov: 
+which hit branch 8336 (hit by 1 inputs) 
+while bitflipping, 2997 of 3264 tries hit branch 8336
+while calibrating, 946 of 1225 tries hit branch 8336
+calib stage: 0 new coverage in 4489 total execs
+calib stage: 0 new branches in 4489 total execs
+In deterministic stage, 19225 of 19488 tries hit branch 8336
+det stage: 0 new coverage in 23977 total execs
+det stage: 0 new branches in 23977 total execs
+In havoc stage, 1326 of 3072 tries hit branch 8336
+havoc stage: 0 new coverage in 27049 total execs
+havoc stage: 0 new branches in 27049 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:007097,sync:autofz,src:013570,+cov: 
+which hit branch 1728 (hit by 1 inputs) 
+while bitflipping, 4121 of 4352 tries hit branch 1728
+while calibrating, 699 of 1633 tries hit branch 1728
+calib stage: 0 new coverage in 5985 total execs
+calib stage: 0 new branches in 5985 total execs
+In deterministic stage, 21896 of 21955 tries hit branch 1728
+det stage: 0 new coverage in 27940 total execs
+det stage: 0 new branches in 27940 total execs
+In havoc stage, 3088 of 6144 tries hit branch 1728
+havoc stage: 1 new coverage in 34092 total execs
+havoc stage: 0 new branches in 34092 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:007122,sync:autofz,src:012785,+cov: 
+which hit branch 9802 (hit by 1 inputs) 
+while bitflipping, 3474 of 3808 tries hit branch 9802
+while calibrating, 790 of 1429 tries hit branch 9802
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 24373 of 24613 tries hit branch 9802
+det stage: 1 new coverage in 29858 total execs
+det stage: 1 new branches in 29858 total execs
+In havoc stage, 958 of 2048 tries hit branch 9802
+havoc stage: 1 new coverage in 31906 total execs
+havoc stage: 1 new branches in 31906 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:007194,sync:autofz,src:013967,+cov: 
+which hit branch 2172 (hit by 1 inputs) 
+while bitflipping, 4467 of 4640 tries hit branch 2172
+while calibrating, 1597 of 1741 tries hit branch 2172
+calib stage: 0 new coverage in 6381 total execs
+calib stage: 0 new branches in 6381 total execs
+In deterministic stage, 41888 of 42019 tries hit branch 2172
+det stage: 0 new coverage in 48400 total execs
+det stage: 0 new branches in 48400 total execs
+In havoc stage, 984 of 2048 tries hit branch 2172
+havoc stage: 0 new coverage in 50448 total execs
+havoc stage: 0 new branches in 50448 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:007224,sync:autofz,src:013646,+cov: 
+which hit branch 2164 (hit by 1 inputs) 
+while bitflipping, 4325 of 4504 tries hit branch 2164
+while calibrating, 1546 of 1690 tries hit branch 2164
+calib stage: 1 new coverage in 6202 total execs
+calib stage: 1 new branches in 6202 total execs
+In deterministic stage, 12287 of 12290 tries hit branch 2164
+det stage: 1 new coverage in 18492 total execs
+det stage: 1 new branches in 18492 total execs
+In havoc stage, 1239 of 3072 tries hit branch 2164
+havoc stage: 1 new coverage in 21564 total execs
+havoc stage: 1 new branches in 21564 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:007282,sync:autofz,src:014446,+cov: 
+which hit branch 5228 (hit by 1 inputs) 
+while bitflipping, 4174 of 4352 tries hit branch 5228
+while calibrating, 1486 of 1633 tries hit branch 5228
+calib stage: 0 new coverage in 5985 total execs
+calib stage: 0 new branches in 5985 total execs
+In deterministic stage, 12916 of 12982 tries hit branch 5228
+det stage: 0 new coverage in 18967 total execs
+det stage: 0 new branches in 18967 total execs
+In havoc stage, 928 of 2048 tries hit branch 5228
+havoc stage: 0 new coverage in 21015 total execs
+havoc stage: 0 new branches in 21015 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:007394,sync:autofz,src:014040,+cov: 
+which hit branch 7467 (hit by 1 inputs) 
+while bitflipping, 3715 of 3936 tries hit branch 7467
+while calibrating, 998 of 1477 tries hit branch 7467
+calib stage: 0 new coverage in 5413 total execs
+calib stage: 0 new branches in 5413 total execs
+In deterministic stage, 21716 of 21799 tries hit branch 7467
+det stage: 0 new coverage in 27212 total execs
+det stage: 0 new branches in 27212 total execs
+In havoc stage, 839 of 1536 tries hit branch 7467
+havoc stage: 0 new coverage in 28748 total execs
+havoc stage: 0 new branches in 28748 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:007409,sync:autofz,src:014091,+cov: 
+which hit branch 4379 (hit by 1 inputs) 
+while bitflipping, 3530 of 3808 tries hit branch 4379
+while calibrating, 1111 of 1429 tries hit branch 4379
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 28914 of 29428 tries hit branch 4379
+det stage: 0 new coverage in 34665 total execs
+det stage: 0 new branches in 34665 total execs
+In havoc stage, 1419 of 4096 tries hit branch 4379
+havoc stage: 1 new coverage in 38769 total execs
+havoc stage: 0 new branches in 38769 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:007463,sync:autofz,src:013664,+cov: 
+which hit branch 2364 (hit by 1 inputs) 
+while bitflipping, 3717 of 3936 tries hit branch 2364
+while calibrating, 702 of 1477 tries hit branch 2364
+calib stage: 0 new coverage in 5413 total execs
+calib stage: 0 new branches in 5413 total execs
+In deterministic stage, 22245 of 22325 tries hit branch 2364
+det stage: 0 new coverage in 27738 total execs
+det stage: 0 new branches in 27738 total execs
+In havoc stage, 1542 of 3072 tries hit branch 2364
+havoc stage: 0 new coverage in 30810 total execs
+havoc stage: 0 new branches in 30810 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:007505,sync:autofz,src:013353,+cov: 
+which hit branch 5017 (hit by 1 inputs) 
+while bitflipping, 786 of 1056 tries hit branch 5017
+while calibrating, 148 of 397 tries hit branch 5017
+calib stage: 0 new coverage in 1453 total execs
+calib stage: 0 new branches in 1453 total execs
+In deterministic stage, 12256 of 12394 tries hit branch 5017
+det stage: 0 new coverage in 13847 total execs
+det stage: 0 new branches in 13847 total execs
+In havoc stage, 965 of 3072 tries hit branch 5017
+havoc stage: 0 new coverage in 16919 total execs
+havoc stage: 0 new branches in 16919 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:007574,sync:autofz,src:012787,+cov: 
+which hit branch 9798 (hit by 1 inputs) 
+while bitflipping, 3474 of 3808 tries hit branch 9798
+while calibrating, 790 of 1429 tries hit branch 9798
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 22724 of 22964 tries hit branch 9798
+det stage: 0 new coverage in 28201 total execs
+det stage: 0 new branches in 28201 total execs
+In havoc stage, 969 of 2048 tries hit branch 9798
+havoc stage: 0 new coverage in 30249 total execs
+havoc stage: 0 new branches in 30249 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:007727,src:001302,op:ext_AO,pos:29,+cov: 
+which hit branch 3910 (hit by 1 inputs) 
+while bitflipping, 2718 of 2944 tries hit branch 3910
+while calibrating, 431 of 1105 tries hit branch 3910
+calib stage: 0 new coverage in 4049 total execs
+calib stage: 0 new branches in 4049 total execs
+In deterministic stage, 25212 of 25458 tries hit branch 3910
+det stage: 0 new coverage in 29507 total execs
+det stage: 0 new branches in 29507 total execs
+In havoc stage, 991 of 2048 tries hit branch 3910
+havoc stage: 0 new coverage in 31555 total execs
+havoc stage: 0 new branches in 31555 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:007728,src:001302,op:havoc,rep:64,+cov: 
+which hit branch 3882 (hit by 1 inputs) 
+while bitflipping, 2495 of 2720 tries hit branch 3882
+while calibrating, 347 of 1021 tries hit branch 3882
+calib stage: 0 new coverage in 3741 total execs
+calib stage: 0 new branches in 3741 total execs
+In deterministic stage, 21679 of 21925 tries hit branch 3882
+det stage: 0 new coverage in 25666 total execs
+det stage: 0 new branches in 25666 total execs
+In havoc stage, 3621 of 6144 tries hit branch 3882
+havoc stage: 1 new coverage in 31818 total execs
+havoc stage: 1 new branches in 31818 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:007733,src:001633,op:int16,pos:1054,val:be:+1024,+cov: 
+which hit branch 6112 (hit by 1 inputs) 
+while bitflipping, 10933 of 11200 tries hit branch 6112
+while calibrating, 1702 of 4201 tries hit branch 6112
+calib stage: 0 new coverage in 15401 total execs
+calib stage: 0 new branches in 15401 total execs
+In deterministic stage, 34390 of 34413 tries hit branch 6112
+det stage: 0 new coverage in 49814 total execs
+det stage: 0 new branches in 49814 total execs
+In havoc stage, 2621 of 3072 tries hit branch 6112
+havoc stage: 0 new coverage in 52886 total execs
+havoc stage: 0 new branches in 52886 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:007750,src:002258,op:havoc,rep:128,+cov: 
+which hit branch 5612 (hit by 1 inputs) 
+while bitflipping, 8314 of 8480 tries hit branch 5612
+while calibrating, 2426 of 3181 tries hit branch 5612
+calib stage: 0 new coverage in 11661 total execs
+calib stage: 0 new branches in 11661 total execs
+In deterministic stage, 31156 of 31188 tries hit branch 5612
+det stage: 0 new coverage in 42849 total execs
+det stage: 0 new branches in 42849 total execs
+In havoc stage, 1206 of 1536 tries hit branch 5612
+havoc stage: 0 new coverage in 44385 total execs
+havoc stage: 0 new branches in 44385 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:007793,sync:autofz,src:015553,+cov: 
+which hit branch 4565 (hit by 1 inputs) 
+while bitflipping, 3632 of 3808 tries hit branch 4565
+while calibrating, 1180 of 1429 tries hit branch 4565
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 16292 of 16334 tries hit branch 4565
+det stage: 0 new coverage in 21571 total execs
+det stage: 0 new branches in 21571 total execs
+In havoc stage, 1439 of 3072 tries hit branch 4565
+havoc stage: 0 new coverage in 24643 total execs
+havoc stage: 0 new branches in 24643 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:007838,sync:autofz,src:015536,+cov: 
+which hit branch 4471 (hit by 1 inputs) 
+while bitflipping, 4020 of 4192 tries hit branch 4471
+while calibrating, 1326 of 1573 tries hit branch 4471
+calib stage: 0 new coverage in 5765 total execs
+calib stage: 0 new branches in 5765 total execs
+In deterministic stage, 25642 of 25664 tries hit branch 4471
+det stage: 0 new coverage in 31429 total execs
+det stage: 0 new branches in 31429 total execs
+In havoc stage, 1998 of 3072 tries hit branch 4471
+havoc stage: 0 new coverage in 34501 total execs
+havoc stage: 0 new branches in 34501 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:007986,sync:autofz,src:015535,+cov: 
+which hit branch 4467 (hit by 1 inputs) 
+while bitflipping, 3635 of 3808 tries hit branch 4467
+while calibrating, 1182 of 1429 tries hit branch 4467
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 11762 of 11804 tries hit branch 4467
+det stage: 0 new coverage in 17041 total execs
+det stage: 0 new branches in 17041 total execs
+In havoc stage, 1542 of 3072 tries hit branch 4467
+havoc stage: 0 new coverage in 20113 total execs
+havoc stage: 0 new branches in 20113 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008046,sync:autofz,src:015534,+cov: 
+which hit branch 4479 (hit by 1 inputs) 
+while bitflipping, 3636 of 3808 tries hit branch 4479
+while calibrating, 1267 of 1429 tries hit branch 4479
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 11769 of 11811 tries hit branch 4479
+det stage: 0 new coverage in 17048 total execs
+det stage: 0 new branches in 17048 total execs
+In havoc stage, 1510 of 3072 tries hit branch 4479
+havoc stage: 0 new coverage in 20120 total execs
+havoc stage: 0 new branches in 20120 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008063,sync:autofz,src:017983,+cov: 
+which hit branch 4554 (hit by 1 inputs) 
+while bitflipping, 920 of 1088 tries hit branch 4554
+while calibrating, 158 of 409 tries hit branch 4554
+calib stage: 1 new coverage in 1505 total execs
+calib stage: 1 new branches in 1505 total execs
+In deterministic stage, 8296 of 8348 tries hit branch 4554
+det stage: 1 new coverage in 9853 total execs
+det stage: 1 new branches in 9853 total execs
+In havoc stage, 1628 of 3072 tries hit branch 4554
+havoc stage: 1 new coverage in 12925 total execs
+havoc stage: 1 new branches in 12925 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008071,sync:autofz,src:017700,+cov: 
+which hit branch 9641 (hit by 1 inputs) 
+while bitflipping, 3559 of 3808 tries hit branch 9641
+while calibrating, 728 of 1429 tries hit branch 9641
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 18794 of 18930 tries hit branch 9641
+det stage: 0 new coverage in 24167 total execs
+det stage: 0 new branches in 24167 total execs
+In havoc stage, 1490 of 3072 tries hit branch 9641
+havoc stage: 0 new coverage in 27239 total execs
+havoc stage: 0 new branches in 27239 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008104,sync:autofz,src:017694,+cov: 
+which hit branch 9668 (hit by 1 inputs) 
+while bitflipping, 3572 of 3808 tries hit branch 9668
+while calibrating, 1187 of 1429 tries hit branch 9668
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 19475 of 19649 tries hit branch 9668
+det stage: 0 new coverage in 24886 total execs
+det stage: 0 new branches in 24886 total execs
+In havoc stage, 3065 of 6144 tries hit branch 9668
+havoc stage: 1 new coverage in 31038 total execs
+havoc stage: 0 new branches in 31038 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008109,sync:autofz,src:017567,+cov: 
+which hit branch 8441 (hit by 1 inputs) 
+while bitflipping, 4438 of 4632 tries hit branch 8441
+while calibrating, 1561 of 1738 tries hit branch 8441
+calib stage: 0 new coverage in 6370 total execs
+calib stage: 0 new branches in 6370 total execs
+In deterministic stage, 13514 of 13584 tries hit branch 8441
+det stage: 0 new coverage in 19954 total execs
+det stage: 0 new branches in 19954 total execs
+In havoc stage, 1465 of 3072 tries hit branch 8441
+havoc stage: 0 new coverage in 23026 total execs
+havoc stage: 0 new branches in 23026 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008200,sync:autofz,src:016664,+cov: 
+which hit branch 9734 (hit by 1 inputs) 
+while bitflipping, 3510 of 3808 tries hit branch 9734
+while calibrating, 498 of 1429 tries hit branch 9734
+calib stage: 1 new coverage in 5245 total execs
+calib stage: 1 new branches in 5245 total execs
+In deterministic stage, 27500 of 27610 tries hit branch 9734
+det stage: 3 new coverage in 32871 total execs
+det stage: 3 new branches in 32871 total execs
+In havoc stage, 961 of 3072 tries hit branch 9734
+havoc stage: 3 new coverage in 35943 total execs
+havoc stage: 3 new branches in 35943 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008203,sync:autofz,src:018008,+cov: 
+which hit branch 4469 (hit by 1 inputs) 
+while bitflipping, 2332 of 2560 tries hit branch 4469
+while calibrating, 331 of 961 tries hit branch 4469
+calib stage: 0 new coverage in 3521 total execs
+calib stage: 0 new branches in 3521 total execs
+In deterministic stage, 35023 of 35029 tries hit branch 4469
+det stage: 1 new coverage in 38558 total execs
+det stage: 1 new branches in 38558 total execs
+In havoc stage, 1829 of 3072 tries hit branch 4469
+havoc stage: 1 new coverage in 41630 total execs
+havoc stage: 1 new branches in 41630 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008205,sync:autofz,src:018002,+cov: 
+which hit branch 4585 (hit by 1 inputs) 
+while bitflipping, 920 of 1088 tries hit branch 4585
+while calibrating, 158 of 409 tries hit branch 4585
+calib stage: 0 new coverage in 1497 total execs
+calib stage: 0 new branches in 1497 total execs
+In deterministic stage, 8296 of 8348 tries hit branch 4585
+det stage: 0 new coverage in 9845 total execs
+det stage: 0 new branches in 9845 total execs
+In havoc stage, 1640 of 3072 tries hit branch 4585
+havoc stage: 0 new coverage in 12917 total execs
+havoc stage: 0 new branches in 12917 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008232,sync:autofz,src:016615,+cov: 
+which hit branch 2104 (hit by 1 inputs) 
+while bitflipping, 4461 of 4640 tries hit branch 2104
+while calibrating, 1609 of 1741 tries hit branch 2104
+calib stage: 1 new coverage in 6389 total execs
+calib stage: 1 new branches in 6389 total execs
+In deterministic stage, 11289 of 11354 tries hit branch 2104
+det stage: 1 new coverage in 17743 total execs
+det stage: 1 new branches in 17743 total execs
+In havoc stage, 528 of 1024 tries hit branch 2104
+havoc stage: 1 new coverage in 18767 total execs
+havoc stage: 1 new branches in 18767 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008247,sync:autofz,src:017113,+cov: 
+which hit branch 1610 (hit by 1 inputs) 
+while bitflipping, 4079 of 4232 tries hit branch 1610
+while calibrating, 1435 of 1588 tries hit branch 1610
+calib stage: 0 new coverage in 5820 total execs
+calib stage: 0 new branches in 5820 total execs
+In deterministic stage, 12077 of 12157 tries hit branch 1610
+det stage: 0 new coverage in 17977 total execs
+det stage: 0 new branches in 17977 total execs
+In havoc stage, 1267 of 3072 tries hit branch 1610
+havoc stage: 0 new coverage in 21049 total execs
+havoc stage: 0 new branches in 21049 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008257,sync:autofz,src:018011,+cov: 
+which hit branch 4481 (hit by 1 inputs) 
+while bitflipping, 2333 of 2560 tries hit branch 4481
+while calibrating, 421 of 961 tries hit branch 4481
+calib stage: 1 new coverage in 3529 total execs
+calib stage: 0 new branches in 3529 total execs
+In deterministic stage, 34989 of 34995 tries hit branch 4481
+det stage: 1 new coverage in 38524 total execs
+det stage: 0 new branches in 38524 total execs
+In havoc stage, 267 of 1024 tries hit branch 4481
+havoc stage: 1 new coverage in 39548 total execs
+havoc stage: 0 new branches in 39548 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008260,sync:autofz,src:016296,+cov: 
+which hit branch 7432 (hit by 1 inputs) 
+while bitflipping, 3770 of 3936 tries hit branch 7432
+while calibrating, 1298 of 1477 tries hit branch 7432
+calib stage: 5 new coverage in 5453 total execs
+calib stage: 4 new branches in 5453 total execs
+In deterministic stage, 26542 of 26742 tries hit branch 7432
+det stage: 8 new coverage in 32219 total execs
+det stage: 7 new branches in 32219 total execs
+In havoc stage, 1736 of 3072 tries hit branch 7432
+havoc stage: 8 new coverage in 35291 total execs
+havoc stage: 7 new branches in 35291 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008292,sync:autofz,src:017698,+cov: 
+which hit branch 9626 (hit by 1 inputs) 
+while bitflipping, 3551 of 3800 tries hit branch 9626
+while calibrating, 725 of 1426 tries hit branch 9626
+calib stage: 0 new coverage in 5226 total execs
+calib stage: 0 new branches in 5226 total execs
+In deterministic stage, 16678 of 16817 tries hit branch 9626
+det stage: 0 new coverage in 22043 total execs
+det stage: 0 new branches in 22043 total execs
+In havoc stage, 1417 of 3072 tries hit branch 9626
+havoc stage: 0 new coverage in 25115 total execs
+havoc stage: 0 new branches in 25115 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008301,sync:autofz,src:016836,+cov: 
+which hit branch 9879 (hit by 1 inputs) 
+while bitflipping, 3558 of 3808 tries hit branch 9879
+while calibrating, 1187 of 1429 tries hit branch 9879
+calib stage: 6 new coverage in 5285 total execs
+calib stage: 6 new branches in 5285 total execs
+In deterministic stage, 18997 of 19216 tries hit branch 9879
+det stage: 8 new coverage in 24517 total execs
+det stage: 8 new branches in 24517 total execs
+In havoc stage, 2916 of 6144 tries hit branch 9879
+havoc stage: 9 new coverage in 30669 total execs
+havoc stage: 9 new branches in 30669 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008303,sync:autofz,src:016253,+cov: 
+which hit branch 7419 (hit by 1 inputs) 
+while bitflipping, 3631 of 3808 tries hit branch 7419
+while calibrating, 1185 of 1429 tries hit branch 7419
+calib stage: 2 new coverage in 5253 total execs
+calib stage: 0 new branches in 5253 total execs
+In deterministic stage, 20134 of 20397 tries hit branch 7419
+det stage: 2 new coverage in 25650 total execs
+det stage: 0 new branches in 25650 total execs
+In havoc stage, 1500 of 3072 tries hit branch 7419
+havoc stage: 2 new coverage in 28722 total execs
+havoc stage: 0 new branches in 28722 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008307,sync:autofz,src:016606,+cov: 
+which hit branch 2566 (hit by 1 inputs) 
+while bitflipping, 3640 of 3792 tries hit branch 2566
+while calibrating, 1317 of 1423 tries hit branch 2566
+calib stage: 0 new coverage in 5215 total execs
+calib stage: 0 new branches in 5215 total execs
+In deterministic stage, 10024 of 10065 tries hit branch 2566
+det stage: 2 new coverage in 15296 total execs
+det stage: 2 new branches in 15296 total execs
+In havoc stage, 1510 of 3072 tries hit branch 2566
+havoc stage: 2 new coverage in 18368 total execs
+havoc stage: 2 new branches in 18368 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008321,sync:autofz,src:017942,+cov: 
+which hit branch 6071 (hit by 1 inputs) 
+while bitflipping, 1613 of 1760 tries hit branch 6071
+while calibrating, 553 of 661 tries hit branch 6071
+calib stage: 2 new coverage in 2437 total execs
+calib stage: 0 new branches in 2437 total execs
+In deterministic stage, 11420 of 11420 tries hit branch 6071
+det stage: 2 new coverage in 13857 total execs
+det stage: 0 new branches in 13857 total execs
+In havoc stage, 1336 of 3072 tries hit branch 6071
+havoc stage: 2 new coverage in 16929 total execs
+havoc stage: 0 new branches in 16929 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008322,sync:autofz,src:016768,+cov: 
+which hit branch 3898 (hit by 1 inputs) 
+while bitflipping, 2526 of 2752 tries hit branch 3898
+while calibrating, 359 of 1033 tries hit branch 3898
+calib stage: 0 new coverage in 3785 total execs
+calib stage: 0 new branches in 3785 total execs
+In deterministic stage, 23717 of 23925 tries hit branch 3898
+det stage: 0 new coverage in 27710 total execs
+det stage: 0 new branches in 27710 total execs
+In havoc stage, 1428 of 3072 tries hit branch 3898
+havoc stage: 0 new coverage in 30782 total execs
+havoc stage: 0 new branches in 30782 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008333,sync:autofz,src:016612,+cov: 
+which hit branch 1988 (hit by 1 inputs) 
+while bitflipping, 823 of 1024 tries hit branch 1988
+while calibrating, 192 of 385 tries hit branch 1988
+calib stage: 0 new coverage in 1409 total execs
+calib stage: 0 new branches in 1409 total execs
+In deterministic stage, 9243 of 9383 tries hit branch 1988
+det stage: 0 new coverage in 10792 total execs
+det stage: 0 new branches in 10792 total execs
+In havoc stage, 1329 of 3072 tries hit branch 1988
+havoc stage: 0 new coverage in 13864 total execs
+havoc stage: 0 new branches in 13864 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008339,sync:autofz,src:017987,+cov: 
+which hit branch 4573 (hit by 1 inputs) 
+while bitflipping, 923 of 1088 tries hit branch 4573
+while calibrating, 246 of 409 tries hit branch 4573
+calib stage: 0 new coverage in 1497 total execs
+calib stage: 0 new branches in 1497 total execs
+In deterministic stage, 7470 of 7522 tries hit branch 4573
+det stage: 0 new coverage in 9019 total execs
+det stage: 0 new branches in 9019 total execs
+In havoc stage, 908 of 3072 tries hit branch 4573
+havoc stage: 0 new coverage in 12091 total execs
+havoc stage: 0 new branches in 12091 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008343,sync:autofz,src:017030,+cov: 
+which hit branch 8395 (hit by 1 inputs) 
+while bitflipping, 4384 of 4616 tries hit branch 8395
+while calibrating, 1422 of 1732 tries hit branch 8395
+calib stage: 0 new coverage in 6348 total execs
+calib stage: 0 new branches in 6348 total execs
+In deterministic stage, 20428 of 20512 tries hit branch 8395
+det stage: 1 new coverage in 26868 total execs
+det stage: 1 new branches in 26868 total execs
+In havoc stage, 1488 of 3072 tries hit branch 8395
+havoc stage: 1 new coverage in 29940 total execs
+havoc stage: 1 new branches in 29940 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008346,sync:autofz,src:018021,+cov: 
+which hit branch 4531 (hit by 1 inputs) 
+while bitflipping, 951 of 1120 tries hit branch 4531
+while calibrating, 149 of 421 tries hit branch 4531
+calib stage: 2 new coverage in 1557 total execs
+calib stage: 2 new branches in 1557 total execs
+In deterministic stage, 8672 of 8724 tries hit branch 4531
+det stage: 2 new coverage in 10281 total execs
+det stage: 2 new branches in 10281 total execs
+In havoc stage, 1797 of 3072 tries hit branch 4531
+havoc stage: 2 new coverage in 13353 total execs
+havoc stage: 2 new branches in 13353 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008372,sync:autofz,src:017716,+cov: 
+which hit branch 9642 (hit by 1 inputs) 
+while bitflipping, 3574 of 3808 tries hit branch 9642
+while calibrating, 1196 of 1429 tries hit branch 9642
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 18134 of 18316 tries hit branch 9642
+det stage: 0 new coverage in 23553 total execs
+det stage: 0 new branches in 23553 total execs
+In havoc stage, 1487 of 3072 tries hit branch 9642
+havoc stage: 0 new coverage in 26625 total execs
+havoc stage: 0 new branches in 26625 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008450,sync:autofz,src:017757,+cov: 
+which hit branch 9687 (hit by 1 inputs) 
+while bitflipping, 3564 of 3808 tries hit branch 9687
+while calibrating, 1195 of 1429 tries hit branch 9687
+calib stage: 1 new coverage in 5245 total execs
+calib stage: 0 new branches in 5245 total execs
+In deterministic stage, 15860 of 16035 tries hit branch 9687
+det stage: 1 new coverage in 21280 total execs
+det stage: 0 new branches in 21280 total execs
+In havoc stage, 1439 of 3072 tries hit branch 9687
+havoc stage: 1 new coverage in 24352 total execs
+havoc stage: 0 new branches in 24352 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008460,sync:autofz,src:016614,+cov: 
+which hit branch 2139 (hit by 1 inputs) 
+while bitflipping, 4442 of 4632 tries hit branch 2139
+while calibrating, 1601 of 1738 tries hit branch 2139
+calib stage: 1 new coverage in 6378 total execs
+calib stage: 1 new branches in 6378 total execs
+In deterministic stage, 11931 of 12005 tries hit branch 2139
+det stage: 1 new coverage in 18383 total execs
+det stage: 1 new branches in 18383 total execs
+In havoc stage, 1472 of 3072 tries hit branch 2139
+havoc stage: 1 new coverage in 21455 total execs
+havoc stage: 1 new branches in 21455 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008504,sync:autofz,src:017702,+cov: 
+which hit branch 9655 (hit by 1 inputs) 
+while bitflipping, 3763 of 4000 tries hit branch 9655
+while calibrating, 1267 of 1501 tries hit branch 9655
+calib stage: 0 new coverage in 5501 total execs
+calib stage: 0 new branches in 5501 total execs
+In deterministic stage, 17580 of 17819 tries hit branch 9655
+det stage: 0 new coverage in 23320 total execs
+det stage: 0 new branches in 23320 total execs
+In havoc stage, 1437 of 3072 tries hit branch 9655
+havoc stage: 0 new coverage in 26392 total execs
+havoc stage: 0 new branches in 26392 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008505,sync:autofz,src:017916,+cov: 
+which hit branch 10313 (hit by 1 inputs) 
+while bitflipping, 3589 of 3808 tries hit branch 10313
+while calibrating, 1212 of 1429 tries hit branch 10313
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 19251 of 19659 tries hit branch 10313
+det stage: 0 new coverage in 24896 total execs
+det stage: 0 new branches in 24896 total execs
+In havoc stage, 1464 of 3072 tries hit branch 10313
+havoc stage: 0 new coverage in 27968 total execs
+havoc stage: 0 new branches in 27968 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008506,sync:autofz,src:017651,+cov: 
+which hit branch 4690 (hit by 1 inputs) 
+while bitflipping, 3563 of 3808 tries hit branch 4690
+while calibrating, 1173 of 1429 tries hit branch 4690
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 15723 of 15987 tries hit branch 4690
+det stage: 0 new coverage in 21224 total execs
+det stage: 0 new branches in 21224 total execs
+In havoc stage, 1489 of 3072 tries hit branch 4690
+havoc stage: 0 new coverage in 24296 total execs
+havoc stage: 0 new branches in 24296 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008519,sync:autofz,src:017270,+cov: 
+which hit branch 10309 (hit by 1 inputs) 
+while bitflipping, 3697 of 3936 tries hit branch 10309
+while calibrating, 745 of 1477 tries hit branch 10309
+calib stage: 4 new coverage in 5445 total execs
+calib stage: 1 new branches in 5445 total execs
+In deterministic stage, 20268 of 20728 tries hit branch 10309
+det stage: 5 new coverage in 26181 total execs
+det stage: 2 new branches in 26181 total execs
+In havoc stage, 1682 of 3072 tries hit branch 10309
+havoc stage: 5 new coverage in 29253 total execs
+havoc stage: 2 new branches in 29253 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008523,sync:autofz,src:018026,+cov: 
+which hit branch 6434 (hit by 1 inputs) 
+while bitflipping, 2027 of 2320 tries hit branch 6434
+while calibrating, 460 of 871 tries hit branch 6434
+calib stage: 0 new coverage in 3191 total execs
+calib stage: 0 new branches in 3191 total execs
+In deterministic stage, 33255 of 33508 tries hit branch 6434
+det stage: 0 new coverage in 36699 total execs
+det stage: 0 new branches in 36699 total execs
+In havoc stage, 1176 of 3072 tries hit branch 6434
+havoc stage: 0 new coverage in 39771 total execs
+havoc stage: 0 new branches in 39771 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008539,sync:autofz,src:017469,+cov: 
+which hit branch 8219 (hit by 1 inputs) 
+while bitflipping, 3495 of 3808 tries hit branch 8219
+while calibrating, 1085 of 1429 tries hit branch 8219
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 34703 of 35135 tries hit branch 8219
+det stage: 0 new coverage in 40372 total execs
+det stage: 0 new branches in 40372 total execs
+In havoc stage, 2880 of 6144 tries hit branch 8219
+havoc stage: 1 new coverage in 46524 total execs
+havoc stage: 0 new branches in 46524 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008559,sync:autofz,src:016176,+cov: 
+which hit branch 6496 (hit by 1 inputs) 
+while bitflipping, 2023 of 2336 tries hit branch 6496
+while calibrating, 456 of 877 tries hit branch 6496
+calib stage: 0 new coverage in 3213 total execs
+calib stage: 0 new branches in 3213 total execs
+In deterministic stage, 35896 of 36176 tries hit branch 6496
+det stage: 0 new coverage in 39389 total execs
+det stage: 0 new branches in 39389 total execs
+In havoc stage, 2310 of 6144 tries hit branch 6496
+havoc stage: 1 new coverage in 45541 total execs
+havoc stage: 0 new branches in 45541 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008570,sync:autofz,src:017649,+cov: 
+which hit branch 2846 (hit by 1 inputs) 
+while bitflipping, 3623 of 3808 tries hit branch 2846
+while calibrating, 1248 of 1429 tries hit branch 2846
+calib stage: 1 new coverage in 5245 total execs
+calib stage: 1 new branches in 5245 total execs
+In deterministic stage, 13341 of 13463 tries hit branch 2846
+det stage: 1 new coverage in 18708 total execs
+det stage: 1 new branches in 18708 total execs
+In havoc stage, 1443 of 3072 tries hit branch 2846
+havoc stage: 1 new coverage in 21780 total execs
+havoc stage: 1 new branches in 21780 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008584,sync:autofz,src:017953,+cov: 
+which hit branch 7968 (hit by 1 inputs) 
+while bitflipping, 2072 of 2208 tries hit branch 7968
+while calibrating, 571 of 829 tries hit branch 7968
+calib stage: 1 new coverage in 3045 total execs
+calib stage: 0 new branches in 3045 total execs
+In deterministic stage, 45409 of 45409 tries hit branch 7968
+det stage: 1 new coverage in 48454 total execs
+det stage: 0 new branches in 48454 total execs
+In havoc stage, 8016 of 24576 tries hit branch 7968
+havoc stage: 4 new coverage in 73054 total execs
+havoc stage: 0 new branches in 73054 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008642,sync:autofz,src:016500,+cov: 
+which hit branch 10335 (hit by 1 inputs) 
+while bitflipping, 3569 of 3808 tries hit branch 10335
+while calibrating, 696 of 1429 tries hit branch 10335
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 19296 of 19586 tries hit branch 10335
+det stage: 0 new coverage in 24823 total execs
+det stage: 0 new branches in 24823 total execs
+In havoc stage, 1396 of 3072 tries hit branch 10335
+havoc stage: 0 new coverage in 27895 total execs
+havoc stage: 0 new branches in 27895 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008651,sync:autofz,src:016835,+cov: 
+which hit branch 5236 (hit by 1 inputs) 
+while bitflipping, 4179 of 4352 tries hit branch 5236
+while calibrating, 1479 of 1633 tries hit branch 5236
+calib stage: 1 new coverage in 5993 total execs
+calib stage: 1 new branches in 5993 total execs
+In deterministic stage, 12271 of 12275 tries hit branch 5236
+det stage: 1 new coverage in 18268 total execs
+det stage: 1 new branches in 18268 total execs
+In havoc stage, 1430 of 3072 tries hit branch 5236
+havoc stage: 1 new coverage in 21340 total execs
+havoc stage: 1 new branches in 21340 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008669,sync:autofz,src:017874,+cov: 
+which hit branch 10396 (hit by 1 inputs) 
+while bitflipping, 3599 of 3808 tries hit branch 10396
+while calibrating, 1113 of 1429 tries hit branch 10396
+calib stage: 2 new coverage in 5253 total execs
+calib stage: 2 new branches in 5253 total execs
+In deterministic stage, 18910 of 19203 tries hit branch 10396
+det stage: 3 new coverage in 24464 total execs
+det stage: 3 new branches in 24464 total execs
+In havoc stage, 1502 of 3072 tries hit branch 10396
+havoc stage: 3 new coverage in 27536 total execs
+havoc stage: 3 new branches in 27536 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008695,sync:autofz,src:017225,+cov: 
+which hit branch 9999 (hit by 1 inputs) 
+while bitflipping, 350 of 512 tries hit branch 9999
+while calibrating, 89 of 193 tries hit branch 9999
+calib stage: 0 new coverage in 705 total execs
+calib stage: 0 new branches in 705 total execs
+In deterministic stage, 8006 of 8009 tries hit branch 9999
+det stage: 0 new coverage in 8714 total execs
+det stage: 0 new branches in 8714 total execs
+In havoc stage, 999 of 3072 tries hit branch 9999
+havoc stage: 0 new coverage in 11786 total execs
+havoc stage: 0 new branches in 11786 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008716,sync:autofz,src:015956,+cov: 
+which hit branch 10248 (hit by 1 inputs) 
+while bitflipping, 3992 of 4352 tries hit branch 10248
+while calibrating, 1042 of 1633 tries hit branch 10248
+calib stage: 0 new coverage in 5985 total execs
+calib stage: 0 new branches in 5985 total execs
+In deterministic stage, 23164 of 23742 tries hit branch 10248
+det stage: 0 new coverage in 29727 total execs
+det stage: 0 new branches in 29727 total execs
+In havoc stage, 1437 of 3072 tries hit branch 10248
+havoc stage: 0 new coverage in 32799 total execs
+havoc stage: 0 new branches in 32799 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008717,sync:autofz,src:016750,+cov: 
+which hit branch 1607 (hit by 1 inputs) 
+while bitflipping, 4105 of 4256 tries hit branch 1607
+while calibrating, 1444 of 1597 tries hit branch 1607
+calib stage: 0 new coverage in 5853 total execs
+calib stage: 0 new branches in 5853 total execs
+In deterministic stage, 12633 of 12712 tries hit branch 1607
+det stage: 0 new coverage in 18565 total execs
+det stage: 0 new branches in 18565 total execs
+In havoc stage, 1280 of 3072 tries hit branch 1607
+havoc stage: 0 new coverage in 21637 total execs
+havoc stage: 0 new branches in 21637 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008750,sync:autofz,src:016543,+cov: 
+which hit branch 6509 (hit by 1 inputs) 
+while bitflipping, 2023 of 2336 tries hit branch 6509
+while calibrating, 440 of 877 tries hit branch 6509
+calib stage: 0 new coverage in 3213 total execs
+calib stage: 0 new branches in 3213 total execs
+In deterministic stage, 34981 of 35247 tries hit branch 6509
+det stage: 0 new coverage in 38460 total execs
+det stage: 0 new branches in 38460 total execs
+In havoc stage, 2426 of 6144 tries hit branch 6509
+havoc stage: 1 new coverage in 44612 total execs
+havoc stage: 0 new branches in 44612 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008754,sync:autofz,src:017761,+cov: 
+which hit branch 9595 (hit by 1 inputs) 
+while bitflipping, 3601 of 3808 tries hit branch 9595
+while calibrating, 1233 of 1429 tries hit branch 9595
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 13992 of 14059 tries hit branch 9595
+det stage: 0 new coverage in 19296 total execs
+det stage: 0 new branches in 19296 total execs
+In havoc stage, 1462 of 3072 tries hit branch 9595
+havoc stage: 0 new coverage in 22368 total execs
+havoc stage: 0 new branches in 22368 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008755,sync:autofz,src:017151,+cov: 
+which hit branch 8438 (hit by 1 inputs) 
+while bitflipping, 4312 of 4504 tries hit branch 8438
+while calibrating, 1509 of 1690 tries hit branch 8438
+calib stage: 0 new coverage in 6194 total execs
+calib stage: 0 new branches in 6194 total execs
+In deterministic stage, 17312 of 17325 tries hit branch 8438
+det stage: 0 new coverage in 23519 total execs
+det stage: 0 new branches in 23519 total execs
+In havoc stage, 1156 of 3072 tries hit branch 8438
+havoc stage: 0 new coverage in 26591 total execs
+havoc stage: 0 new branches in 26591 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008821,sync:autofz,src:017729,+cov: 
+which hit branch 9696 (hit by 1 inputs) 
+while bitflipping, 2257 of 2496 tries hit branch 9696
+while calibrating, 703 of 937 tries hit branch 9696
+calib stage: 0 new coverage in 3433 total execs
+calib stage: 0 new branches in 3433 total execs
+In deterministic stage, 13580 of 13724 tries hit branch 9696
+det stage: 0 new coverage in 17157 total execs
+det stage: 0 new branches in 17157 total execs
+In havoc stage, 1372 of 3072 tries hit branch 9696
+havoc stage: 0 new coverage in 20229 total execs
+havoc stage: 0 new branches in 20229 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008852,sync:autofz,src:018024,+cov: 
+which hit branch 6277 (hit by 1 inputs) 
+while bitflipping, 901 of 1056 tries hit branch 6277
+while calibrating, 264 of 397 tries hit branch 6277
+calib stage: 0 new coverage in 1453 total execs
+calib stage: 0 new branches in 1453 total execs
+In deterministic stage, 12217 of 12261 tries hit branch 6277
+det stage: 0 new coverage in 13714 total execs
+det stage: 0 new branches in 13714 total execs
+In havoc stage, 1342 of 3072 tries hit branch 6277
+havoc stage: 0 new coverage in 16786 total execs
+havoc stage: 0 new branches in 16786 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008856,sync:autofz,src:018020,+cov: 
+which hit branch 4512 (hit by 1 inputs) 
+while bitflipping, 985 of 1152 tries hit branch 4512
+while calibrating, 157 of 433 tries hit branch 4512
+calib stage: 0 new coverage in 1585 total execs
+calib stage: 0 new branches in 1585 total execs
+In deterministic stage, 9311 of 9363 tries hit branch 4512
+det stage: 0 new coverage in 10948 total execs
+det stage: 0 new branches in 10948 total execs
+In havoc stage, 1702 of 3072 tries hit branch 4512
+havoc stage: 0 new coverage in 14020 total execs
+havoc stage: 0 new branches in 14020 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008917,sync:autofz,src:016617,+cov: 
+which hit branch 5523 (hit by 1 inputs) 
+while bitflipping, 8273 of 8448 tries hit branch 5523
+while calibrating, 3038 of 3169 tries hit branch 5523
+calib stage: 1 new coverage in 11625 total execs
+calib stage: 1 new branches in 11625 total execs
+In deterministic stage, 49735 of 49804 tries hit branch 5523
+det stage: 1 new coverage in 61429 total execs
+det stage: 1 new branches in 61429 total execs
+In havoc stage, 2380 of 3072 tries hit branch 5523
+havoc stage: 1 new coverage in 64501 total execs
+havoc stage: 1 new branches in 64501 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008973,sync:autofz,src:016567,+cov: 
+which hit branch 517 (hit by 1 inputs) 
+while bitflipping, 3647 of 3808 tries hit branch 517
+while calibrating, 1307 of 1429 tries hit branch 517
+calib stage: 1 new coverage in 5245 total execs
+calib stage: 0 new branches in 5245 total execs
+In deterministic stage, 11720 of 11863 tries hit branch 517
+det stage: 2 new coverage in 17116 total execs
+det stage: 0 new branches in 17116 total execs
+In havoc stage, 1474 of 3072 tries hit branch 517
+havoc stage: 2 new coverage in 20188 total execs
+havoc stage: 0 new branches in 20188 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:008986,sync:autofz,src:017924,+cov: 
+which hit branch 10314 (hit by 1 inputs) 
+while bitflipping, 3589 of 3808 tries hit branch 10314
+while calibrating, 1211 of 1429 tries hit branch 10314
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 19128 of 19536 tries hit branch 10314
+det stage: 0 new coverage in 24773 total execs
+det stage: 0 new branches in 24773 total execs
+In havoc stage, 1427 of 3072 tries hit branch 10314
+havoc stage: 0 new coverage in 27845 total execs
+havoc stage: 0 new branches in 27845 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:009025,sync:autofz,src:017724,+cov: 
+which hit branch 9629 (hit by 1 inputs) 
+while bitflipping, 3573 of 3808 tries hit branch 9629
+while calibrating, 1196 of 1429 tries hit branch 9629
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 18357 of 18534 tries hit branch 9629
+det stage: 0 new coverage in 23771 total execs
+det stage: 0 new branches in 23771 total execs
+In havoc stage, 1462 of 3072 tries hit branch 9629
+havoc stage: 0 new coverage in 26843 total execs
+havoc stage: 0 new branches in 26843 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:009058,sync:autofz,src:016786,+cov: 
+which hit branch 6303 (hit by 1 inputs) 
+while bitflipping, 3619 of 3808 tries hit branch 6303
+while calibrating, 1194 of 1429 tries hit branch 6303
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 16111 of 16178 tries hit branch 6303
+det stage: 0 new coverage in 21415 total execs
+det stage: 0 new branches in 21415 total execs
+In havoc stage, 1508 of 3072 tries hit branch 6303
+havoc stage: 0 new coverage in 24487 total execs
+havoc stage: 0 new branches in 24487 total execs
+Trying to fuzz input /home/autofz/arm64_tcpdump1/tcpdump/fairfuzz/afl-master_1/queue/id:009087,sync:autofz,src:017902,+cov: 
+which hit branch 10417 (hit by 1 inputs) 
+while bitflipping, 3601 of 3808 tries hit branch 10417
+while calibrating, 1114 of 1429 tries hit branch 10417
+calib stage: 0 new coverage in 5237 total execs
+calib stage: 0 new branches in 5237 total execs
+In deterministic stage, 25343 of 25642 tries hit branch 10417
+det stage: 0 new coverage in 30879 total execs
+det stage: 0 new branches in 30879 total execs
+In havoc stage, 1462 of 3072 tries hit branch 10417
+havoc stage: 0 new coverage in 33951 total execs
+havoc stage: 0 new branches in 33951 total execs
+Trying to fuzz input /home/a
