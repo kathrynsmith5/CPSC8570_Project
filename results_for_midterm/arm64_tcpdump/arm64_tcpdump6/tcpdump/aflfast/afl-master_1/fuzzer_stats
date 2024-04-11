@@ -1,0 +1,27 @@
+start_time        : 1712481092
+last_update       : 1712567824
+fuzzer_pid        : 3472417
+cycles_done       : 0
+execs_done        : 9496956
+execs_per_sec     : 0.05
+paths_total       : 11267
+paths_favored     : 4052
+paths_found       : 378
+paths_imported    : 10884
+max_depth         : 3
+cur_path          : 606
+pending_favs      : 3947
+pending_total     : 11120
+variable_paths    : 0
+stability         : 100.00%
+bitmap_cvg        : 17.03%
+unique_crashes    : 0
+unique_hangs      : 12
+last_path         : 1712565424
+last_crash        : 0
+last_hang         : 1712516864
+execs_since_crash : 9496956
+exec_timeout      : 1000
+afl_banner        : afl-master_1
+afl_version       : 2.51b
+command_line      : /fuzzer/aflfast/afl-fuzz -i /seeds/unibench/general_evaluation/pcap -o /home/autofz/arm64_tcpdump6/tcpdump/aflfast -p fast -m none -t 1000+ -M afl-master_1 -- /d/p/justafl/unibench/tcpdump/tcpdump -e -vv -nr @@
