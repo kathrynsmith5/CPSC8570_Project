@@ -40,11 +40,11 @@
 %     this file to be compiled. (And changing refs style to 'plain'.)
 %
 %   * Make template self-contained in terms of figures, to
-%     allow this file to be compiled. 
+%     allow this file to be compiled.
 %
 %   * Added packages for hyperref, embedding fonts, and improving
 %     appearance.
-%   
+%
 %   * Removed outdated text.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -83,34 +83,34 @@ Clemson University
 \section{Introduction and Problem}
 %-------------------------------------------------------------------------------
 
-At the midterm point in this term, this paper reports our progress thus far on 
-this project. We've built a version of the autofz tool chain on ARM64. We have 
-also successfully executed fuzzing campaigns against four targets that were included 
-in the original autofz paper. We look forward to selecting and integrating additional 
-metrics into autofz that can be used to improve the allocation of resources to the 
-individual algorithms used by autofz. This paper also documents each researcher's 
+At the midterm point in this term, this paper reports our progress thus far on
+this project. We've built a version of the autofz tool chain on ARM64. We have
+also successfully executed fuzzing campaigns against four targets that were included
+in the original autofz paper. We look forward to selecting and integrating additional
+metrics into autofz that can be used to improve the allocation of resources to the
+individual algorithms used by autofz. This paper also documents each researcher's
 individual completed and planned contributions for this project.
 
-Due to the success of fuzzing as a method of identifying bugs in software, many fuzzers have been developed. 
-Unfortunately, selecting a fuzzer is a difficult task. The following challenges 
-prevent researchers from quickly selecting a fuzzer using benchmarking: no fuzzer 
-consistently outperforms the others, the efficacy of a fuzzer is inconsistent 
-throughout its execution, and fuzzing results are not reproducible. 
+Due to the success of fuzzing as a method of identifying bugs in software, many fuzzers have been developed.
+Unfortunately, selecting a fuzzer is a difficult task. The following challenges
+prevent researchers from quickly selecting a fuzzer using benchmarking: no fuzzer
+consistently outperforms the others, the efficacy of a fuzzer is inconsistent
+throughout its execution, and fuzzing results are not reproducible.
 
-In response to these problems, Autofz was developed. Autofz leverages multiple 
-fuzzers by dynamically allocating resources to the fuzzers using runtime data. 
-Autofz eliminates the fuzzer selection problem and consistently outperforms 
-individual fuzzers. 
+In response to these problems, Autofz was developed. Autofz leverages multiple
+fuzzers by dynamically allocating resources to the fuzzers using runtime data.
+Autofz eliminates the fuzzer selection problem and consistently outperforms
+individual fuzzers.
 
 In spite of its successes, Autofz is not perfect. While there is no consensus on
 the best way to assess fuzzers, Autofz oversimplifies this process. Autofz relies
-on one metric, path coverage, to rank its fuzzers and allocate resources. Autofz 
-could be improved by incorporating additional metrics during its analysis. 
+on one metric, bitmap coverage, to rank its fuzzers and allocate resources. Autofz
+could be improved by incorporating additional metrics during its analysis.
 
-Moreover, Autofz prides itself on streamlining the fuzzer selection process for 
-the novel user, but it was designed and tested on Ubuntu 20.04 equipped with AMD 
-Ryzen 9 3900 having 24 cores and 32 GB memory. This equipment is not representative 
-of the standard user, and as a result, Autofz needs to be rebuilt and tested in 
+Moreover, Autofz prides itself on streamlining the fuzzer selection process for
+the novel user, but it was designed and tested on Ubuntu 20.04 equipped with AMD
+Ryzen 9 3900 having 24 cores and 32 GB memory. This equipment is not representative
+of the standard user, and as a result, Autofz needs to be rebuilt and tested in
 additional environments. \cite{Fu}
 
 %-------------------------------------------------------------------------------
@@ -118,76 +118,77 @@ additional environments. \cite{Fu}
 %-------------------------------------------------------------------------------
 
 \subsection{Fuzzing}
-In 1990, Miller et al. proposed fuzz testing as a tool to test Unix utilities 
-and other applications. Their fuzzer generated random number and character 
-strings. Next, they executed a target program with the random input. Finally, 
-the fuzzer would record how the tested application responded to the random input. 
-The application could succeed, crash, or hang; succeed meant that the program 
-executed normally, a crash indicated that the program terminated abnormally while 
-a hang implied that the application entered an infinite loop. Furthermore, a 
-crash or hang indicated unwanted behavior within the target application. Using this 
-simple methodology, Miller et al. discovered a wealth of bugs within Unix utilities 
+In 1990, Miller et al. proposed fuzz testing as a tool to test Unix utilities
+and other applications. Their fuzzer generated random number and character
+strings. Next, they executed a target program with the random input. Finally,
+the fuzzer would record how the tested application responded to the random input.
+The application could succeed, crash, or hang; succeed meant that the program
+executed normally, a crash indicated that the program terminated abnormally while
+a hang implied that the application entered an infinite loop. Furthermore, a
+crash or hang indicated unwanted behavior within the target application. Using this
+simple methodology, Miller et al. discovered a wealth of bugs within Unix utilities
 that had not been identified using formal testing procedures. \cite{Miller}
 
 \subsection{Fuzzing Assessment Methods}
-Since Miller et al. introduced fuzzing as an inexpensive means of identifying bugs 
-and increasing overall system reliability, many researchers have developed more 
-complex fuzzers. Despite this abundance of fuzzers, a consensus has not emerged 
-on how to compare them. Moreover, testing conditions are not consistent for new fuzzers. 
-Ecezia et al. aimed to resolve this issue by proposing a universal method for testing new 
-fuzzers and evaluating existing fuzzers. They presented evaluation metrics that could be 
-divided into three categories: bug detection, coverage, and performance. Metrics defined 
-in the bug detention group quantified any undesirable behavior identified by the fuzzer 
-while metrics categorized under coverage measured the percentage of the code that had 
-been executed by the fuzzer. Metrics in the performance category are measurements not 
-directly related to bug detection or performance; they include data such as number of 
+Since Miller et al. introduced fuzzing as an inexpensive means of identifying bugs
+and increasing overall system reliability, many researchers have developed more
+complex fuzzers. Despite this abundance of fuzzers, a consensus has not emerged
+on how to compare them. Moreover, testing conditions are not consistent for new fuzzers.
+Ecezia et al. aimed to resolve this issue by proposing a universal method for testing new
+fuzzers and evaluating existing fuzzers. They presented evaluation metrics that could be
+divided into three categories: bug detection, coverage, and performance. Metrics defined
+in the bug detention group quantified any undesirable behavior identified by the fuzzer
+while metrics categorized under coverage measured the percentage of the code that had
+been executed by the fuzzer. Metrics in the performance category are measurements not
+directly related to bug detection or performance; they include data such as number of
 runs executed during a set time frame and time needed to identify the first bug.
 
-After establishing the metrics that need to be collected during testing, Ecezia et al. 
-set the criteria for fuzzer test conditions. They asserted that in order to compare 
-multiple fuzzers, the fuzzers must be tested against the same target applications, at 
-least 15 times, and for the same period of time. These conditions are aimed at eliminating 
-inconsistencies associated with evaluating fuzzers. For instance, fuzzers can only be 
-compared if they are run on the same target application because the results of fuzzers 
-are directly linked to the system under test. When a more buggy program is fuzzed, it 
-will yield more bugs than a well-designed system regardless of the fuzzer. Moreover, 
-in order to evaluate a fuzzer, it must be executed at least 15 times because the random 
-input generated by a fuzzers will vary between runs. The final condition that must be 
-constant for each test is execution time; a fuzzer executed for 10 hours cannot be 
-compared to a fuzzer that has been running for 24 hours; the fuzzer run for 24 hours 
-will likely discover more bugs than the fuzzer that has run for 10 hours. The 24 hour 
-fuzzer is not necessarily a better fuzzer, but it had more opportunities to discover 
+After establishing the metrics that need to be collected during testing, Ecezia et al.
+set the criteria for fuzzer test conditions. They asserted that in order to compare
+multiple fuzzers, the fuzzers must be tested against the same target applications, at
+least 15 times, and for the same period of time. These conditions are aimed at eliminating
+inconsistencies associated with evaluating fuzzers. For instance, fuzzers can only be
+compared if they are run on the same target application because the results of fuzzers
+are directly linked to the system under test. When a more buggy program is fuzzed, it
+will yield more bugs than a well-designed system regardless of the fuzzer. Moreover,
+in order to evaluate a fuzzer, it must be executed at least 15 times because the random
+input generated by a fuzzers will vary between runs. The final condition that must be
+constant for each test is execution time; a fuzzer executed for 10 hours cannot be
+compared to a fuzzer that has been running for 24 hours; the fuzzer run for 24 hours
+will likely discover more bugs than the fuzzer that has run for 10 hours. The 24 hour
+fuzzer is not necessarily a better fuzzer, but it had more opportunities to discover
 unwanted behavior. \cite{Ecezia}
 
 \subsection{Autofz}
-While Ecezia et al. looked to simplify the difficult task of identifying the best 
-fuzzer by establishing evaluation criteria, Fu et al. aimed to eliminate the task. 
-They proposed a new fuzzer that would make the task of evaluating and selecting an 
-individual fuzzer obsolete. Autofz is a collaborative fuzzer that dynamically deploys 
-a set of fuzzers. Autofz accomplishes this by dividing its workload into 2 phases; 
-they are a preparation and a focus phase. 
+While Ecezia et al. looked to simplify the difficult task of identifying the best
+fuzzer by establishing evaluation criteria, Fu et al. aimed to eliminate the task.
+They proposed a new fuzzer that would make the task of evaluating and selecting an
+individual fuzzer obsolete. Autofz is a collaborative fuzzer that dynamically deploys
+a set of fuzzers. Autofz accomplishes this by dividing its workload into two phases;
+they are a preparation and a focus phase.
 
 During the preparation phase, Autofz captures the runtime trends of multiple fuzzers
-on the target application. First, Autofz deploys the fuzzers with the same seeds. 
-These fuzzers are allowed to execute for the same period of time. Next, Autofz 
-measures the number of unique paths explored by the individual fuzzers. This 
-process is repeated until the phase times out or a strong trend emerges. A strong 
-trend occurs when the difference between the code coverage of the best and worst 
-performing fuzzer exceeds a predetermined threshold. 
+on the target application. First, Autofz deploys the fuzzers with the same seeds.
+Each fuzzers execute for the an equal portion of the preparation phase. Next, Autofz
+measures bitmap coverage achieved by each individual fuzzers. This
+process is repeated until the end of the preparation phase is reached or a strong trend emerges. A strong
+trend occurs when the difference in bitmap coverage of the best and worst
+performing fuzzer exceeds a predetermined threshold.
 
-Based on the data collected in the preparation phase, Autofz deploys 
-the set fuzzers with the potential to maximize the focus phase’s performance.
-Specifically, Autofz allocates resources to the fuzzers proportionally 
+Based on the data collected in the preparation phase, Autofz deploys
+the set of fuzzers with the potential to maximize the focus phase’s performance.
+More specifically, Autofz allocates resources to the fuzzers proportionally
 to their performance during the preparation phase. For example, the fuzzers
-that demonstrated the greatest code coverage during the preparation phase 
-have the most resources allocated to them during the focus phase. Moreover, 
-one fuzzer can be allocated all available resources or no resources. After 
-assigning resources to the individual fuzzers, the focus phase is executed. In 
+that demonstrated the greatest bitmap coverage during the preparation phase
+have the most resources allocated to them during the focus phase, and the fuzzers
+that preformed poorly will have less available. This may result in
+one fuzzer receiving all available resources or no resources. After
+assigning resources to the individual fuzzers, the focus phase is executed. In
 the focus phase, each fuzzer is executed with its respective resources.
 
-During the focus phase, Autofz achieved greater bitmap coverage than individual 
-fuzzers that executed under the same conditions. Autofz also outperformed 
-collaborative fuzzers that equally allocated resources to individual fuzzers. 
+During the focus phase, Autofz achieved greater bitmap coverage than individual
+fuzzers that executed under the same conditions. Autofz also outperformed
+collaborative fuzzers that equally allocated resources to individual fuzzers.
 \cite{Fu}
 
 %-------------------------------------------------------------------------------
@@ -196,13 +197,13 @@ collaborative fuzzers that equally allocated resources to individual fuzzers.
 In this effort, we seek to answer the following research questions:
 
 \begin{itemize}
-    \item \textbf{RQ1.} Can we successfully reproduce a working tool chain from 
+    \item \textbf{RQ1.} Can we successfully reproduce a working tool chain from
     Fu et al. \cite{Fu} on portable ARM64 computing devices?
     \item \textbf{RQ2.} Can we reproduce the results (e.g. number of defects found)
      of fuzzing at least two targets from Fu et al. \cite{Fu} on our ARM64-based
       tool chain?
     \item \textbf{RQ3.} Autofz uses a single metric (i.e. AFL bitmap coverage) for
-     allocation of resources to fuzzers. Can we identify at least one additional, 
+     allocation of resources to fuzzers. Can we identify at least one additional,
      alternate metric that will improve this allocation?
 \end{itemize}
 
@@ -219,11 +220,11 @@ Our plan for the remaining time in this term is as follows:
 %-------------------------------------------------------------------------------
 \section{Progress to Date}
 %-------------------------------------------------------------------------------
-In order to confirm the findings presented in Fu et.al.\cite{Fu}, we deployed our own instance of 
-their autofz environment. We replicated their testing environment by deploying their docker image 
-on our own hardware. Moreover, we tested our recreation of Fu et al.'s autofz against the targets: 
-exiv2, nm, mojs, and tcpdump. Our initial findings validate the results presented in Fu et al.; 
-autofz is consistently a top preforming fuzzers against the tested targets. 
+In order to confirm the findings presented in Fu et.al.\cite{Fu}, we deployed our own instance of
+their autofz environment. We replicated their testing environment by deploying their docker image
+on our own hardware. Moreover, we tested our recreation of Fu et al.'s autofz against the targets:
+exiv2, nm, mojs, and tcpdump. Our initial findings validate the results presented in Fu et al.;
+autofz is consistently a top preforming fuzzers against the tested targets.
 
 We have also been able to produce a working tool chain on ARM64, with some significant variations
 from Fu et al. \cite{Fu}. Our ARM64 environment implements 7 fuzzing algorithms in
@@ -265,7 +266,7 @@ described in Table \ref{arm64-characteristics}.
     \label{arm64-characteristics}
 \end{table}
 
-There are a number of reasons for the differences between Fu et al., 
+There are a number of reasons for the differences between Fu et al.,
 and our ARM64 environment. They correspond to the reason numbers in Table \ref{arm64-characteristics}
 and are:
 \begin{enumerate}
@@ -278,9 +279,9 @@ and are:
     They do not support other architectures.
 \end{enumerate}
 
-To compare the  modified autofz with the proposed autofz, we tested it against the targets: exiv2, 
-nm, mojs, and tcpdump. Initial test indicate that the ARM64 compatible autofz performs similarly to 
-the unmodified autofz. Figure \ref{fig:exiv2_bmdensity_8Mar2024} displays bitmap density covered of 
+To compare the  modified autofz with the proposed autofz, we tested it against the targets: exiv2,
+nm, mojs, and tcpdump. Initial test indicate that the ARM64 compatible autofz performs similarly to
+the unmodified autofz. Figure \ref{fig:exiv2_bmdensity_8Mar2024} displays bitmap density covered of
 the individual algorithms in our implementation, as compared to a similar plot from Fu et. al\cite{Fu}.
 
 \begin{figure}
@@ -291,7 +292,7 @@ the individual algorithms in our implementation, as compared to a similar plot f
     \label{fig:exiv2_bmdensity_8Mar2024}
 \end{figure}
 
-Bitmap density coverage of our initial fuzzing campaign against tcpdump is plotted in figure 
+Bitmap density coverage of our initial fuzzing campaign against tcpdump is plotted in figure
 \ref{fig:tcpdump_bmdensity_8Mar2024}, shown as a comparison with results from Fu et al.\cite{Fu}.
 
 
@@ -302,37 +303,37 @@ Bitmap density coverage of our initial fuzzing campaign against tcpdump is plott
     \label{fig:tcpdump_bmdensity_8Mar2024}
 \end{figure}
 
-In addition to producing an ARM64 compatible autofz, we identified a potential improvement for autofz. 
-Existing versions of autofz use bitmap coverage to rank fuzzers during the preparation, but bitmap 
-coverage may not be the best metric for identifying the most effective fuzzers for a target. While 
-bitmap coverage indicates the portion of a target that was fuzzed, it does not guarantee bug discovery. 
-To resolve these problems, we plan to modify autofz, so fuzzers that discover more bugs during the 
-preparation phase are rewarded with more resources during the focus phase because discovering more bugs 
-across a smaller area of code decreases the attack surface by more entry points than discovering fewer 
+In addition to producing an ARM64 compatible autofz, we identified a potential improvement for autofz.
+Existing versions of autofz use bitmap coverage to rank fuzzers during the preparation, but bitmap
+coverage may not be the best metric for identifying the most effective fuzzers for a target. While
+bitmap coverage indicates the portion of a target that was fuzzed, it does not guarantee bug discovery.
+To resolve these problems, we plan to modify autofz, so fuzzers that discover more bugs during the
+preparation phase are rewarded with more resources during the focus phase because discovering more bugs
+across a smaller area of code decreases the attack surface by more entry points than discovering fewer
 bugs over a greater area of the code.
 
 %-------------------------------------------------------------------------------
 \section{Team Contributions and Plan}
 %-------------------------------------------------------------------------------
 
-At the midpoint in this term, Kathryn has recreated autofz using Fu et al.\cite{Fu}'s build scripts 
-on our AMD64 development system. She identified an alternate metric that we can incorporate into 
-autofz. She also executed fuzzing campaigns against mojs and tcpdump on both of our architectures 
-under evaluation (i.e. AMD64 and ARM64). 
+At the midpoint in this term, Kathryn has recreated autofz using Fu et al.\cite{Fu}'s build scripts
+on our AMD64 development system. She identified an alternate metric that we can incorporate into
+autofz. She also executed fuzzing campaigns against mojs and tcpdump on both of our architectures
+under evaluation (i.e. AMD64 and ARM64).
 
-Andrew recreated autofz using Fu et al.\cite{Fu}'s docker image on our AMD64 development system. 
-He also completed the modifications necessary to run autofz on our ARM64 laptops. He executed fuzzing 
+Andrew recreated autofz using Fu et al.\cite{Fu}'s docker image on our AMD64 development system.
+He also completed the modifications necessary to run autofz on our ARM64 laptops. He executed fuzzing
 campaigns against exiv2 and nm on both: AMD64 and ARM64.
 
-We will both work to reproduce and confirm results from Fu et al.\cite{Fu}. To validate our findings: 
-Andrew plans to analyze his findings from fuzzing runs against exiv2 and nm; Kathryn plans to do the 
-same of findings from fuzzing runs against mojs and tcpdump. We will work together to incorporate 
-the rate of unique bugs found as an additional metric into the allocation of resources to individual 
+We will both work to reproduce and confirm results from Fu et al.\cite{Fu}. To validate our findings:
+Andrew plans to analyze his findings from fuzzing runs against exiv2 and nm; Kathryn plans to do the
+same of findings from fuzzing runs against mojs and tcpdump. We will work together to incorporate
+the rate of unique bugs found as an additional metric into the allocation of resources to individual
 algorithms by autofz.
 
 
 
-    
+
 \bibliographystyle{plain}
 \bibliography{output}
 
