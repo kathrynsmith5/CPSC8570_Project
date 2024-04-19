@@ -66,7 +66,7 @@
 \date{}
 
 % make title bold and 14 pt font (Latex default is non-bold, 16 pt)
-\title{\Large \bf “ARMy Fuzzing:” Midterm Report}
+\title{\Large \bf ARMy Fuzzing - DRAFT}
 
 %for single author (just remove % characters)
 \author{
@@ -80,37 +80,27 @@ Clemson University
 \maketitle
 
 %-------------------------------------------------------------------------------
-\section{Introduction and Problem}
+\section{Problem Statement}
 %-------------------------------------------------------------------------------
 
-At the midterm point in this term, this paper reports our progress thus far on
-this project. We've built a version of the autofz tool chain on ARM64. We have
-also successfully executed fuzzing campaigns against four targets that were included
-in the original autofz paper. We look forward to selecting and integrating additional
-metrics into autofz that can be used to improve the allocation of resources to the
-individual algorithms used by autofz. This paper also documents each researcher's
-individual completed and planned contributions for this project.
+Due to the success of fuzzing as a method of identifying bugs in software, many fuzzers have been 
+developed. Unfortunately, selecting a fuzzer is a difficult task. The following challenges prevent 
+researchers from quickly selecting a fuzzer using benchmarking: no fuzzer consistently outperforms 
+the others, the efficacy of a fuzzer is inconsistent throughout its execution, and fuzzing results 
+are not reproducible.
 
-Due to the success of fuzzing as a method of identifying bugs in software, many fuzzers have been developed.
-Unfortunately, selecting a fuzzer is a difficult task. The following challenges
-prevent researchers from quickly selecting a fuzzer using benchmarking: no fuzzer
-consistently outperforms the others, the efficacy of a fuzzer is inconsistent
-throughout its execution, and fuzzing results are not reproducible.
+In response to these problems, Autofz was developed. Autofz leverages multiple fuzzers by dynamically 
+allocating resources to fuzzers using runtime data. This methodology empowers Autofz to eliminate the 
+fuzzer selection problem and outperform individual fuzzers.
 
-In response to these problems, Autofz was developed. Autofz leverages multiple
-fuzzers by dynamically allocating resources to the fuzzers using runtime data.
-Autofz eliminates the fuzzer selection problem and consistently outperforms
-individual fuzzers.
+In spite of these successes, Autofz is not perfect. While there is no consensus on the best way to 
+assess fuzzers, Autofz oversimplifies this process. Autofz relies on a singular metric, bitmap 
+coverage, to rank its fuzzers and allocate resources. Autofz may perform even better if it employs 
+additional metrics when assigning resources to its fuzzers.
 
-In spite of its successes, Autofz is not perfect. While there is no consensus on
-the best way to assess fuzzers, Autofz oversimplifies this process. Autofz relies
-on one metric, bitmap coverage, to rank its fuzzers and allocate resources. Autofz
-could be improved by incorporating additional metrics during its analysis.
-
-Moreover, Autofz prides itself on streamlining the fuzzer selection process for
-the novel user, but it was designed and tested on Ubuntu 20.04 equipped with AMD
-Ryzen 9 3900 having 24 cores and 32 GB memory. This equipment is not representative
-of the standard user, and as a result, Autofz needs to be rebuilt and tested in
+Moreover, Autofz prides itself on streamlining the fuzzer selection process for the novel user, but 
+it was designed for and tested on an AMD Ryzen 9 3900 with 24 cores and 32 GB memory. This equipment 
+is not representative of the standard user, and as a result, Autofz needs to be adapted for use in 
 additional environments. \cite{Fu}
 
 %-------------------------------------------------------------------------------
@@ -118,77 +108,51 @@ additional environments. \cite{Fu}
 %-------------------------------------------------------------------------------
 
 \subsection{Fuzzing}
-In 1990, Miller et al. proposed fuzz testing as a tool to test Unix utilities
-and other applications. Their fuzzer generated random number and character
-strings. Next, they executed a target program with the random input. Finally,
-the fuzzer would record how the tested application responded to the random input.
-The application could succeed, crash, or hang; succeed meant that the program
-executed normally, a crash indicated that the program terminated abnormally while
-a hang implied that the application entered an infinite loop. Furthermore, a
-crash or hang indicated unwanted behavior within the target application. Using this
-simple methodology, Miller et al. discovered a wealth of bugs within Unix utilities
-that had not been identified using formal testing procedures. \cite{Miller}
+In 1990, Miller et al. proposed fuzz testing as a tool to identify bugs in Unix utilities and other 
+applications. Their fuzzer generated, deployed and monitored the execution of random strings on a 
+target program. The application could succeed, crash, or hang. The application was successful when 
+program terminated normally, and the input did not identify a bug. Alternatively, if the input caused 
+the program to crash or hang, a defect was discovered. Using this simple methodology, Miller et al. 
+were able to uncover bugs within Unix utilities that had not been previously identified using formal 
+testing procedures. \cite{Miller}
+
+Since Miller et al. introduced fuzzing as an effective means of identifying bugs, over thirty more 
+sophisticated fuzzers have been proposed. Most fuzzers conform to the basic methodology introduced by 
+Miller et al; they generate test cases that deploy on a target while monitoring its state. 
+
+// add more detail about how seeds are generated
+Despite their similarities, the test case generation phase varies between fuzzers. Fuzzers can be 
+divided as generation-based or mutation-based fuzzers. Generation-based fuzzers generate inputs that 
+conform with grammars while mutation-based fuzzers modify existing inputs. 
+
+Fuzzers can also be divided into blackbox, whitebox, and greybox. Blackbox fuzzers only monitor the 
+state of the target application before and after the execution of an input while whitebox fuzzers 
+document the status of the target throughout execution, and greybox fuzzers monitor specific 
+execution attributes. \cite{Zhu}
 
 \subsection{Fuzzing Assessment Methods}
-Since Miller et al. introduced fuzzing as an inexpensive means of identifying bugs
-and increasing overall system reliability, many researchers have developed more
-complex fuzzers. Despite this abundance of fuzzers, a consensus has not emerged
-on how to compare them. Moreover, testing conditions are not consistent for new fuzzers.
-Ecezia et al. aimed to resolve this issue by proposing a universal method for testing new
-fuzzers and evaluating existing fuzzers. They presented evaluation metrics that could be
-divided into three categories: bug detection, coverage, and performance. Metrics defined
-in the bug detention group quantified any undesirable behavior identified by the fuzzer
-while metrics categorized under coverage measured the percentage of the code that had
-been executed by the fuzzer. Metrics in the performance category are measurements not
-directly related to bug detection or performance; they include data such as number of
-runs executed during a set time frame and time needed to identify the first bug.
+// add more detail about evaluation metrics (what undesirable behavior was quanitified? crashes? 
+// hangs?)
+Despite the abundance of fuzzers and their differences in implementation and performance, a consensus
+has not emerged on how to compare them. Ecezia et al. aimed to resolve this issue by proposing a 
+universal method for testing new fuzzers and evaluating existing fuzzers. They presented three 
+categories of evaluation metrics: bug detection, coverage, and performance. Metrics defined in the 
+bug detention group quantified any undesirable behavior identified by the fuzzer while metrics 
+categorized under coverage measured the percentage of the code that had been executed by the fuzzer. 
+Metrics in the performance category are measurements not directly related to bug detection or 
+coverage; they included data such as number of runs executed during a set time frame and time 
+needed to identify the first bug.
 
-After establishing the metrics that need to be collected during testing, Ecezia et al.
-set the criteria for fuzzer test conditions. They asserted that in order to compare
-multiple fuzzers, the fuzzers must be tested against the same target applications, at
-least 15 times, and for the same period of time. These conditions are aimed at eliminating
-inconsistencies associated with evaluating fuzzers. For instance, fuzzers can only be
-compared if they are run on the same target application because the results of fuzzers
-are directly linked to the system under test. When a more buggy program is fuzzed, it
-will yield more bugs than a well-designed system regardless of the fuzzer. Moreover,
-in order to evaluate a fuzzer, it must be executed at least 15 times because the random
-input generated by a fuzzers will vary between runs. The final condition that must be
-constant for each test is execution time; a fuzzer executed for 10 hours cannot be
-compared to a fuzzer that has been running for 24 hours; the fuzzer run for 24 hours
-will likely discover more bugs than the fuzzer that has run for 10 hours. The 24 hour
-fuzzer is not necessarily a better fuzzer, but it had more opportunities to discover
-unwanted behavior. \cite{Ecezia}
+After establishing the metrics that should to be evaluated during testing, Ecezia et al. established  criteria for fuzzer test conditions. They asserted that in order to compare multiple fuzzers the fuzzers must be executed against the same target applications, at least 15 times, and for the same period of time. These conditions are aimed at eliminating inconsistencies associated with evaluating fuzzers. For instance, fuzzers can only be compared if they are run on the same target application because the performance of a fuzzer is directly linked to the system under test. When a more buggy program is fuzzed, it will yield more bugs than a well-designed system regardless of the fuzzer. Moreover, in order to evaluate a fuzzer, it must be executed at least 15 times because the random input generated by a fuzzers will vary between runs. The final condition that must be constant for each test is execution time; a fuzzer executed for 10 hours cannot be compared to a fuzzer that has been running for 24 hours; the fuzzer run for 24 hours will likely discover more bugs than the fuzzer that has run for 10 hours. The 24 hour fuzzer is not necessarily a better fuzzer, but it had more opportunities to discover unwanted behavior. \cite{Ecezia}
 
 \subsection{Autofz}
-While Ecezia et al. looked to simplify the difficult task of identifying the best
-fuzzer by establishing evaluation criteria, Fu et al. aimed to eliminate the task.
-They proposed a new fuzzer that would make the task of evaluating and selecting an
-individual fuzzer obsolete. Autofz is a collaborative fuzzer that dynamically deploys
-a set of fuzzers. Autofz accomplishes this by dividing its workload into two phases;
-they are a preparation and a focus phase.
+While Ecezia et al. looked to simplify the difficult task of identifying the best fuzzer by establishing evaluation criteria, Fu et al. aimed to eliminate the task. They proposed a new fuzzer that would make the task of evaluating and selecting an individual fuzzer obsolete. Autofz is a dynamic fuzzer that dynamically deploys a set of fuzzers. Autofz accomplishes this by dividing its workload into two phases; they are a preparation and a focus phase.
 
-During the preparation phase, Autofz captures the runtime trends of multiple fuzzers
-on the target application. First, Autofz deploys the fuzzers with the same seeds.
-Each fuzzers execute for the an equal portion of the preparation phase. Next, Autofz
-measures bitmap coverage achieved by each individual fuzzers. This
-process is repeated until the end of the preparation phase is reached or a strong trend emerges. A strong
-trend occurs when the difference in bitmap coverage of the best and worst
-performing fuzzer exceeds a predetermined threshold.
+During the preparation phase, Autofz captures the runtime trends of multiple fuzzers on the target application. First, Autofz deploys the fuzzers with the same seeds. Each fuzzers execute for the an equal portion of the preparation phase. Next, Autofz measures bitmap coverage achieved by each individual fuzzers. This process is repeated until the end of the preparation phase is reached or a strong trend emerges. A strong trend occurs when the difference in bitmap coverage of the best and worst performing fuzzer exceeds a predetermined threshold.
 
-Based on the data collected in the preparation phase, Autofz deploys
-the set of fuzzers with the potential to maximize the focus phase’s performance.
-More specifically, Autofz allocates resources to the fuzzers proportionally
-to their performance during the preparation phase. For example, the fuzzers
-that demonstrated the greatest bitmap coverage during the preparation phase
-have the most resources allocated to them during the focus phase, and the fuzzers
-that preformed poorly will have less available. This may result in
-one fuzzer receiving all available resources or no resources. After
-assigning resources to the individual fuzzers, the focus phase is executed. In
-the focus phase, each fuzzer is executed with its respective resources.
+Based on the data collected in the preparation phase, Autofz deploys the set of fuzzers with the potential to maximize the focus phase’s performance. More specifically, Autofz allocates resources to the fuzzers proportionally to their performance during the preparation phase. For example, the fuzzers that demonstrated the greatest bitmap coverage during the preparation phase have the most resources allocated to them during the focus phase, and the fuzzers that preformed poorly will have less available. This may result in one fuzzer receiving all available resources or no resources. After assigning resources to the individual fuzzers, the focus phase is executed. In the focus phase, each fuzzer is executed with its respective resources.
 
-During the focus phase, Autofz achieved greater bitmap coverage than individual
-fuzzers that executed under the same conditions. Autofz also outperformed
-collaborative fuzzers that equally allocated resources to individual fuzzers.
+During the focus phase, Autofz achieved greater bitmap coverage than individual fuzzers that executed under the same conditions.
 \cite{Fu}
 
 %-------------------------------------------------------------------------------
