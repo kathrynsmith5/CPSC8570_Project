@@ -1,0 +1,1 @@
+/usr/local/bin/autofz -o output -T 24h -f angora --focus-one angora -j4 -t exiv2

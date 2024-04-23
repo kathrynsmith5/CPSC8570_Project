@@ -1,0 +1,1 @@
+/usr/local/bin/autofz -o output -T 24h -f aflfast --focus-one aflfast -j4 -t exiv2
