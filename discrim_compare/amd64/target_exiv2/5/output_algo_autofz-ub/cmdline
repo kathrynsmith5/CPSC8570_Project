@@ -1,0 +1,1 @@
+/usr/local/bin/autofz -o output -T 24h -f all -t exiv2 --discriminator ub
