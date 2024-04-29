@@ -1,8 +1,0 @@
-Entering new queueing cycle
-while bitflipping, 0 of 0 tries hit branch -1
-while calibrating, 0 of 0 tries hit branch -1
-calib stage: 73 new coverage in 31805 total execs
-calib stage: 45 new branches in 31805 total execs
-In deterministic stage, 0 of 0 tries hit branch -1
-det stage: 175 new coverage in 528829 total execs
-det stage: 123 new branches in 528829 total execs
