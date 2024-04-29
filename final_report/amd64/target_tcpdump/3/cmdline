@@ -1,0 +1,1 @@
+/usr/local/bin/autofz -o amd_tcpdump3 -T 24h -f redqueen lafintel mopt learnafl fairfuzz radamsa aflfast -t tcpdump

@@ -1,0 +1,1 @@
+/usr/local/bin/autofz -o arm64_tcpdump5 -T 24h -f redqueen lafintel learnafl mopt fairfuzz radamsa aflfast -t tcpdump
