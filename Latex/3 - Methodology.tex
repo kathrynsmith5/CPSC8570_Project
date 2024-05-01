@@ -1,7 +1,7 @@
 %-------------------------------------------------------------------------------
 \section{Methodology}
 %-------------------------------------------------------------------------------
-In order to confirm the findings presented in Fu et.al.\cite{Fu}, we deployed our 
+In order to confirm the findings presented in Fu et.al.\cite{fu_autofz_2023}, we deployed our 
 own instance of their autofz environment. We replicated their testing environment 
 by deploying their docker image on our own hardware. Moreover, we tested our 
 recreation of Fu et al.'s autofz against the targets: exiv2, mp3gain, mojs, and 
@@ -9,7 +9,7 @@ tcpdump. Our initial findings validate the results presented in Fu et al.; autof
 is consistently a top performing  against the tested targets.
 
 We have also been able to produce a working tool chain on ARM64, with some significant 
-variations from Fu et al. \cite{Fu}. Our ARM64 environment implements 7 fuzzing 
+variations from Fu et al. \cite{fu_autofz_2023}. Our ARM64 environment implements 7 fuzzing 
 algorithms in Ubuntu 22.04 LTS, running in a virtual machine with the UTM app on 
 host laptops running macOS 14.3.1 on Apple Silicon (ARM64) architecture 
 \textbf{(RQ1)}. Key differences are described in Table \ref{arm64-characteristics}.
@@ -17,7 +17,7 @@ host laptops running macOS 14.3.1 on Apple Silicon (ARM64) architecture
 \begin{table}[ht]
     \begin{tabular}{|l|l|l|l|}
         \hline
-                        & Original\cite{Fu} & ARM64 & Reason \\
+                        & Original\cite{fu_autofz_2023} & ARM64 & Reason \\
         \hline
         Ubuntu Version  & 16.04             & 22.04 & 1 \\
         \hline
@@ -56,7 +56,7 @@ and our ARM64 environment. They correspond to the reason numbers in Table
     \item Ubuntu 16.04 LTS does not support the ARM64 architecture (also called 
     aarch64).
     \item Aflforkserver.so comes from the quickcov package, developed to support 
-    the Cupid research project\cite{guler2020cupid}. We had to recompile it for aarch64.
+    the Cupid research project\cite{guler_cupid_2020}. We had to recompile it for aarch64.
     \item Learn AFL does not properly compile instrumented binaries for aarch64.
     \item Angora and QSYM are written such that they are dependent upon the x86\_64 ISA.
     They do not support other architectures.
@@ -66,19 +66,19 @@ To compare the  modified autofz with the proposed autofz, we tested it against t
 targets: exiv2, nm, mojs, and tcpdump. Initial test indicate that the ARM64 compatible 
 autofz performs similarly to the unmodified autofz. Figure \ref{fig:exiv2_compare_orig_arm64} 
 displays bitmap density covered of the individual algorithms in our ARM64 implementation, 
-as compared to a similar plot from Fu et. al\cite{Fu}.
+as compared to a similar plot from Fu et. al\cite{fu_autofz_2023}.
 
 \begin{figure}
     \includegraphics[width=0.52\textwidth]{figs/exiv2_compare_orig_arm64.png}
     \centering
-    \caption{A comparison of bitmap density covered in the original\cite{Fu} and our 
+    \caption{A comparison of bitmap density covered in the original\cite{fu_autofz_2023} and our 
     coverage during initial fuzzing of exiv2}
     \label{fig:exiv2_compare_orig_arm64}
 \end{figure}
 
 Bitmap density coverage of our initial fuzzing campaign against tcpdump is plotted 
 in figure \ref{fig:tcpdump_bmdensity_8Mar2024}, shown as a comparison with results 
-from Fu et al.\cite{Fu}.
+from Fu et al.\cite{fu_autofz_2023}.
 
 In addition to producing an ARM64 compatible autofz, we identified a potential improvement for autofz.
 Existing versions of autofz use bitmap coverage to rank fuzzers during the preparation, but bitmap

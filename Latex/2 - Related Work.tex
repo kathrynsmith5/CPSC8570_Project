@@ -9,7 +9,7 @@ target program. The application could succeed, crash, or hang. The application w
 program terminated normally, and the input did not identify a bug. Alternatively, if the input caused 
 the program to crash or hang, a defect was discovered. Using this simple methodology, Miller et al. 
 were able to uncover bugs within Unix utilities that had not been previously identified using formal 
-testing procedures. \cite{Miller}
+testing procedures. \cite{miller_empirical_1990}
 
 Since Miller et al. introduced fuzzing as an effective means of identifying bugs, over thirty more 
 sophisticated fuzzers have been proposed. Most fuzzers conform to the basic methodology introduced by 
@@ -22,7 +22,7 @@ conform with grammars while mutation-based fuzzers modify existing inputs.
 Fuzzers can also be divided into blackbox, whitebox, and greybox. Blackbox fuzzers only monitor the 
 state of the target application before and after the execution of an input while whitebox fuzzers 
 document the status of the target throughout execution, and greybox fuzzers monitor specific 
-execution attributes. \cite{Zhu}
+execution attributes. \cite{zhu_fuzzing_2022}
 
 // add more detail about how seeds are generated
 
@@ -30,19 +30,57 @@ execution attributes. \cite{Zhu}
 Despite the abundance of fuzzers and their differences in implementation and performance, a consensus
  has not emerged on how to compare them.
 
-\subsubsection{Bitmap Coverage}
+\subsubsection{AFL Bitmap Coverage}
 Bitmap coverage is a one means of capturing a fuzzer's performance; it quantifies the number of
- branches explored by the fuzzer. To calculate bitmap coverage, a large bitmap is generated. Each bit 
- represents some combination of the target's entrance and exit points. When an input is injected, the 
- bit that represents the input's entrance and exit locations is incremented. A non zero bit indicates 
- that that branch has been explored. After execution, the number of non-zero bits represents the 
- bitmap coverage achieved by the fuzzer. \cite{AFLGitHub}
+ branches explored by the fuzzer. To calculate bitmap coverage, instrumentation is injected at branch 
+ points when the program is compiled. By marking these points in the binary, then the fuzzer can 
+ identify which branches have and have not yet been taken during a fuzzing run. 
+ \cite{noauthor_afldocstechnical_detailstxt_nodate}
+
+ This coverage method was introduced in the American Fuzzy Lop (AFL) project \cite{noauthor_afldocstechnical_detailstxt_nodate}. 
+ It is supported by fuzzers that are based on or otherwise derived from AFL.  AFL's developers 
+ note that this approach makes distinguishing between different program traces trivial. It also draws 
+ the fuzzer to the target's state transition points, where opportunities to enter undocumented states 
+ are most likely. The bitmap is implemented as 64 kB of shared memory, or enough storage to 
+ accommodate 65,536 coverage points, \emph{l} \cite{yun_qsym_2018}, each roughly implemented as:
+
+ \begin{algorithm}
+    \caption {Insert Bitmap}\label{bitmap}
+    \begin{algorithmic}[1]
+        \Procedure {Insert Bitmap}{$location$}$\ as\ b(l)$
+            \State $l_{cur} \gets\ COMPILE\_TIME\_RANDOM$
+            \State $b(l) \gets\ b[l_{cur}\  xor\  l_{prev}] + 1$
+            \State $l_{prev} \gets\ l_{cur} >> 1$
+        \EndProcedure
+    \end{algorithmic}
+\end{algorithm}
+ 
+While using bitmap coverage allows competition amongst disparate fuzzers, this choice restricts the 
+set of Autofz's supported fuzzers to those that implement AFL bitmap as a coverage metric. In algorithm 
+\ref{bitmap}\, we define \emph{$l_{cur}$} as a random number that is assigned at compile time. While 
+not implemented in our experiments, the bitmap metric can be implemented when testing black-box binaries; 
+i.e. binary programs for which source code is not available to the tester. AFL (and some of its derivatives)
+implements QEMU mode instrumentation \cite{noauthor_aflqemu_mode_nodate}, where bitmap composition is 
+by \cite{noauthor_afldocstechnical_detailstxt_nodate}:
+
+\begin{algorithm}
+    \caption {Insert Bitmap, QEMU Mode}\label{qemu_bitmap}
+    \begin{algorithmic}[1]
+        \Procedure {Insert Bitmap}{$location$}$\ as\ b(l)$
+            \If{$addr_{block} > start_{elf_text}\ \&\&
+            \linebreak addr_{block} < end_{elf_text}$}
+                \State $l_{cur} \gets\ (addr_{block}\ >>\ 4)\ xor\ (addr_{block}\ <<\ 8)$
+                \State $b(l) \gets\ b[l_{cur}\  xor\  l_{prev}] + 1$
+                \State $l_{prev} \gets\ l_{cur} >> 1$
+            \EndIf
+        \EndProcedure
+    \end{algorithmic}
+\end{algorithm}
 
 \subsubsection{Additional Metrics}
-Ecezia et al. asserted that the methodology for testing new and evaluating 
-existing fuzzers needs to be standardized. In their proposed protocol, 
-they recommended using three categories of metrics. They are bugs, 
-coverage, and performance. 
+Ecezia et al. \cite{eceiza_improving_2023} asserted that the methodology for testing new and 
+evaluating existing fuzzers needs to be standardized. In their proposed protocol, they 
+recommended using three categories of metrics. They are bugs, coverage, and performance. 
 
 \begin{itemize}
     \item \textbf{Bugs} Ecezia et al. recommends using the total number of
@@ -90,14 +128,30 @@ generated by a fuzzers will vary between runs.
 The final condition that must be constant for each test is execution time; a fuzzer executed for 
 10 hours cannot be compared to a fuzzer that has been running for 24 hours; the fuzzer that ran for 
 24 hours will likely discover more bugs than the fuzzer that has run for 10 hours. The 24 hour fuzzer 
-is not necessarily a better fuzzer, but it had more opportunities to discover unwanted behavior. \cite{Ecezia}
+is not necessarily a better fuzzer, but it had more opportunities to discover unwanted behavior. 
+\cite{eceiza_improving_2023}
 
 \subsection{Autofz}
-While Ecezia et al. looked to simplify the difficult task of identifying the best fuzzer by establishing evaluation criteria, Fu et al. aimed to eliminate the task. They proposed a new fuzzer that would make the task of evaluating and selecting an individual fuzzer obsolete. Autofz is a dynamic fuzzer that dynamically deploys a set of fuzzers. Autofz accomplishes this by dividing its workload into two phases; they are a preparation and a focus phase.
+While Ecezia et al. looked to simplify the difficult task of identifying the best fuzzer by establishing 
+evaluation criteria, Fu et al.\cite{fu_autofz_2023} aimed to eliminate the task. They proposed a new fuzzer that would make 
+the task of evaluating and selecting an individual fuzzer obsolete. Autofz is a dynamic fuzzer that 
+dynamically deploys a set of fuzzers. Autofz accomplishes this by dividing its workload into two phases; 
+they are a preparation and a focus phase.
 
-During the preparation phase, Autofz captures the runtime trends of multiple fuzzers on the target application. First, Autofz deploys the fuzzers with the same seeds. Each fuzzers execute for the an equal portion of the preparation phase. Next, Autofz measures bitmap coverage achieved by each individual fuzzers. This process is repeated until the end of the preparation phase is reached or a strong trend emerges. A strong trend occurs when the difference in bitmap coverage of the best and worst performing fuzzer exceeds a predetermined threshold.
+During the preparation phase, Autofz captures the runtime trends of multiple fuzzers on the target 
+application. First, Autofz deploys the fuzzers with the same seeds. Each fuzzers execute for the an equal 
+portion of the preparation phase. Next, Autofz measures bitmap coverage achieved by each individual fuzzers. 
+This process is repeated until the end of the preparation phase is reached or a strong trend emerges. A 
+strong trend occurs when the difference in bitmap coverage of the best and worst performing fuzzer exceeds 
+a predetermined threshold.
 
-Based on the data collected in the preparation phase, Autofz deploys the set of fuzzers with the potential to maximize the focus phase’s performance. More specifically, Autofz allocates resources to the fuzzers proportionally to their performance during the preparation phase. For example, the fuzzers that demonstrated the greatest bitmap coverage during the preparation phase have the most resources allocated to them during the focus phase, and the fuzzers that preformed poorly will have less available. This may result in one fuzzer receiving all available resources or no resources. After assigning resources to the individual fuzzers, the focus phase is executed. In the focus phase, each fuzzer is executed with its respective resources.
+Based on the data collected in the preparation phase, Autofz deploys the set of fuzzers with the potential 
+to maximize the focus phase’s performance. More specifically, Autofz allocates resources to the fuzzers 
+proportionally to their performance during the preparation phase. For example, the fuzzers that demonstrated 
+the greatest bitmap coverage during the preparation phase have the most resources allocated to them during 
+the focus phase, and the fuzzers that preformed poorly will have less available. This may result in one 
+fuzzer receiving all available resources or no resources. After assigning resources to the individual fuzzers, 
+the focus phase is executed. In the focus phase, each fuzzer is executed with its respective resources.
 
-During the focus phase, Autofz achieved greater bitmap coverage than individual fuzzers that executed under the same conditions.
-\cite{Fu}
+During the focus phase, Autofz achieved greater bitmap coverage than individual fuzzers that executed under 
+the same conditions. \cite{fu_autofz_2023}
