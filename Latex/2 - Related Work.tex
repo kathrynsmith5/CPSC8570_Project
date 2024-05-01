@@ -1,0 +1,103 @@
+%-------------------------------------------------------------------------------
+\section{Related Work}
+%-------------------------------------------------------------------------------
+
+\subsection{Fuzzing}
+In 1990, Miller et al. proposed fuzz testing as a tool to identify bugs in Unix utilities and other 
+applications. Their fuzzer generated, deployed and monitored the execution of random strings on a 
+target program. The application could succeed, crash, or hang. The application was successful when 
+program terminated normally, and the input did not identify a bug. Alternatively, if the input caused 
+the program to crash or hang, a defect was discovered. Using this simple methodology, Miller et al. 
+were able to uncover bugs within Unix utilities that had not been previously identified using formal 
+testing procedures. \cite{Miller}
+
+Since Miller et al. introduced fuzzing as an effective means of identifying bugs, over thirty more 
+sophisticated fuzzers have been proposed. Most fuzzers conform to the basic methodology introduced by 
+Miller et al; they generate test cases and deploy them on a target while monitoring its state. 
+
+Despite their similarities, the test case generation phase varies between fuzzers. Fuzzers can be 
+divided as generation-based or mutation-based fuzzers. Generation-based fuzzers generate inputs that 
+conform with grammars while mutation-based fuzzers modify existing inputs. 
+
+Fuzzers can also be divided into blackbox, whitebox, and greybox. Blackbox fuzzers only monitor the 
+state of the target application before and after the execution of an input while whitebox fuzzers 
+document the status of the target throughout execution, and greybox fuzzers monitor specific 
+execution attributes. \cite{Zhu}
+
+// add more detail about how seeds are generated
+
+\subsection{Fuzzing Assessment Methods}
+Despite the abundance of fuzzers and their differences in implementation and performance, a consensus
+ has not emerged on how to compare them.
+
+\subsubsection{Bitmap Coverage}
+Bitmap coverage is a one means of capturing a fuzzer's performance; it quantifies the number of
+ branches explored by the fuzzer. To calculate bitmap coverage, a large bitmap is generated. Each bit 
+ represents some combination of the target's entrance and exit points. When an input is injected, the 
+ bit that represents the input's entrance and exit locations is incremented. A non zero bit indicates 
+ that that branch has been explored. After execution, the number of non-zero bits represents the 
+ bitmap coverage achieved by the fuzzer. \cite{AFLGitHub}
+
+\subsubsection{Additional Metrics}
+Ecezia et al. asserted that the methodology for testing new and evaluating 
+existing fuzzers needs to be standardized. In their proposed protocol, 
+they recommended using three categories of metrics. They are bugs, 
+coverage, and performance. 
+
+\begin{itemize}
+    \item \textbf{Bugs} Ecezia et al. recommends using the total number of
+    bugs discovered as the best means of assessing the general performance 
+    of a fuzzer. They argue that since number of bugs discovered 
+    encompasses all other bug metrics, it is the superior bug metrics. 
+    While total number of bugs identified may encompass unique bugs 
+    discovered, unique bugs discovered is likely a better means of 
+    measuring a fuzzers general performance. Total number of bugs 
+    discovered includes duplicate bugs. This may result in a fuzzer that 
+    discovers the few bugs many times appearing to perform better than 
+    another fuzzer that discovers more unique bugs once. Moreover, once a 
+    bug is known, it does not need to be discovered again.
+    \item \textbf{Coverage} Coverage metrics communicate the performance 
+    of a fuzzer's exploratory processes. While Ecezia et al. do not 
+    explicitly identify bitmap coverage in their proposed method, they 
+    recommend a combination of line and branch coverage for evaluating the 
+    coverage achieved by a fuzzer. Despite this recommendation, they 
+    maintain that complete line or branch coverage does not guarantee 
+    complete bug discovery. Instead, they report that if the fuzzer does 
+    not provide the target bug triggering input, an error may remain 
+    undiscovered even after the buggy line of or path through code is 
+    fuzzed. 
+    \item \textbf{Performance} Performance metrics reflect the efficiency 
+    of the fuzzer. Ecezia et al. reports that density is the best means of 
+    measuring a fuzzer's efficiency. Density communicates the ratio of 
+    number of tests completed to bugs discovered. A denser fuzzer will 
+    need few runs to identify a bug, and consequently, identify more bugs 
+    faster than a fuzzer with a lower density. 
+\end{itemize}
+
+\subsubsection{Experimental Conditions}
+In addition to establishing the evaluation metrics, Ecezia et al. established  criteria for fuzzer 
+test conditions. They asserted that in order to compare fuzzers, the fuzzers must be executed 
+against the same applications, at least 15 times, and for the same period of time. These conditions 
+are aimed at eliminating inconsistencies associated with evaluating fuzzers. 
+
+For instance, fuzzers can only be compared if they are run on the same target application because 
+the performance of a fuzzer is directly linked to the system under test. When a more buggy program 
+is fuzzed, it will yield more bugs than a well-designed system regardless of the fuzzer. 
+
+Moreover, when evaluating a fuzzer, it must be executed at least 15 times because the random input 
+generated by a fuzzers will vary between runs.
+
+The final condition that must be constant for each test is execution time; a fuzzer executed for 
+10 hours cannot be compared to a fuzzer that has been running for 24 hours; the fuzzer that ran for 
+24 hours will likely discover more bugs than the fuzzer that has run for 10 hours. The 24 hour fuzzer 
+is not necessarily a better fuzzer, but it had more opportunities to discover unwanted behavior. \cite{Ecezia}
+
+\subsection{Autofz}
+While Ecezia et al. looked to simplify the difficult task of identifying the best fuzzer by establishing evaluation criteria, Fu et al. aimed to eliminate the task. They proposed a new fuzzer that would make the task of evaluating and selecting an individual fuzzer obsolete. Autofz is a dynamic fuzzer that dynamically deploys a set of fuzzers. Autofz accomplishes this by dividing its workload into two phases; they are a preparation and a focus phase.
+
+During the preparation phase, Autofz captures the runtime trends of multiple fuzzers on the target application. First, Autofz deploys the fuzzers with the same seeds. Each fuzzers execute for the an equal portion of the preparation phase. Next, Autofz measures bitmap coverage achieved by each individual fuzzers. This process is repeated until the end of the preparation phase is reached or a strong trend emerges. A strong trend occurs when the difference in bitmap coverage of the best and worst performing fuzzer exceeds a predetermined threshold.
+
+Based on the data collected in the preparation phase, Autofz deploys the set of fuzzers with the potential to maximize the focus phase’s performance. More specifically, Autofz allocates resources to the fuzzers proportionally to their performance during the preparation phase. For example, the fuzzers that demonstrated the greatest bitmap coverage during the preparation phase have the most resources allocated to them during the focus phase, and the fuzzers that preformed poorly will have less available. This may result in one fuzzer receiving all available resources or no resources. After assigning resources to the individual fuzzers, the focus phase is executed. In the focus phase, each fuzzer is executed with its respective resources.
+
+During the focus phase, Autofz achieved greater bitmap coverage than individual fuzzers that executed under the same conditions.
+\cite{Fu}

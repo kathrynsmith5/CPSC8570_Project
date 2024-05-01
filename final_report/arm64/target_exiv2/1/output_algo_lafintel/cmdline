@@ -1,1 +1,0 @@
-/usr/local/bin/autofz -o output -T 24h -f lafintel --focus-one lafintel -j4 -t exiv2

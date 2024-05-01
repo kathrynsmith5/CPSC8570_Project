@@ -1,0 +1,35 @@
+%-------------------------------------------------------------------------------
+\section{Introduction}
+%-------------------------------------------------------------------------------
+
+Due to the success of fuzzing as a method of identifying bugs in software, many fuzzers have been 
+developed. Unfortunately, selecting a fuzzer is a difficult task. The following challenges prevent 
+researchers from quickly selecting a fuzzer using benchmarking: no fuzzer consistently outperforms 
+the others, the efficacy of a fuzzer is inconsistent throughout its execution, and fuzzing results 
+are not reproducible.
+
+In response to these problems, Autofz was developed. Autofz leverages multiple fuzzers by dynamically 
+allocating resources to fuzzers using runtime data. This methodology empowers Autofz to eliminate the 
+fuzzer selection problem and outperform individual fuzzers.
+
+In spite of these successes, Autofz is not perfect. While there is no consensus on the best way to 
+assess fuzzers, Autofz oversimplifies this process. Autofz relies on a singular metric, bitmap 
+coverage, to rank its fuzzers and allocate resources. Autofz may perform even better if it employs 
+additional metrics when assigning resources to its fuzzers.
+
+Moreover, Autofz prides itself on streamlining the fuzzer selection process for the novel user, but 
+it was designed for and tested on an AMD Ryzen 9 3900 with 24 cores and 32 GB memory. This equipment 
+is not representative of the standard user, and as a result, Autofz needs to be adapted for use in 
+additional environments. \cite{Fu}
+
+In this effort, we seek to improve Autofz and answer the following research questions:
+\begin{itemize}
+    \item \textbf{RQ1.} Can we successfully reproduce a working tool chain from
+    Fu et al. \cite{Fu} on portable ARM64 computing devices?
+    \item \textbf{RQ2.} Can we reproduce the results (e.g. number of defects found)
+     of fuzzing at least two targets from Fu et al. \cite{Fu} on our ARM64-based
+      tool chain?
+    \item \textbf{RQ3.} Autofz uses a single metric (i.e. AFL bitmap coverage) for
+     allocation of resources to fuzzers. Can we identify at least one additional,
+     alternate metric that will improve this allocation?
+\end{itemize}

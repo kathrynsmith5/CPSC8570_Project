@@ -1,1 +1,0 @@
-/usr/local/bin/autofz -o output -T 24h -f all -j4 -t exiv2 --discriminator bitmap-ub

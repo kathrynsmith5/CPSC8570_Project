@@ -1,1 +1,0 @@
-/usr/local/bin/autofz -o output -T 24h -f radamsa --focus-one radamsa -j4 -t exiv2

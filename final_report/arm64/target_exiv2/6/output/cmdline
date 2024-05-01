@@ -1,1 +1,0 @@
-/usr/local/bin/autofz -o output -f aflfast fairfuzz mopt learnafl lafintel redqueen radamsa -j 4 -t exiv2 --discriminator ub-bitmap

@@ -1,1 +1,0 @@
-/usr/local/bin/autofz -o output -T 24h -f learnafl redqueen mopt aflfast lafintel fairfuzz radamsa -j4 -t exiv2
