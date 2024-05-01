@@ -67,12 +67,11 @@ by \cite{noauthor_afldocstechnical_detailstxt_nodate}:
     \caption {Insert Bitmap, QEMU Mode}\label{qemu_bitmap}
     \begin{algorithmic}[1]
         \Procedure {Insert Bitmap}{$location$}$\ as\ b(l)$
-            \If{$addr_{block} > start_{elf_text}\ \&\&
-            \linebreak addr_{block} < end_{elf_text}$}
+          \If{$end_{elf_text} > addr_{block} > start_{elf_text}$}
                 \State $l_{cur} \gets\ (addr_{block}\ >>\ 4)\ xor\ (addr_{block}\ <<\ 8)$
                 \State $b(l) \gets\ b[l_{cur}\  xor\  l_{prev}] + 1$
                 \State $l_{prev} \gets\ l_{cur} >> 1$
-            \EndIf
+          \EndIf
         \EndProcedure
     \end{algorithmic}
 \end{algorithm}
@@ -133,17 +132,17 @@ is not necessarily a better fuzzer, but it had more opportunities to discover un
 
 \subsection{Autofz}
 While Ecezia et al. looked to simplify the difficult task of identifying the best fuzzer by establishing 
-evaluation criteria, Fu et al.\cite{fu_autofz_2023} aimed to eliminate the task. They proposed a new fuzzer that would make 
-the task of evaluating and selecting an individual fuzzer obsolete. Autofz is a dynamic fuzzer that 
-dynamically deploys a set of fuzzers. Autofz accomplishes this by dividing its workload into two phases; 
-they are a preparation and a focus phase.
+evaluation criteria, Fu et al.\cite{fu_autofz_2023} aimed to eliminate the task. They proposed a new 
+fuzzer that would make the task of evaluating and selecting an individual fuzzer obsolete. Autofz is a 
+dynamic fuzzer that dynamically deploys a set of fuzzers. Autofz accomplishes this by dividing its 
+workload into two phases; they are a preparation and a focus phase.
 
 During the preparation phase, Autofz captures the runtime trends of multiple fuzzers on the target 
-application. First, Autofz deploys the fuzzers with the same seeds. Each fuzzers execute for the an equal 
-portion of the preparation phase. Next, Autofz measures bitmap coverage achieved by each individual fuzzers. 
+application. First, Autofz deploys the fuzzers with the same seeds. Each fuzzer executes for an equal 
+portion of the preparation phase. Next, Autofz measures bitmap coverage achieved by each individual fuzzer. 
 This process is repeated until the end of the preparation phase is reached or a strong trend emerges. A 
 strong trend occurs when the difference in bitmap coverage of the best and worst performing fuzzer exceeds 
-a predetermined threshold.
+a predetermined threshold. 
 
 Based on the data collected in the preparation phase, Autofz deploys the set of fuzzers with the potential 
 to maximize the focus phase’s performance. More specifically, Autofz allocates resources to the fuzzers 
