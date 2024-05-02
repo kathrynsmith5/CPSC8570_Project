@@ -4,7 +4,7 @@
 
 \subsection{Fuzzing}
 In 1990, Miller et al. proposed fuzz testing as a tool to identify bugs in Unix utilities and other 
-applications. Their fuzzer generated, deployed and monitored the execution of random strings on a 
+applications. Their fuzzer generated, deployed, and monitored the execution of random strings on a 
 target program. The application could succeed, crash, or hang. The application was successful when 
 program terminated normally, and the input did not identify a bug. Alternatively, if the input caused 
 the program to crash or hang, a defect was discovered. Using this simple methodology, Miller et al. 
@@ -24,7 +24,8 @@ state of the target application before and after the execution of an input while
 document the status of the target throughout execution, and greybox fuzzers monitor specific 
 execution attributes. \cite{zhu_fuzzing_2022}
 
-// add more detail about how seeds are generated
+These differences in implementation lead to variablitly in how individuals fuzzers perform against different
+targets.
 
 \subsection{Fuzzing Assessment Methods}
 Despite the abundance of fuzzers and their differences in implementation and performance, a consensus
