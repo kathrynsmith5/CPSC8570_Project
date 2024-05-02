@@ -36,8 +36,8 @@ SSD, running Ubuntu 20.04.6 LTS (focal). Containers were built on this host usin
 the source code available at the sslab-gatech/autofz repository \cite{noauthor_sslab-gatechautofz_2024} 
 and were also installed from fuyu0425/autofz images on docker hub\cite{noauthor_fuyu0425autofz_nodate}.
 
-Following installation, \texttt{autofz} was deployed on the aforementioned targets. Each 
-target was fuzzed 10 times to account for the inheirent variablity in fuzzer performance among runs. 
+Following installation, \texttt{autofz} and the individual fuzzers from its pool were deployed on the aforementioned targets. Each 
+target was fuzzed 10 times by texttt{autofz} to account for the inherent variablity in fuzzer performance among runs. 
 
 %-------------------------------------------------------------------------------
 \subsection{Autofz on ARM64 - ARMy Fuzzing}
@@ -105,6 +105,8 @@ Our modified kit is published open-source and available on GitHub,
 of the drewinchas/autofz repository.
 
 This iteration of \texttt{autofz} was also tested against the same target for ten trials.
+In order to fairly compare this instance of ttt{autofz} to the original, the 
+original Autofz was deployed using the same limited pool of fuzzers. 
 
 %-------------------------------------------------------------------------------
 \subsection{An Additional Metric: Unique Bugs}
@@ -269,4 +271,4 @@ all changes necessary to support unique bugs as \texttt{discriminator}, in addit
 compatibility with Ubuntu on ARM64. 
 
 Each algorithm of out final iteration of \texttt{autofz} was evaluated against the four targets, but due to time constrants, they
-were not able to undergo 10 trails.
+were not able to undergo 10 trials.
