@@ -55,11 +55,14 @@
 % to be able to draw some self-contained figs
 \usepackage{tikz}
 \usepackage{amsmath}
-\usepackage{amsfonts}
+\usepackage{amsfonts,amstext}
 
 % necessary to depict some algorithms
 \usepackage{algorithm,algpseudocode,float}
 \usepackage{bbm}
+
+% Let's suppress hbox warnings (https://tex.stackexchange.com/questions/138/what-are-underfull-hboxes-and-vboxes-and-how-can-i-get-rid-of-them)
+\hbadness=99999
 
 %-------------------------------------------------------------------------------
 \begin{document}

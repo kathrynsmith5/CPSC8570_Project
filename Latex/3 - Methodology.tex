@@ -121,7 +121,7 @@ where $\mathbb{UB}$ is the unique bugs metric.
 %
 % LaTex below comes from Fu et al.'s source code of their paper; modified for our purposes
 %
-\begin{algorithm}[h!]
+\begin{algorithm}[ht!]
   \caption{Preparation Phase, unique bugs (ub)}\label{prep-phase-with-ub}
   \small
   \begin{algorithmic}[1]
@@ -158,7 +158,7 @@ In this case, we can use Algorithm \ref{prep-phase-with-ub-bitmap} to fall back 
 resource allocation by bitmap, where $\mathbb{B}$ is the bitmap metric and $\mathbb{UB}$ 
 remains unique bugs.
 
-\begin{algorithm}[h!]
+\begin{algorithm}[ht!]
   \caption{Preparation Phase: unique bugs (ub), then bitmap}\label{prep-phase-with-ub-bitmap}
   \small
   \begin{algorithmic}[1]
@@ -196,7 +196,7 @@ remains unique bugs.
 Conversely, we can fall back to the unique bugs metric as a tie-breaker as well. This is described in
 Algorithm .
 
-\begin{algorithm}[h!]
+\begin{algorithm}[ht!]
   \caption{Preparation Phase: bitmap, then unique bugs (ub)}\label{prep-phase-with-bitmap-ub}
   \small
   \begin{algorithmic}[1]
@@ -233,19 +233,19 @@ Algorithm .
 
 \textbf{Usage.} Implementation of these algorithms required some modifications to \texttt{autofz}'s 
 command line interface, as well as modifications to the drawing program. When invoking 
-autofz, the user may now specify \texttt{--discriminator bitmap | ub | ub-bitmap | bitmap-ub},
+autofz, the user may now specify \texttt{\textendash-discriminator bitmap | ub | ub-bitmap | bitmap-ub},
 where:
 
 \begin{itemize}
-  \item \texttt{--discriminator bitmap} invokes \texttt{autofz} with AFL bitmap as the 
+  \item \texttt{\textendash-discriminator bitmap} invokes \texttt{autofz} with AFL bitmap as the 
   fuzzer discriminator. This is the original \texttt{autofz} behavior. It is also the default behavior 
-  when the \texttt{--discriminator} is not passed.
-  \item \texttt{--discriminator ub} invokes \texttt{autofz} with unique bugs as discriminator. The 
+  when the \texttt{\textendash-discriminator} is not passed.
+  \item \texttt{\textendash-discriminator ub} invokes \texttt{autofz} with unique bugs as discriminator. The 
   value for $\theta$ is ignored, as the discrimination threshold is fixed at 1, as described 
   in Algorithm \ref{prep-phase-with-ub}.
-  \item \texttt{--discriminator ub-bitmap} invokes \texttt{autofz} with unique bugs as discriminator, 
+  \item \texttt{\textendash-discriminator ub-bitmap} invokes \texttt{autofz} with unique bugs as discriminator, 
   and bitmap as tie-breaker, as described in Algorithm \ref{prep-phase-with-ub-bitmap}.
-  \item \texttt{--discriminator bitmap-ub} invokes autofx with bitmap as discriminator, 
+  \item \texttt{\textendash-discriminator bitmap-ub} invokes autofx with bitmap as discriminator, 
   with unique bugs as tie-breaker, according to Algorithm \ref{prep-phase-with-bitmap-ub}.
 \end{itemize}
 
