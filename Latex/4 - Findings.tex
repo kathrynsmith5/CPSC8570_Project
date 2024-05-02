@@ -20,6 +20,14 @@ Bitmap density coverage of our initial fuzzing campaign against tcpdump is plott
 in figure \ref{fig:tcpdump_bmdensity_8Mar2024}, shown as a comparison with results 
 from Fu et al.\cite{fu_autofz_2023}.
 
+\begin{figure}
+    \includegraphics[width=0.52\textwidth]{figs/tcp_compare_orig_arm64.png}
+    \centering
+    \caption{A comparison of bitmap density covered in the original\cite{fu_autofz_2023} and our 
+    coverage during initial fuzzing of tcpdump}
+    \label{fig:exiv2_compare_orig_arm64}
+\end{figure}
+
 In addition to producing an ARM64 compatible autofz, we identified a potential improvement for autofz.
 Existing versions of autofz use bitmap coverage to rank fuzzers during the preparation, but bitmap
 coverage may not be the best metric for identifying the most effective fuzzers for a target. While
