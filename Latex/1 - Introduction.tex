@@ -8,35 +8,35 @@ researchers from quickly selecting a fuzzer using benchmarking: no fuzzer consis
 the others, the efficacy of a fuzzer is inconsistent throughout its execution, and fuzzing results 
 are not reproducible.
 
-In response to these problems, Autofz was developed. Autofz leverages multiple fuzzers by dynamically 
-allocating resources to fuzzers using runtime data. This methodology empowers Autofz to eliminate the 
+In response to these problems, \texttt{autofz} was developed. \texttt{Autofz} leverages multiple fuzzers by dynamically 
+allocating resources to fuzzers using runtime data. This methodology empowers \texttt{autofz} to eliminate the 
 fuzzer selection problem and outperform individual fuzzers.
 
-In spite of these successes, Autofz is not perfect. While there is no consensus on the best way to 
-assess fuzzers, Autofz oversimplifies this process. Autofz was originally written to rely on a 
+In spite of these successes, \texttt{autofz} is not perfect. While there is no consensus on the best way to 
+assess fuzzers, \texttt{autofz} oversimplifies this process. \texttt{Autofz} was originally written to rely on a 
 singular metric, AFL bitmap coverage, to rank its fuzzers and allocate resources. In this paper, we
 propose the use of unique bugs as an additional and alternative metric as well. We posit that, in 
-many cases, autofz performs even better if it considers the number of unique bugs found when assigning 
+many cases, \texttt{autofz} performs even better if it considers the number of unique bugs found when assigning 
 resources to individual fuzzers.
 
-Moreover, Autofz prides itself on streamlining the fuzzer selection process for the novel user, but 
+Moreover, \texttt{autofz} prides itself on streamlining the fuzzer selection process for the novel user, but 
 it was designed for and tested on a cluster of hosts, each boasting an AMD Ryzen 9 3900 with 24 cores 
 and 32 GB memory. We believe that this is not representative of the standard user, and as a result, 
-autofz needs to be adapted for use in additional environments. \cite{fu_autofz_2023} We posit that autofz can 
+autofz needs to be adapted for use in additional environments. \cite{fu_autofz_2023} We posit that \texttt{autofz} can 
 effectively deliver similar results on commodity, portable hardware (i.e. Apple MacOS based laptop 
 computers) that is based on the ARM64 architecture. 
 
-By investigating the implementation and results of autofz on this configuration, we identify some the 
+By investigating the implementation and results of \texttt{autofz} on this configuration, we identify some the 
 challenges and opportunities presented by fuzzing on the ARM64 architecture.
 
-In this effort, we seek to improve Autofz and answer the following research questions:
+In this effort, we seek to improve \texttt{autofz} and answer the following research questions:
 \begin{itemize}
     \item \textbf{RQ1.} Can we successfully reproduce a working tool chain from
     Fu et al. \cite{fu_autofz_2023} on portable ARM64 computing devices?
     \item \textbf{RQ2.} Can we reproduce the results (e.g. number of defects found)
      of fuzzing at least two targets from Fu et al. \cite{fu_autofz_2023} on our ARM64-based
       tool chain?
-    \item \textbf{RQ3.} Autofz uses a single metric (i.e. AFL bitmap coverage) for
+    \item \textbf{RQ3.} \texttt{autofz} uses a single metric (i.e. AFL bitmap coverage) for
      allocation of resources to fuzzers. Can we identify at least one additional,
      alternate metric that will improve this allocation?
 \end{itemize}

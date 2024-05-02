@@ -10,19 +10,19 @@
 
 %-------------------------------------------------------------------------------
 In order to confirm the findings presented in Fu et.al.\cite{fu_autofz_2023}, we implemented our 
-own instances of autofz. We implemented our evaluation environment by:
+own instances of \texttt{autofz}. We implemented our evaluation environment by:
 
 \begin{enumerate}
     \item Installing the containers provided by Fu et al. \cite{fu_autofz_2023} on our own
     AMD64 development workstation;
     \item Building our own containers, based on Fu et al. \cite{fu_autofz_2023} on our own
     AMD64 development workstation;
-    \item Building our own containers, based on our own modifications to Autofz on our own 
+    \item Building our own containers, based on our own modifications to \texttt{autofz} on our own 
     ARM64 (Apple MacBook) laptop devices
 \end{enumerate}
 
-Moreover, we tested our implementations of autofz against the targets: exiv2, mp3gain, mojs, and 
-tcpdump. Our initial findings validate the results presented in Fu et al.; autofz 
+Moreover, we tested our implementations of \texttt{autofz} against the targets: exiv2, mp3gain, mojs, and 
+tcpdump. Our initial findings validate the results presented in Fu et al.; \texttt{autofz} 
 is consistently a top performing against the tested targets.
 
 %-------------------------------------------------------------------------------
@@ -108,10 +108,10 @@ of the drewinchas/autofz repository.
 Fu et al.\cite{fu_autofz_2023} recognized that reliance on a single metric for resource 
 allocation could potentially lead to unfair comparison with those fuzzers that do not 
 utilize an edge coverage metric. Furthermore, our review of the original source 
-code shows that autofz is not likely to produce meaningful improvements over individual 
+code shows that \texttt{autofz} is not likely to produce meaningful improvements over individual 
 fuzzers unless those individual fuzzers implement the AFL bitmap coverage metric.
 
-We offer that the count of unique bugs discovered during autofz's preparation phase 
+We offer that the count of unique bugs discovered during \texttt{autofz}'s preparation phase 
 as a useful, if not more universal metric \textbf{(RQ1)}. Eceiza et al.\cite{eceiza_improving_2023}'s 
 survey of 36 fuzzers showed that the vast majority of them reported discovered 
 bugs as a metric. To demonstrate and evaluate the use of this metric to inform resource allocation, we 
@@ -231,20 +231,25 @@ Algorithm .
   \end{algorithmic}
 \end{algorithm}
 
-\textbf{Usage.} Implementation of these algorithms required some modifications to autofz's 
+\textbf{Usage.} Implementation of these algorithms required some modifications to \texttt{autofz}'s 
 command line interface, as well as modifications to the drawing program. When invoking 
 autofz, the user may now specify \texttt{--discriminator bitmap | ub | ub-bitmap | bitmap-ub},
 where:
 
 \begin{itemize}
-  \item \texttt{--discriminator bitmap} invokes autofz with AFL bitmap as the 
-  fuzzer discriminator. This is the original autofz behavior. It is also the default behavior 
+  \item \texttt{--discriminator bitmap} invokes \texttt{autofz} with AFL bitmap as the 
+  fuzzer discriminator. This is the original \texttt{autofz} behavior. It is also the default behavior 
   when the \texttt{--discriminator} is not passed.
-  \item \texttt{--discriminator ub} invokes autofz with unique bugs as discriminator. The 
+  \item \texttt{--discriminator ub} invokes \texttt{autofz} with unique bugs as discriminator. The 
   value for $\theta$ is ignored, as the discrimination threshold is fixed at 1, as described 
   in Algorithm \ref{prep-phase-with-ub}.
-  \item \texttt{--discriminator ub-bitmap} invokes autofz with unique bugs as discriminator, 
+  \item \texttt{--discriminator ub-bitmap} invokes \texttt{autofz} with unique bugs as discriminator, 
   and bitmap as tie-breaker, as described in Algorithm \ref{prep-phase-with-ub-bitmap}.
   \item \texttt{--discriminator bitmap-ub} invokes autofx with bitmap as discriminator, 
   with unique bugs as tie-breaker, according to Algorithm \ref{prep-phase-with-bitmap-ub}.
 \end{itemize}
+
+Similarly, we modified the \texttt{autofz-draw} tool in order to create plots that 
+differentiate between the new resource allocation algorithms. It now plots \texttt{autofz-bitmap}, 
+\texttt{autofz-ub}, \texttt{autofz-ub-bitmap}, and \texttt{autofz-bitmap-ub}. In our 
+implementation, \texttt{autofz-bitmap} is equivalent to the original \texttt{autofz}
