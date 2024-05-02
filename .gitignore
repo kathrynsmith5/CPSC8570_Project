@@ -7,3 +7,4 @@ Latex/*.fls
 Latex/*.log
 Latex/*.out
 Latex/*.synctex.gz
+Latex/main.pdf
