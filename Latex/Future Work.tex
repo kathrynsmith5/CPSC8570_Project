@@ -1,7 +1,7 @@
 %-------------------------------------------------------------------------------
 \section{Future Research and Limitations}
 %-------------------------------------------------------------------------------
-\item \textbf{Additional Targets.} The version of \texttt{autofz} proposed by Fu et al. 
+\subsection{Additional Targets} The version of \texttt{autofz} proposed by Fu et al. 
 was tested against 12 targets and verified over 10 iterations. Our research  
 confirmed the finding of Fu et al on 4 targets over ten repetitions. While we 
 replicated the outcomes of Fu et al. with limited tests, the variations 
@@ -16,14 +16,14 @@ Additionally, the proposed algorithms for resources allocation during the prepar
 underwent restricted testing. More testing needs to be undertaken in order to confirm
 the performance on tested targets and extrapolate the performance to untested targets.
 
-\item \textbf{Complex Targets.} All versions of \texttt{autofz} need to be tested against 
+\subsection{Complex Targets} All versions of \texttt{autofz} need to be tested against 
 complex targets. Fu et al. evaluated \texttt{autofz} against simple targets with known bugs. In 
 order to compare our findings to Fu et al., we were restricted to testing our 
 iterations of \texttt{autofz} against the same targets. In the future, all variations of 
 \texttt{autofz} should be tested against larger, more complex targets that are comparable to
 targets that may leverage fuzzing.
 
-\item \textbf{Fuzzer Pool Composition} Fu et al. disclosed that the performance of
+\subsection{Fuzzer Pool Composition} Fu et al. disclosed that the performance of
 Autofz is dependent of the composition of its fuzzer pool. When \texttt{autofz} was presented
 with a large pool of fuzzers and when \texttt{autofz} was provided with too few fuzzers, it 
 under preformed. Further testing needs to be undertaken in order to determine the ideal
