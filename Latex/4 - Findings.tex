@@ -9,7 +9,7 @@ Figure \ref{fig:exiv2_compare_orig_arm64} displays bitmap density covered by the
 as compared to a similar plot from Fu et al.\cite{fu_autofz_2023}. While our recreation of autofz achieved lower bitmap coverage than 
 the version published by Fu et al., our individual fuzzers also achieved lower bitmap coverage. As a result, our replica still 
 outperformed all other individual fuzzers tested in our environment. This is consistant
-with Fu et al. findings and further proves that \texttt{autofz} is seperior to individual fuzzers.
+with Fu et al.'s findings and further proves that \texttt{autofz} is superior to individual fuzzers.
 
 \begin{figure}
     \includegraphics[width=0.52\textwidth]{figs/exiv2_compare_orig_arm64.png}
@@ -20,10 +20,10 @@ with Fu et al. findings and further proves that \texttt{autofz} is seperior to i
 \end{figure}
 
 Testing also indicates that the ARM64 compatible \texttt{autofz} performs similarly to the unmodified AMD64 \texttt{autofz}. 
-Bitmap density coverage of \texttt{autofz} is plottted alogside our ARM64 compatible \texttt{autofz} in figure 
+Bitmap density coverage of AMD64 \texttt{autofz} is plottted alogside our ARM64 \texttt{autofz} in figure 
 \ref{fig:tcpdump_compare_orig_arm64}. After 24 hours, both implementations achieved similar bitmap coverage.
-\texttt{Autofz}'s bitmap coverage grew linearly while ARM64 \texttt{autofz} followed a logarithmic trend. Consequently, 
-the orignal \texttt{autofz} took longer to achieve the same bitmap coverage. 
+AMD64 \texttt{Autofz}'s bitmap coverage grew linearly while ARM64 \texttt{autofz} followed a logarithmic trend. Consequently, 
+the AMD64 \texttt{autofz} took longer to achieve the same bitmap coverage. 
 
 \begin{figure}
     \includegraphics[width=0.52\textwidth]{figs/tcpdump_compare_orig_arm64.png}
