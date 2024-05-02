@@ -42,7 +42,8 @@ Bitmap coverage is a one means of capturing a fuzzer's performance; it quantifie
  note that this approach makes distinguishing between different program traces trivial. It also draws 
  the fuzzer to the target's state transition points, where opportunities to enter undocumented states 
  are most likely. The bitmap is implemented as 64 kB of shared memory, or enough storage to 
- accommodate 65,536 coverage points, \emph{l} \cite{yun_qsym_2018}, each roughly implemented as:
+ accommodate 65,536 coverage points, \emph{l} \cite{yun_qsym_2018}, each roughly implemented as 
+ described in Algorithm \ref{bitmap}
 
  \begin{algorithm}
     \caption {Insert Bitmap}\label{bitmap}
@@ -61,7 +62,7 @@ set of Autofz's supported fuzzers to those that implement AFL bitmap as a covera
 not implemented in our experiments, the bitmap metric can be implemented when testing black-box binaries; 
 i.e. binary programs for which source code is not available to the tester. AFL (and some of its derivatives)
 implements QEMU mode instrumentation \cite{noauthor_aflqemu_mode_nodate}, where bitmap composition is 
-by \cite{noauthor_afldocstechnical_detailstxt_nodate}:
+by \cite{noauthor_afldocstechnical_detailstxt_nodate} is described in Algorithm \ref{qemu_bitmap}.
 
 \begin{algorithm}
     \caption {Insert Bitmap, QEMU Mode}\label{qemu_bitmap}
