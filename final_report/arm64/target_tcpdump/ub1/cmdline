@@ -1,0 +1,1 @@
+/usr/local/bin/autofz -o arm64_tcpdump -T 24h -f all -t tcpdump --discriminator ub

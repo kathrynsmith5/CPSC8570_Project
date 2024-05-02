@@ -1,0 +1,1 @@
+/usr/local/bin/autofz -o arm64_infotocap -T 24h -f all -t infotocap --discriminator bitmap
