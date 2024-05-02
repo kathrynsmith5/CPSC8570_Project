@@ -8,3 +8,4 @@ Latex/*.log
 Latex/*.out
 Latex/*.synctex.gz
 Latex/main.pdf
+final_report/arm64/.DS_Store
