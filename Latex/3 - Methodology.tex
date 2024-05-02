@@ -253,3 +253,12 @@ Similarly, we modified the \texttt{autofz-draw} tool in order to create plots th
 differentiate between the new resource allocation algorithms. It now plots \texttt{autofz+bitmap}, 
 \texttt{autofz+ub}, \texttt{autofz+ub-bitmap}, and \texttt{autofz+bitmap-ub}. In our 
 implementation, \texttt{autofz+bitmap} is equivalent to the original \texttt{autofz}
+
+\textbf{Get it.} Our modified kit is published open-source and available on GitHub at \texttt{drewinchas/autofz}\cite{york_drewinchasautofz_2024}. 
+The main branch, \texttt{ub}, is a fork of the original \texttt{sslab-gatech/autofz}\cite{noauthor_sslab-gatechautofz_2024} 
+repo, but it has been modified to only include the changes to \texttt{autofz} and \texttt{autofz-draw} 
+that are necessary to support unique bugs as \texttt{discriminator} and the additional algorithms. 
+
+The 'ARMy Fuzzing' kit, in the \texttt{arm64} branch\cite{noauthor_drewinchasautofz_nodate}, contains 
+all changes necessary to support unique bugs as \texttt{discriminator}, in addition to those made for 
+compatibility with Ubuntu on ARM64. 
