@@ -1,0 +1,30 @@
+%-------------------------------------------------------------------------------
+\section{Future Research and Limitations}
+%-------------------------------------------------------------------------------
+\item \textbf{Additional Targets.} The version of Autofz proposed by Fu et al. 
+was tested against 12 targets and verified over 10 iterations. Our research  
+confirmered the finding of Fu et al on 4 targets over ten repetitions. While we 
+replicated the outcomes of Fu et al. with limited tests, the variations 
+of Autofz proposed in this paper need to under go additional testing. Due to their 
+novelty, they cannot rely on previous literature to confirm their findings.
+
+Similarly to Autofz, we tested Autofz for ARM64 against 4 targets over 10 
+iterations. While trends were able to be identied among the tested targets, this
+sample is not large enough to apply the outcomes to all targets. 
+
+Additionally, the proposed algorithms for resources alloaction during the preparation
+underwent restricted testing. More testing needs to be undertaken in order to confirm
+the preformance on tested targets and extrapolate the performance to untested targets.
+
+\item \textbf{Complex Targets.} All versions of Autofz need to be tested against 
+complex targets. Fu et al. evaluated Autofz against simple targets with known bugs. In 
+order to compare our findings to Fu et al., we were restiricted to testing our 
+iterations of Autofz against the same targets. In the future, all veriations of 
+Autofz should be tested agaist larger, more complex targets that are comparable to
+targets that may leverage fuzzing.
+
+\item \textbf{Fuzzer Pool Composition} Fu et al. disclosed that the performance of
+Autofz is dependent of the composision of its fuzzer pool. When Autofz was presented
+with a large pool of fuzzers and when Autofz was provided with too few fuzzers, it 
+underpreformed. Further testing needs to be undertaken in order to determine the ideal
+number of fuzzer in the pool as well as which fuzzers should be in the pool.
