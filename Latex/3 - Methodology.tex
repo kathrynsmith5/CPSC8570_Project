@@ -1,18 +1,42 @@
 %-------------------------------------------------------------------------------
 \section{Methodology}
 %-------------------------------------------------------------------------------
-In order to confirm the findings presented in Fu et.al.\cite{fu_autofz_2023}, we deployed our 
-own instance of their autofz environment. We replicated their testing environment 
-by deploying their docker image on our own hardware. Moreover, we tested our 
-recreation of Fu et al.'s autofz against the targets: exiv2, mp3gain, mojs, and 
+In order to confirm the findings presented in Fu et.al.\cite{fu_autofz_2023}, we implemented our 
+own instances of autofz. We implemented our evaluation environment by:
+
+\begin{enumerate}
+    \item Installing the containers provided by Fu et al. \cite{fu_autofz_2023} on our own
+    AMD64 development workstation;
+    \item Building our own containers, based on Fu et al. \cite{fu_autofz_2023} on our own
+    AMD64 development workstation;
+    \item Building our own containers, based on our own modifications to Autofz on our own 
+    ARM64 (Apple MacBook) laptop devices
+\end{enumerate}
+
+Moreover, we tested our implementations of autofz against the targets: exiv2, mp3gain, mojs, and 
 tcpdump. Our initial findings validate the results presented in Fu et al.; autofz 
-is consistently a top performing  against the tested targets.
+is consistently a top performing against the tested targets.
+
+%-------------------------------------------------------------------------------
+\subsection{Autofz on AMD64 - Validating Fu et al.\cite{fu_autofz_2023}}
+%-------------------------------------------------------------------------------
+
+To validate the results of Fu et al., we deployed a single physical workstation with 
+an AMD FX\texttrademark - 6300 Six-Core Processor (3.5 Ghz), 16 GB memory, and 1 TB 
+SSD, running Ubuntu 20.04.6 LTS (focal). Containers were built on this host using 
+the source code available at the sslab-gatech/autofz repository \cite{noauthor_sslab-gatechautofz_2024} 
+and were also installed from fuyu0425/autofz images on docker hub\cite{noauthor_fuyu0425autofz_nodate}.
+
+
+%-------------------------------------------------------------------------------
+\subsection{Autofz on ARM64 - ARMy Fuzzing}
+%-------------------------------------------------------------------------------
 
 We have also been able to produce a working tool chain on ARM64, with some significant 
-variations from Fu et al. \cite{fu_autofz_2023}. Our ARM64 environment implements 7 fuzzing 
-algorithms in Ubuntu 22.04 LTS, running in a virtual machine with the UTM app on 
-host laptops running macOS 14.3.1 on Apple Silicon (ARM64) architecture 
-\textbf{(RQ1)}. Key differences are described in Table \ref{arm64-characteristics}.
+variations from Fu et al. \cite{fu_autofz_2023}. Our ARM64 environment supports 7 of 
+the original fuzzers in Ubuntu 22.04 LTS. We configured these in virtual machines 
+with the UTM app on host laptops running macOS 14.3.1 on Apple Silicon (ARM64) 
+architecture \textbf{(RQ1)}. Key differences are described in Table \ref{arm64-characteristics}.
 
 \begin{table}[ht]
     \begin{tabular}{|l|l|l|l|}
@@ -48,6 +72,9 @@ host laptops running macOS 14.3.1 on Apple Silicon (ARM64) architecture
     \label{arm64-characteristics}
 \end{table}
 
+The majority of our changes were made in the \texttt{build.sh} scripts and \texttt{Dockerfile}s
+for the affected containers.
+
 There are a number of reasons for the differences between Fu et al.,
 and our ARM64 environment. They correspond to the reason numbers in Table 
 \ref{arm64-characteristics} and are:
@@ -61,30 +88,3 @@ and our ARM64 environment. They correspond to the reason numbers in Table
     \item Angora and QSYM are written such that they are dependent upon the x86\_64 ISA.
     They do not support other architectures.
 \end{enumerate}
-
-To compare the  modified autofz with the proposed autofz, we tested it against the 
-targets: exiv2, nm, mojs, and tcpdump. Initial test indicate that the ARM64 compatible 
-autofz performs similarly to the unmodified autofz. Figure \ref{fig:exiv2_compare_orig_arm64} 
-displays bitmap density covered of the individual algorithms in our ARM64 implementation, 
-as compared to a similar plot from Fu et. al\cite{fu_autofz_2023}.
-
-\begin{figure}
-    \includegraphics[width=0.52\textwidth]{figs/exiv2_compare_orig_arm64.png}
-    \centering
-    \caption{A comparison of bitmap density covered in the original\cite{fu_autofz_2023} and our 
-    coverage during initial fuzzing of exiv2}
-    \label{fig:exiv2_compare_orig_arm64}
-\end{figure}
-
-Bitmap density coverage of our initial fuzzing campaign against tcpdump is plotted 
-in figure \ref{fig:tcpdump_bmdensity_8Mar2024}, shown as a comparison with results 
-from Fu et al.\cite{fu_autofz_2023}.
-
-In addition to producing an ARM64 compatible autofz, we identified a potential improvement for autofz.
-Existing versions of autofz use bitmap coverage to rank fuzzers during the preparation, but bitmap
-coverage may not be the best metric for identifying the most effective fuzzers for a target. While
-bitmap coverage indicates the portion of a target that was fuzzed, it does not guarantee bug discovery.
-To resolve these problems, we plan to modify autofz, so fuzzers that discover more bugs during the
-preparation phase are rewarded with more resources during the focus phase because discovering more bugs
-across a smaller area of code decreases the attack surface by more entry points than discovering fewer
-bugs over a greater area of the code.
