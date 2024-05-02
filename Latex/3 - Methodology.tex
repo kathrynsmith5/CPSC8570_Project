@@ -21,9 +21,10 @@ own instances of \texttt{autofz}. We implemented our evaluation environment by:
     ARM64 (Apple MacBook) laptop devices
 \end{enumerate}
 
-Moreover, we tested our implementations of \texttt{autofz} against the targets: exiv2, mp3gain, mojs, and 
-tcpdump. Our initial findings validate the results presented in Fu et al.; \texttt{autofz} 
-is consistently a top performing against the tested targets.
+In each of these evironements, we tested our implementations of \texttt{autofz} against the 
+targets: exiv2, mp3gain, infotocap, and tcpdump. For consistancy and comparision, 
+the targets were selected from the targets used by Fu et al. during their inital evaluation.
+They were also was tested under the same time restrictions as Fu et al.
 
 %-------------------------------------------------------------------------------
 \subsection{Autofz on AMD64 - Validating Fu et al.\cite{fu_autofz_2023}}
@@ -35,12 +36,14 @@ SSD, running Ubuntu 20.04.6 LTS (focal). Containers were built on this host usin
 the source code available at the sslab-gatech/autofz repository \cite{noauthor_sslab-gatechautofz_2024} 
 and were also installed from fuyu0425/autofz images on docker hub\cite{noauthor_fuyu0425autofz_nodate}.
 
+Following installation, \texttt{autofz} was deployed on the aforementioned targets. Each 
+target was fuzzed 10 times to account for the inheirent variablity in fuzzer performance among runs. 
 
 %-------------------------------------------------------------------------------
 \subsection{Autofz on ARM64 - ARMy Fuzzing}
 %-------------------------------------------------------------------------------
 
-We have also been able to produce a working tool chain on ARM64, with some significant 
+We also produced a working tool chain on ARM64, with some significant 
 variations from Fu et al. \cite{fu_autofz_2023}. Our ARM64 environment supports 7 of 
 the original fuzzers in Ubuntu 22.04 LTS. We configured these in virtual machines 
 with the UTM app on host laptops running macOS 14.3.1 on Apple Silicon (ARM64) 
@@ -100,6 +103,8 @@ and our ARM64 environment. They correspond to the reason numbers in Table
 Our modified kit is published open-source and available on GitHub, 
 \cite{noauthor_drewinchasautofz_nodate} placed in the arm64 branch 
 of the drewinchas/autofz repository.
+
+This iteration of \texttt{autofz} was also tested against the same target for ten trials.
 
 %-------------------------------------------------------------------------------
 \subsection{An Additional Metric: Unique Bugs}
@@ -262,3 +267,6 @@ that are necessary to support unique bugs as \texttt{discriminator} and the addi
 The 'ARMy Fuzzing' kit, in the \texttt{arm64} branch\cite{noauthor_drewinchasautofz_nodate}, contains 
 all changes necessary to support unique bugs as \texttt{discriminator}, in addition to those made for 
 compatibility with Ubuntu on ARM64. 
+
+Each algorithm of out final iteration of \texttt{autofz} was evaluated against the four targets, but due to time constrants, they
+were not able to undergo 10 trails.

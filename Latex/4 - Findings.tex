@@ -3,10 +3,9 @@
 %-------------------------------------------------------------------------------
 
 To compare the  modified \texttt{autofz} with the proposed \texttt{autofz}, we tested it against the 
-targets: exiv2, nm, intotocap, and tcpdump. Initial test indicate that the ARM64 compatible 
-autofz performs similarly to the unmodified \texttt{autofz}. Figure \ref{fig:exiv2_compare_orig_arm64} 
-displays bitmap density covered of the individual algorithms in our ARM64 implementation, 
-as compared to a similar plot from Fu et. al\cite{fu_autofz_2023}.
+targets: exiv2, nm, intotocap, and tcpdump. Figure \ref{fig:exiv2_compare_orig_arm64} 
+displays bitmap density covered by the individual algorithms in our ARM64 implementation, 
+as compared to a similar plot from Fu et al.\cite{fu_autofz_2023}. 
 
 \begin{figure}
     \includegraphics[width=0.52\textwidth]{figs/exiv2_compare_orig_arm64.png}
@@ -16,16 +15,31 @@ as compared to a similar plot from Fu et. al\cite{fu_autofz_2023}.
     \label{fig:exiv2_compare_orig_arm64}
 \end{figure}
 
-Bitmap density coverage of our initial fuzzing campaign against tcpdump is plotted 
-in figure \ref{fig:tcpdump_bmdensity_8Mar2024}, shown as a comparison with results 
-from Fu et al.\cite{fu_autofz_2023}.
+Testing indicates that the ARM64 compatible autofz performs similarly to the unmodified \texttt{autofz}. 
+Bitmap density coverage of tttext{autofz} is plottted alogside our ARM64 compatible tttext{autofz} in figure 
+\ref{fig:tcpdump_compare_orig_arm64}. After 24 hours, both implementations achieved similar bitmap coverage.
+tttext{Autofz} followed a linear trend while ARM64 tttext{autofz} followed a logarithmic trend. Consequently, 
+the orignal tttext{autofz} took longer to achieve the same bitmap coverage. 
 
 \begin{figure}
-    \includegraphics[width=0.52\textwidth]{figs/tcp_compare_orig_arm64.png}
+    \includegraphics[width=0.52\textwidth]{figs/tcpdump_compare_orig_arm64.png}
     \centering
-    \caption{A comparison of bitmap density covered in the original\cite{fu_autofz_2023} and our 
-    coverage during initial fuzzing of tcpdump}
-    \label{fig:exiv2_compare_orig_arm64}
+    \caption{A comparison of bitmap density covered in the original\cite{fu_autofz_2023} and our ARM64 implementation
+    coverage during fuzzing of tcpdump}
+    \label{fig:tcpdump_compare_orig_arm64}
+\end{figure}
+
+Bug coverage of our initial fuzzing campaign against tcpdump is plotted in figure \ref{figs:tcp_compare_orig_arm64_ub.png}, 
+shown as a comparison are results from Fu et al.\cite{fu_autofz_2023}. While the ARM64 adaptation of \texttt{autofz} achieved similar
+performance to the original in bitmap coverage, it out performed the origional in bug discovery. These findings suggests that 
+\texttt{autofz} can be successfully adapted for the ARM64 architecture and may even out perform better.
+
+\begin{figure}
+    \includegraphics[width=0.52\textwidth]{figs/tcpdump_compare_orig_arm64_ub.png}
+    \centering
+    \caption{A comparison of bug discovery in the original\cite{fu_autofz_2023} and our ARM64 implementation
+    coverage during fuzzing of tcpdump}
+    \label{figs:tcp_compare_orig_arm64_ub.png}
 \end{figure}
 
 In addition to producing an ARM64 compatible \texttt{autofz}, we identified a potential improvement for \texttt{autofz}.
