@@ -13,7 +13,7 @@ allocating resources to fuzzers using runtime data. This methodology empowers \t
 fuzzer selection problem and outperform individual fuzzers.
 
 In spite of these successes, \texttt{autofz} is not perfect. While there is no consensus on the best way to 
-assess fuzzers, \texttt{autofz} oversimplifies this process. \texttt{Autofz} was originally written to rely on a 
+assess fuzzers, \texttt{autofz} oversimplifies this process. \texttt{Autofz} originally relied on a 
 singular metric, AFL bitmap coverage, to rank its fuzzers and allocate resources. In this paper, we
 propose the use of unique bugs as an additional and alternative metric. We posit that, in 
 many cases, \texttt{autofz} performs even better if it considers the number of unique bugs found when assigning 
