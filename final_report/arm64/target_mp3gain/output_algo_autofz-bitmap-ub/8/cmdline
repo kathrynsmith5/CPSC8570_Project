@@ -1,0 +1,1 @@
+/usr/local/bin/autofz --fuzzer all -t mp3gain -T 24h --discriminator bitmap-ub -o 8

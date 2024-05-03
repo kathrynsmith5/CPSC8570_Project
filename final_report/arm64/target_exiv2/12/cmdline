@@ -1,0 +1,1 @@
+/usr/local/bin/autofz -f all -t exiv2 -T 24h --discriminator bitmap -o 12

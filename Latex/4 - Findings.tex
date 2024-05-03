@@ -9,7 +9,7 @@ and are included in UNIFUZZ's\cite{li_unifuzz_2021} set of real-world programs f
 benchmarking fuzzers. As a baseline, UNIFUZZ's published counts of unique bugs are 
 shown in figure \ref{fig:unifuzz_selections}.
 
-\begin{figure}[h!]
+\begin{figure}[ht!]
     \includegraphics[width=0.5\textwidth]{figs/unifuzz_selections.png}
     \centering
     \caption{Counts of unique bugs found by the listed fuzzers, as documented in 
@@ -20,27 +20,96 @@ shown in figure \ref{fig:unifuzz_selections}.
 
 \subsection{Autofz on AMD64}
 
-Figure \ref{fig:exiv2_compare_orig_arm64} displays bitmap density covered by the individual algorithms in our AMD64 implementation, 
-as compared to a similar plot from Fu et al.\cite{fu_autofz_2023}. While our recreation of autofz achieved lower bitmap coverage than 
-the version published by Fu et al., our individual fuzzers also achieved lower bitmap coverage. As a result, our replica still 
-outperformed all other individual fuzzers tested in our environment. This is consistant
-with Fu et al.'s findings and further proves that \texttt{autofz} is superior to individual fuzzers.
+To confirm some of Fu et al.'s \cite{fu_autofz_2023} findings and validate our 
+own \texttt{autofz} kits. Running on our AMD64 host, we were able to find the following
+average counts of unique bugs, as shown in table \ref{amd64-benchmark-comparison}. 
 
-\begin{figure}
-    \includegraphics[width=0.52\textwidth]{figs/exiv2_compare_orig_arm64.png}
+As we can see, our average of unique bugs found in \texttt{infotocap} was consistent 
+with Fu et al.\cite{fu_autofz_2023} and UNIFUZZ\cite{li_unifuzz_2021}. Their finding 
+was based on ten (24 hour) fuzzing runs, ours was based on eight. While Fu et al. did 
+not include metrics for the \texttt{mp3gain} target, our average was found by seven  
+fuzzing runs and was consistent with the UNIFUZZ benchmark. Similarly, our average 
+of 10 unique bugs was documented through only two fuzzing runs, but was consistent 
+with UNIFUZZ and relatively close to Fu et al.'s finding.
+
+The \texttt{tcpdump} target is an outlier in this set, but we note that only QSYM found 
+a significant number of unique bugs, based on UNIFUZZ. 
+
+\begin{table}[ht!]
+    \begin{tabular}{llll}
+        \toprule
+         & amd64 & autofz\cite{fu_autofz_2023} & UNIFUZZ\cite{li_unifuzz_2021} \\
+        \midrule
+        infotocap & 4.09 & 5.50 & ~5 \\
+        mp3gain & 8.67 & n/a & ~8 \\
+        tcpdump & 0.15 & 1.9 &  ~30 \\
+        exiv2 & 10.00 & 13.1 & ~10 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Comparison of average unique bugs found between our AMD64 host, original
+    \texttt{autofz} and UNIFUZZ benchmarks.}
+    \label{amd64-benchmark-comparison}
+\end{table}
+
+Figure \ref{fig:exiv2_compare_orig_amd64} displays bitmap density covered by the individual 
+algorithms in our AMD64 implementation, as compared to a similar plot from Fu et al.
+\cite{fu_autofz_2023}. While our recreation of autofz achieved lower bitmap coverage than 
+the version published by Fu et al., our individual fuzzers also achieved lower bitmap 
+coverage. As a result, our replica still outperformed all other individual fuzzers tested 
+in our environment. We note this as our average number of unique bugs found in \texttt{exiv2} 
+were similar to those found by Fu et al. 
+
+Likewise, we compare bitmap coverage of \texttt{tcpdump} on our AMD64 host to the findings 
+in the original \texttt{autofz} report\cite{fu_autofz_2023}, shown in figure 
+\ref{fig:tcpdump_compare_orig_amd64}.
+
+\begin{figure}[ht!]
+    \includegraphics[width=0.5\textwidth]{figs/exiv2_compare_orig_amd64.png}
     \centering
-    \caption{A comparison of bitmap density covered in the original\cite{fu_autofz_2023} and our 
-    coverage during initial fuzzing of exiv2}
-    \label{fig:exiv2_compare_orig_arm64}
+    \caption{A comparison of bitmap density covered in the original\cite{fu_autofz_2023} (shown 
+    on top) and our coverage (shown on bottom) during initial fuzzing of \texttt{exiv2}.}
+    \label{fig:exiv2_compare_orig_amd64}
+\end{figure}
+
+\begin{figure}[ht!]
+    \includegraphics[width=0.5\textwidth]{figs/tcpdump_compare_orig_amd64.png}
+    \centering
+    \caption{A comparison of bitmap density covered in the original\cite{fu_autofz_2023} (shown 
+    on top) and our coverage (shown on bottom) during initial fuzzing of \texttt{tcpdump}.}
+    \label{fig:tcpdump_compare_orig_amd64}
 \end{figure}
 
 \subsection{Autofz on ARM64}
 
-Testing also indicates that the ARM64 compatible \texttt{autofz} performs similarly to the unmodified AMD64 \texttt{autofz}. 
-Bitmap density coverage of AMD64 \texttt{autofz} is plottted alogside our ARM64 \texttt{autofz} in figure 
+Testing also shows that the ARM64 compatible \texttt{autofz} performs similarly to the unmodified 
+AMD64 \texttt{autofz}. Table \ref{arm64-benchmark-comparison} provides a side-by-side comparison 
+of the average numbers of unique bugs found with our ARM64 kit, AMD64 host, the original 
+\texttt{autofz} paper, and the UNIFUZZ benchmark.
+
+We consistently found many more bugs in \texttt{exiv2} on ARM64, over the course of ten fuzzing 
+runs. At this time, we recommend further study to validate these bugs and understand why this 
+behavior was observed. 
+
+Bitmap density coverage of AMD64 \texttt{autofz} is plotted alogside our ARM64 \texttt{autofz} in figure 
 \ref{fig:tcpdump_compare_orig_arm64}. After 24 hours, both implementations achieved similar bitmap coverage.
 AMD64 \texttt{Autofz}'s bitmap coverage grew linearly while ARM64 \texttt{autofz} followed a logarithmic trend. Consequently, 
 the AMD64 \texttt{autofz} took longer to achieve the same bitmap coverage. 
+
+\begin{table}[ht!]
+    \begin{tabular}{lllll}
+        \toprule
+         & arm64 & amd64 & autofz & UNIFUZZ \\
+        \midrule
+        infotocap & 4.77 & 4.09 & 5.50 & ~5 \\
+        mp3gain & 7.40 & 8.67 & n/a & ~8 \\
+        tcpdump & 0.38 & 0.15 & 1.9 &  ~30 \\
+        exiv2 & 29.80 & 10.00 & 13.1 & ~10 \\
+        \bottomrule
+        \end{tabular}
+        \caption{Comparison of average unique bugs found between ARMy Fuzzing (ARM64), our AMD64 
+        host, original \texttt{autofz} and UNIFUZZ benchmarks.}
+        \label{arm64-benchmark-comparison}
+    \end{table}
 
 \begin{figure}
     \includegraphics[width=0.52\textwidth]{figs/tcpdump_compare_orig_arm64.png}
