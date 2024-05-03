@@ -18,6 +18,8 @@ shown in figure \ref{fig:unifuzz_selections}.
     \label{fig:unifuzz_selections}
 \end{figure}
 
+\substection(Autofz on AMD64)
+
 Figure \ref{fig:exiv2_compare_orig_arm64} displays bitmap density covered by the individual algorithms in our AMD64 implementation, 
 as compared to a similar plot from Fu et al.\cite{fu_autofz_2023}. While our recreation of autofz achieved lower bitmap coverage than 
 the version published by Fu et al., our individual fuzzers also achieved lower bitmap coverage. As a result, our replica still 
@@ -31,6 +33,8 @@ with Fu et al.'s findings and further proves that \texttt{autofz} is superior to
     coverage during initial fuzzing of exiv2}
     \label{fig:exiv2_compare_orig_arm64}
 \end{figure}
+
+\substection(Autofz on ARM64)
 
 Testing also indicates that the ARM64 compatible \texttt{autofz} performs similarly to the unmodified AMD64 \texttt{autofz}. 
 Bitmap density coverage of AMD64 \texttt{autofz} is plottted alogside our ARM64 \texttt{autofz} in figure 
@@ -59,11 +63,31 @@ when fuzzed with ARM64 \texttt{autofz}, \texttt{autofz} can be successfully adap
     \label{figs:tcp_compare_orig_arm64_ub.png}
 \end{figure}
 
-In addition to producing an ARM64 compatible \texttt{autofz}, we identified a potential improvement for \texttt{autofz}.
-Existing versions of \texttt{autofz} use bitmap coverage to rank fuzzers during the preparation, but bitmap
-coverage may not be the best metric for identifying the most effective fuzzers for a target. While
-bitmap coverage indicates the portion of a target that was fuzzed, it does not guarantee bug discovery.
-To resolve these problems, we plan to modify \texttt{autofz}, so fuzzers that discover more bugs during the
-preparation phase are rewarded with more resources during the focus phase because discovering more bugs
-across a smaller area of code decreases the attack surface by more entry points than discovering fewer
-bugs over a greater area of the code.
+\substection(Additional Metrics for Autofz)
+
+The outcomes of the new resource allocation algorithms on tcpdump in ARM64 and AMD64 are documented in \ref{figs:tcpdump_algo_compare.png}. 
+The outcomes of these algorithms were not consistent. While the ub-bitmap algorithm outperforms the others when tested on the AMD64, a 
+consistent winner does not present when the algorithms are tested in the ARM64 envirnoment. 
+
+\begin{figure}
+    \includegraphics[width=0.52\textwidth]{figs/tcpdump_algo_compare.png}
+    \centering
+    \caption{The outcomes of the new resource allocation algorithms on tcpdump when executed on the AMD64 and ARM64 architectures}
+    \label{figs:tcpdump_algo_compare.png}
+\end{figure}
+
+The inverse of this pattern can be identifed when the new resource allocation algoritions are executed on infotocap in 
+\ref{figs:infotocap_algo_compare.png}. When the new algorithms are tested on infotocap in AMD64 \testtt{autofz}, one does not achieve better
+bitmap coverage and bug discovery, but when the new algorithms are tested on ARM64 \testtt{autofz}, ub-bitmap is the best algorithm.
+
+\begin{figure}
+
+    \includegraphics[width=0.52\textwidth]{figs/infotocap_algo_compare.png}
+    \centering
+    \caption{The outcomes of the new resource allocation algorithms on infotocap when executed on the AMD64 and ARM64 architectures}
+    \label{figs:infotocap_algo_compare.png}
+\end{figure}
+
+As a result of these inconsistencies, one algorithm cannot be identifed as better than the others at this time.
+
+
