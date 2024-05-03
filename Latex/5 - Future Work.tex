@@ -6,14 +6,14 @@ was tested against 12 targets and verified over 10 iterations. Our research
 confirmed the finding of Fu et al on 4 targets over ten repetitions. While we 
 replicated the outcomes of Fu et al. with limited tests, the variations 
 of \texttt{autofz} proposed in this paper need to under go additional testing. Due to their 
-novelty, they cannot rely on previous literature to confirm their findings.
+novelty, they cannot rely on previous literature to confirm their findings. \cite{fu_autofz_2023}
 
 Similarly to \texttt{autofz}, we tested \texttt{autofz} for ARM64 against 4 targets over 10 
 iterations. While trends were able to be identity among the tested targets, this
 sample is not large enough to apply the outcomes to all targets. 
 
 Additionally, the proposed algorithms for resources allocation during the preparation
-underwent restricted testing, and they were insconsistant between targets. 
+underwent restricted testing, and they were inconsistent between targets. 
 More testing needs to be undertaken in order to confirm the performance on tested targets and
 extrapolate their performance to untested targets.
 
@@ -22,15 +22,16 @@ complex targets. Fu et al. evaluated \texttt{autofz} against simple targets with
 order to compare our findings to Fu et al., we were restricted to testing our 
 iterations of \texttt{autofz} against the same targets. In the future, all variations of 
 \texttt{autofz} should be tested against larger, more complex targets that are comparable to
-targets that may leverage fuzzing.
+targets that may leverage fuzzing. \cite{fu_autofz_2023}
 
 \subsection{Fuzzer Pool Composition} Fu et al. disclosed that the performance of
-Autofz is dependent of the composition of its fuzzer pool. When \texttt{autofz} was presented
+Autofz is dependent of the composition of its fuzzer pool, but they did not identify the ideal fuzzer pool size or 
+composision. When \texttt{autofz} was presented
 with a large pool of fuzzers and when \texttt{autofz} was provided with too few fuzzers, it 
 under preformed. Further testing needs to be undertaken in order to determine the ideal
-number of fuzzer in the pool as well as which fuzzers should be in the pool.
+number of fuzzer in the pool as well as which fuzzers should be in the pool. \cite{fu_autofz_2023}
 
-\subsection{Documentation} In addition to confirming and maximizing the performace of \texttt{autofz},
+\subsection{Documentation} In addition to confirming and maximizing the performance of \texttt{autofz},
 \texttt{autofz} needs undergo additional documentation. In route of evaluating \texttt{autofz}, significant 
 changes were made to its graphing function. While these simplified comparing the performance of the variations
 of \texttt{autofz}, they did not improve the performance of \texttt{autofz} and were outside of the scope of our research.
