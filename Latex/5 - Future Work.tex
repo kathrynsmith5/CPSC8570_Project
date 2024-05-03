@@ -1,5 +1,5 @@
 %-------------------------------------------------------------------------------
-\section{Future Research and Limitations}
+\section{Future Research}
 %-------------------------------------------------------------------------------
 \subsection{Additional Targets} The version of \texttt{autofz} proposed by Fu et al. 
 was tested against 12 targets and verified over 10 iterations. Our research  
@@ -13,8 +13,9 @@ iterations. While trends were able to be identity among the tested targets, this
 sample is not large enough to apply the outcomes to all targets. 
 
 Additionally, the proposed algorithms for resources allocation during the preparation
-underwent restricted testing. More testing needs to be undertaken in order to confirm
-the performance on tested targets and extrapolate the performance to untested targets.
+underwent restricted testing, and they were insconsistant between targets. 
+More testing needs to be undertaken in order to confirm the performance on tested targets and
+extrapolate their performance to untested targets.
 
 \subsection{Complex Targets} All versions of \texttt{autofz} need to be tested against 
 complex targets. Fu et al. evaluated \texttt{autofz} against simple targets with known bugs. In 
@@ -28,3 +29,12 @@ Autofz is dependent of the composition of its fuzzer pool. When \texttt{autofz} 
 with a large pool of fuzzers and when \texttt{autofz} was provided with too few fuzzers, it 
 under preformed. Further testing needs to be undertaken in order to determine the ideal
 number of fuzzer in the pool as well as which fuzzers should be in the pool.
+
+\subsection{Documentation} In addition to confirming and maximizing the performace of \texttt{autofz},
+\texttt{autofz} needs undergo additional documentation. In route of evaluating \texttt{autofz}, significant 
+changes were made to its graphing function. While these simplified comparing the performance of the variations
+of \texttt{autofz}, they did not improve the performance of \texttt{autofz} and were outside of the scope of our research.
+As a result, these modifications were not documented and need to testing. 
+
+
+

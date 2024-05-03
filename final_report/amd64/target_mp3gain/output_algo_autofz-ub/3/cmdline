@@ -1,0 +1,1 @@
+/usr/local/bin/autofz -f all -t mp3gain -T 24h --discriminator ub -o 3
