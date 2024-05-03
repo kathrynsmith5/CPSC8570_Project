@@ -1,6 +1,8 @@
 %-------------------------------------------------------------------------------
 \section{Conclusion}
 %-------------------------------------------------------------------------------
-\textt{Autofz} is an effective means of resolving the fuzzer selection burden for AMD64 
-and ARM64 architectures. Alternative algorithms show potential for improving 
-\texttt{autofz}, but more testing is needed to identfy which configuration is best.
+As presented by Fu et al., \textt{autofz} achieves greater bitmap coverage than individual 
+fuzzers, and it is an effective means of eliminating the fuzzer selection burden \cite{fu_autofz_2023}. 
+When adapted for the ARM64 architecture, \textt{autofz} remains effective. 
+While alternative resources allocation algorithms show potential for improving the number of bugs discovered
+and bitmap fuzzed by \texttt{autofz}, more testing is needed to identfy which configuration is best.
