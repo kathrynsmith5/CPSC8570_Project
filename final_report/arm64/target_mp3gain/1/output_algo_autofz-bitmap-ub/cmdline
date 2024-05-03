@@ -1,0 +1,1 @@
+/usr/local/bin/autofz -o output -f all -t mp3gain -T 24h --discriminator bitmap-ub

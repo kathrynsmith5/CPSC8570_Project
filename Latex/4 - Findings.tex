@@ -41,9 +41,9 @@ a significant number of unique bugs, based on UNIFUZZ.
          & amd64 & autofz\cite{fu_autofz_2023} & UNIFUZZ\cite{li_unifuzz_2021} \\
         \midrule
         infotocap & 4.09 & 5.50 & ~5 \\
-        mp3gain & 8.67 & n/a & ~8 \\
+        mp3gain & 8.38 & n/a & ~8 \\
         tcpdump & 0.15 & 1.9 &  ~30 \\
-        exiv2 & 10.00 & 13.1 & ~10 \\
+        exiv2 & 10.67 & 13.1 & ~10 \\
         \bottomrule
     \end{tabular}
     \caption{Comparison of average unique bugs found between our AMD64 host, original
@@ -92,8 +92,8 @@ behavior was observed.
 
 Bitmap density coverage of AMD64 \texttt{autofz} is plotted alogside our ARM64 \texttt{autofz} in figure 
 \ref{fig:tcpdump_compare_orig_arm64}. After 24 hours, both implementations achieved similar bitmap coverage.
-AMD64 \texttt{Autofz}'s bitmap coverage grew linearly while ARM64 \texttt{autofz} followed a logarithmic trend. Consequently, 
-the AMD64 \texttt{autofz} took longer to achieve the same bitmap coverage. 
+AMD64 \texttt{Autofz}'s bitmap coverage grew linearly while ARM64 \texttt{autofz} followed a 
+logarithmic trend. Consequently, the AMD64 \texttt{autofz} took longer to achieve the same bitmap coverage. 
 
 \begin{table}[ht!]
     \begin{tabular}{lllll}
@@ -101,9 +101,9 @@ the AMD64 \texttt{autofz} took longer to achieve the same bitmap coverage.
          & arm64 & amd64 & autofz & UNIFUZZ \\
         \midrule
         infotocap & 4.77 & 4.09 & 5.50 & ~5 \\
-        mp3gain & 7.40 & 8.67 & n/a & ~8 \\
+        mp3gain & 8.00 & 8.67 & n/a & ~8 \\
         tcpdump & 0.38 & 0.15 & 1.9 &  ~30 \\
-        exiv2 & 29.80 & 10.00 & 13.1 & ~10 \\
+        exiv2 & 33.50 & 10.00 & 13.1 & ~10 \\
         \bottomrule
         \end{tabular}
         \caption{Comparison of average unique bugs found between ARMy Fuzzing (ARM64), our AMD64 
@@ -120,9 +120,10 @@ the AMD64 \texttt{autofz} took longer to achieve the same bitmap coverage.
 \end{figure}
 
 Bug coverage of our ARM64 fuzzing campaign against tcpdump is plotted in figure \ref{figs:tcp_compare_orig_arm64_ub.png}, 
-shown as a comparison are results from Fu et al.\cite{fu_autofz_2023}. While the ARM64 adaptation of \texttt{autofz} achieved similar
-performance to the original in bitmap coverage, it out performed the original in bug discovery. Since the other targets followed similar trends
-when fuzzed with ARM64 \texttt{autofz}, \texttt{autofz} can be successfully adapted for the ARM64 architecture.
+shown as a comparison are results from Fu et al.\cite{fu_autofz_2023}. While the ARM64 adaptation of 
+\texttt{autofz} achieved similar performance to the original in bitmap coverage, it outperformed the 
+original in bug discovery. Since the other targets followed similar trends when fuzzed with ARM64 
+\texttt{autofz}, \texttt{autofz} can be successfully adapted for the ARM64 architecture.
 
 \begin{figure}
     \includegraphics[width=0.52\textwidth]{figs/tcpdump_compare_orig_arm64_ub.png}
@@ -134,9 +135,32 @@ when fuzzed with ARM64 \texttt{autofz}, \texttt{autofz} can be successfully adap
 
 \subsection{Additional Metrics for Autofz}
 
-The outcomes of the new resource allocation algorithms on tcpdump in ARM64 and AMD64 are documented in \ref{figs:tcpdump_algo_compare.png}. 
-The outcomes of these algorithms were not consistent. While the ub-bitmap algorithm outperforms the others when tested on the AMD64, a 
-consistent winner does not present when the algorithms are tested in the ARM64 envirnoment. 
+The outcomes of the new resource allocation algorithms on tcpdump in ARM64 and AMD64 are documented in 
+\ref{figs:tcpdump_algo_compare.png}. The outcomes of these algorithms were not consistent. While the 
+ub-bitmap algorithm outperforms the others when tested on the AMD64, a consistent winner does not 
+present when the algorithms are tested in the ARM64 environment.
+
+
+In table \ref{arm64-additional-metrics}, we document the average number of bugs found by each of 
+our fuzzing algorithms on ARM64, including our three new algorithms that consider unique bugs as a 
+discrimination metric. In all of these cases, the \texttt{bitmap} algorithm is equivalent to autofz running without 
+specifying a discriminator (i.e. default). Due to time constraints, we did not complete 
+
+\begin{table}
+    \begin{tabular}{lllll}
+        \toprule
+         & ub & ub-bitmap & bitmap-ub & bitmap \\
+        \midrule
+        infotocap & 4.00 & 3.00 & 1.00 & 4.77 \\
+        mp3gain & 7.40 & 8.83 & 8.0 & 8.0 \\       
+        tcpdump & 0.00 & 0.00 & 0.00 & 0.38 \\
+        exiv2 & 34.0 & 44.0 & 27.0 & 29.80 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Comparison of average unique bugs found between ARMy Fuzzing (ARM64), our AMD64 
+    host, original \texttt{autofz} and UNIFUZZ benchmarks.}
+    \label{arm64-additional-metrics}
+\end{table}
 
 \begin{figure}
     \includegraphics[width=0.52\textwidth]{figs/tcpdump_algo_compare.png}
