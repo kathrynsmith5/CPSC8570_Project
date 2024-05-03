@@ -18,7 +18,7 @@ shown in figure \ref{fig:unifuzz_selections}.
     \label{fig:unifuzz_selections}
 \end{figure}
 
-\substection(Autofz on AMD64)
+\subsection{Autofz on AMD64}
 
 Figure \ref{fig:exiv2_compare_orig_arm64} displays bitmap density covered by the individual algorithms in our AMD64 implementation, 
 as compared to a similar plot from Fu et al.\cite{fu_autofz_2023}. While our recreation of autofz achieved lower bitmap coverage than 
@@ -34,7 +34,7 @@ with Fu et al.'s findings and further proves that \texttt{autofz} is superior to
     \label{fig:exiv2_compare_orig_arm64}
 \end{figure}
 
-\substection(Autofz on ARM64)
+\subsection{Autofz on ARM64}
 
 Testing also indicates that the ARM64 compatible \texttt{autofz} performs similarly to the unmodified AMD64 \texttt{autofz}. 
 Bitmap density coverage of AMD64 \texttt{autofz} is plottted alogside our ARM64 \texttt{autofz} in figure 
@@ -63,7 +63,7 @@ when fuzzed with ARM64 \texttt{autofz}, \texttt{autofz} can be successfully adap
     \label{figs:tcp_compare_orig_arm64_ub.png}
 \end{figure}
 
-\substection(Additional Metrics for Autofz)
+\subsection{Additional Metrics for Autofz}
 
 The outcomes of the new resource allocation algorithms on tcpdump in ARM64 and AMD64 are documented in \ref{figs:tcpdump_algo_compare.png}. 
 The outcomes of these algorithms were not consistent. While the ub-bitmap algorithm outperforms the others when tested on the AMD64, a 
@@ -76,9 +76,9 @@ consistent winner does not present when the algorithms are tested in the ARM64 e
     \label{figs:tcpdump_algo_compare.png}
 \end{figure}
 
-The inverse of this pattern can be identifed when the new resource allocation algoritions are executed on infotocap in 
-\ref{figs:infotocap_algo_compare.png}. When the new algorithms are tested on infotocap in AMD64 \testtt{autofz}, one does not achieve better
-bitmap coverage and bug discovery, but when the new algorithms are tested on ARM64 \testtt{autofz}, ub-bitmap is the best algorithm.
+The inverse of this pattern can be identifed when the new resource allocation algorithms are executed on infotocap in 
+\ref{figs:infotocap_algo_compare.png}. When the new algorithms are tested on infotocap in AMD64 \texttt{autofz}, one does not achieve better
+bitmap coverage and bug discovery, but when the new algorithms are tested on ARM64 \texttt{autofz}, ub-bitmap is the best algorithm.
 
 \begin{figure}
 
